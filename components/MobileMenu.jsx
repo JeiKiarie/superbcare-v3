@@ -1,5 +1,6 @@
-import { useState } from 'react';
+'use client';
 import Link from 'next/link';
+import { useState } from 'react';
 
 const MobileMenu = () => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -34,7 +35,7 @@ const MobileMenu = () => {
 					Home
 				</Link>
 				<Link
-					href="/about"
+					href="/about-us"
 					onClick={toggleMenu}>
 					About
 				</Link>
@@ -49,7 +50,7 @@ const MobileMenu = () => {
 					Testimonials
 				</Link>
 				<Link
-					href="/contact"
+					href="/contact-us"
 					onClick={toggleMenu}>
 					Contact
 				</Link>

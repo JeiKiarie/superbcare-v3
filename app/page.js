@@ -62,7 +62,7 @@ export default function Home() {
 				</motion.h2>
 
 				<div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-					<motion.div
+					<motion.article
 						className="bg-white p-6 rounded-lg shadow-md text-center"
 						initial={{ opacity: 0, scale: 0.8 }}
 						animate={{ opacity: 1, scale: 1 }}
@@ -74,9 +74,9 @@ export default function Home() {
 							Our team is composed of experienced and certified caregivers who
 							are dedicated to providing the best possible care.
 						</p>
-					</motion.div>
+					</motion.article>
 
-					<motion.div
+					<motion.article
 						className="bg-white p-6 rounded-lg shadow-md text-center"
 						initial={{ opacity: 0, scale: 0.8 }}
 						animate={{ opacity: 1, scale: 1 }}
@@ -90,9 +90,9 @@ export default function Home() {
 							daily activities, medical needs, or companionship, we are here to
 							support you every step of the way.
 						</p>
-					</motion.div>
+					</motion.article>
 
-					<motion.div
+					<motion.article
 						className="bg-white p-6 rounded-lg shadow-md text-center"
 						initial={{ opacity: 0, scale: 0.8 }}
 						animate={{ opacity: 1, scale: 1 }}
@@ -104,8 +104,8 @@ export default function Home() {
 							We create personalized care plans tailored to the individual needs
 							and preferences of your loved ones.
 						</p>
-					</motion.div>
-					<motion.div
+					</motion.article>
+					<motion.article
 						className="bg-white p-6 rounded-lg shadow-md text-center"
 						initial={{ opacity: 0, scale: 0.8 }}
 						animate={{ opacity: 1, scale: 1 }}
@@ -119,8 +119,8 @@ export default function Home() {
 							and dignity. Our caregivers assist with such activities of daily
 							living as bathing, dressing, grooming, and mobility.
 						</p>
-					</motion.div>
-					<motion.div
+					</motion.article>
+					<motion.article
 						className="bg-white p-6 rounded-lg shadow-md text-center"
 						initial={{ opacity: 0, scale: 0.8 }}
 						animate={{ opacity: 1, scale: 1 }}
@@ -133,8 +133,8 @@ export default function Home() {
 							comfortable living environment, ie, light housekeeping, laundry,
 							meal preparation, and grocery shopping.
 						</p>
-					</motion.div>
-					<motion.div
+					</motion.article>
+					<motion.article
 						className="bg-white p-6 rounded-lg shadow-md text-center"
 						initial={{ opacity: 0, scale: 0.8 }}
 						animate={{ opacity: 1, scale: 1 }}
@@ -148,8 +148,8 @@ export default function Home() {
 							appointments, and help in engaging in hobbies are some of the
 							aspects of companionship that our carers are trained to give.
 						</p>
-					</motion.div>
-					<motion.div
+					</motion.article>
+					<motion.article
 						className="bg-white p-6 rounded-lg shadow-md text-center"
 						initial={{ opacity: 0, scale: 0.8 }}
 						animate={{ opacity: 1, scale: 1 }}
@@ -163,8 +163,8 @@ export default function Home() {
 							Alzheimer&#39;s care, post-surgery and rehabilitation support, as
 							well as palliative and end-of-life care.
 						</p>
-					</motion.div>
-					<motion.div
+					</motion.article>
+					<motion.article
 						className="bg-white p-6 rounded-lg shadow-md text-center"
 						initial={{ opacity: 0, scale: 0.8 }}
 						animate={{ opacity: 1, scale: 1 }}
@@ -176,8 +176,8 @@ export default function Home() {
 							Trained in emergency procedures, our caregivers can quickly and
 							effectively respond to all unexpected situations.
 						</p>
-					</motion.div>
-					<motion.div
+					</motion.article>
+					<motion.article
 						className="bg-white p-6 rounded-lg shadow-md text-center"
 						initial={{ opacity: 0, scale: 0.8 }}
 						animate={{ opacity: 1, scale: 1 }}
@@ -190,8 +190,8 @@ export default function Home() {
 							independence and well-being while offering personalized assistance
 							with daily tasks.
 						</p>
-					</motion.div>
-					<motion.div
+					</motion.article>
+					<motion.article
 						className="bg-white p-6 rounded-lg shadow-md text-center"
 						initial={{ opacity: 0, scale: 0.8 }}
 						animate={{ opacity: 1, scale: 1 }}
@@ -204,8 +204,8 @@ export default function Home() {
 							where residents receive specialized care tailored to their
 							cognitive needs.
 						</p>
-					</motion.div>
-					<motion.div
+					</motion.article>
+					<motion.article
 						className="bg-white p-6 rounded-lg shadow-md text-center"
 						initial={{ opacity: 0, scale: 0.8 }}
 						animate={{ opacity: 1, scale: 1 }}
@@ -218,7 +218,7 @@ export default function Home() {
 							while ensuring that their loved ones receive the highest standard
 							of care in a welcoming and supportive setting.
 						</p>
-					</motion.div>
+					</motion.article>
 				</div>
 			</section>
 

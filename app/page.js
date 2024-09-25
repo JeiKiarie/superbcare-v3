@@ -3,6 +3,9 @@
 import { motion } from 'framer-motion';
 import Carousel from '/components/Carousel';
 import Hero from '/components/Hero';
+import Link from 'next/link';
+import Image from 'next/image';
+import kiarie from '/public/kiarie.jpg';
 
 export default function Home() {
 	return (
@@ -120,12 +123,14 @@ export default function Home() {
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
 						transition={{ delay: 0.3 }}>
-						<img
-							src="/images/team-member-1.jpg"
+						<Image
+							width={200}
+							height={200}
+							src={kiarie}
 							alt="Team Member"
-							className="w-32 h-32 mx-auto rounded-full mb-4"
+							className="w-64 h-64 mx-auto rounded-full mb-4"
 						/>
-						<h3 className="text-xl font-semibold text-blue-600">John Doe</h3>
+						<h3 className="text-xl font-semibold text-blue-600">James</h3>
 						<p className="text-gray-500">Lead Caregiver</p>
 					</motion.div>
 
@@ -135,12 +140,29 @@ export default function Home() {
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
 						transition={{ delay: 0.5 }}>
-						<img
-							src="/images/team-member-2.jpg"
+						<Image
+							width={200}
+							height={200}
+							src={kiarie}
 							alt="Team Member"
-							className="w-32 h-32 mx-auto rounded-full mb-4"
+							className="w-64 h-64 mx-auto rounded-full mb-4"
 						/>
-						<h3 className="text-xl font-semibold text-blue-600">Jane Smith</h3>
+						<h3 className="text-xl font-semibold text-blue-600">Ken</h3>
+						<p className="text-gray-500">Registered Nurse</p>
+					</motion.div>
+					<motion.div
+						className="bg-white p-6 rounded-lg shadow-md text-center"
+						initial={{ opacity: 0 }}
+						animate={{ opacity: 1 }}
+						transition={{ delay: 0.5 }}>
+						<Image
+							width={200}
+							height={200}
+							src={kiarie}
+							alt="Team Member"
+							className="w-64 h-64 mx-auto rounded-full mb-4"
+						/>
+						<h3 className="text-xl font-semibold text-blue-600">Mark</h3>
 						<p className="text-gray-500">Registered Nurse</p>
 					</motion.div>
 
@@ -193,8 +215,8 @@ export default function Home() {
 						animate={{ opacity: 1 }}
 						transition={{ delay: 0.3 }}>
 						<p className="text-gray-600 mb-4">
-							"The caregivers were professional and compassionate. They helped
-							my mother feel at ease and comfortable in her home."
+							&#34;The caregivers were professional and compassionate. They
+							helped my mother feel at ease and comfortable in her home.&#34;
 						</p>
 						<h4 className="text-lg font-bold text-blue-600">- Jane Doe</h4>
 					</motion.div>
@@ -206,8 +228,8 @@ export default function Home() {
 						animate={{ opacity: 1 }}
 						transition={{ delay: 0.6 }}>
 						<p className="text-gray-600 mb-4">
-							"We received personalized care plans that perfectly matched our
-							needs. Highly recommended!"
+							&#34;We received personalized care plans that perfectly matched
+							our needs. Highly recommended!&#34;
 						</p>
 						<h4 className="text-lg font-bold text-blue-600">- John Smith</h4>
 					</motion.div>

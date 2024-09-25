@@ -50,8 +50,8 @@ export default function Header() {
 					</Link>
 					<Link
 						className="text-lg font-medium hover:text-gray-300"
-						href="/contact">
-						Contact
+						href="/contact-us">
+						Contact Us
 					</Link>
 					<Link
 						className="bg-white text-blue-700 font-semibold py-2 px-4 rounded-lg hover:bg-blue-100"

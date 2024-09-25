@@ -12,8 +12,11 @@ const Hero = () => {
 				initial={{ opacity: 0, y: -50 }}
 				animate={{ opacity: 1, y: 0 }}
 				transition={{ duration: 1 }}>
-				<h1 className="text-5xl font-bold mb-4">
-					Professional Live-In Care Services
+				<h1 className="text-5xl font-bold mb-4 text-center">
+					Professional Live-In Care Services. <br />
+					<span className="text-3xl">
+						Bringing Compassionate Care to Your Home.
+					</span>
 				</h1>
 				<p className="text-lg mb-6 max-w-3xl text-center">
 					We specialize in providing compassionate care and assistance to the

@@ -6,6 +6,92 @@ import Hero from '/components/Hero';
 import Link from 'next/link';
 import Image from 'next/image';
 import kiarie from '/public/kiarie.jpg';
+import { FaUserNurse } from 'react-icons/fa6';
+import { MdOutlineAssistWalker } from 'react-icons/md';
+import { MdAssistWalker } from 'react-icons/md';
+import { LiaUserNurseSolid } from 'react-icons/lia';
+import { BiBrain } from 'react-icons/bi';
+import { LuCalendarClock } from 'react-icons/lu';
+import { TbMoodPuzzled } from 'react-icons/tb';
+import { GiPeaceDove } from 'react-icons/gi';
+import { MdHealthAndSafety } from 'react-icons/md';
+import { GiBroom } from 'react-icons/gi';
+import { FaPeopleGroup } from 'react-icons/fa6';
+import { BiFirstAid } from 'react-icons/bi';
+import { BiTimeFive } from 'react-icons/bi';
+import { BiAlarm } from 'react-icons/bi';
+
+const services = [
+	{
+		id: 1,
+		title: 'Personal Care',
+		icon: MdHealthAndSafety,
+		text: `Our personal care services are designed to assist with daily activities, ensuring that clients can maintain their independence and dignity. Our caregivers assist with such activities of daily living as bathing, dressing, grooming, and mobility.`,
+	},
+	{
+		id: 2,
+		title: 'Household Assistance',
+		icon: GiBroom,
+		text: `We take care of household chores to create a clean, safe, and comfortable living environment, ie, light housekeeping, laundry, meal preparation, and grocery shopping.`,
+	},
+	{
+		id: 3,
+		title: 'Companionship',
+		icon: FaPeopleGroup,
+		text: `We provide companionship to combat loneliness and enhance quality of life. Social interaction, emotional support, accompaniment to appointments, and help in engaging in hobbies are some of the aspects of companionship that our carers are trained to give.`,
+	},
+	{
+		id: 4,
+		title: 'Specialized Care',
+		icon: BiFirstAid,
+		text: `We offer specialised care for those with specific health conditions or recovery needs including Dementia and Alzheimer’s care, post-surgery and rehabilitation support, as well as palliative and end-of-life care.`,
+	},
+
+	{
+		id: 5,
+		title: '24/7 Care & Support',
+		icon: BiTimeFive,
+		text: `Our dedicated caregivers provide round-the-clock assistance, ensuring safety and comfort at all times. Whether it’s help with daily activities, medical needs, or companionship, we are here to support you every step of the way.`,
+	},
+	{
+		id: 6,
+		title: 'Emergency Response',
+		icon: BiAlarm,
+		text: `Trained in emergency procedures, our caregivers can quickly and effectively respond to all unexpected situations.`,
+	},
+	{
+		id: 7,
+		title: 'Skilled Nursing Care',
+		icon: LiaUserNurseSolid,
+		text: `Our skilled nursing services are delivered by a
+		multidisciplinary team of healthcare professionals dedicated to
+		meeting the complex medical needs of our residents.`,
+	},
+	{
+		id: 8,
+		title: 'Assisted Living',
+		icon: MdOutlineAssistWalker,
+		text: `Our assisted living communities are carefully designed to promote independence and well-being while offering personalized assistance with daily tasks.`,
+	},
+	{
+		id: 9,
+		title: 'Memory Care',
+		icon: TbMoodPuzzled,
+		text: `Our memory care program provides a safe and secure environment where residents receive specialized care tailored to their cognitive needs.`,
+	},
+	{
+		id: 10,
+		title: 'Respite Care',
+		icon: LuCalendarClock,
+		text: `Our respite care services offer temporary relief for caregivers while ensuring that their loved ones receive the highest standard of care in a welcoming and supportive setting.`,
+	},
+	{
+		id: 11,
+		title: 'Hospice Care',
+		icon: GiPeaceDove,
+		text: `Our holistic approach focuses on pain management, symptom control, and emotional support, allowing residents to live their remaining days with dignity and peace.`,
+	},
+];
 
 export default function Home() {
 	return (
@@ -62,163 +148,22 @@ export default function Home() {
 				</motion.h2>
 
 				<div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-					<motion.article
-						className="bg-white p-6 rounded-lg shadow-md text-center"
-						initial={{ opacity: 0, scale: 0.8 }}
-						animate={{ opacity: 1, scale: 1 }}
-						transition={{ delay: 0.3, duration: 0.5 }}>
-						<h3 className="text-2xl font-bold text-blue-600 mb-4">
-							Experienced Caregivers
-						</h3>
-						<p className="text-gray-500">
-							Our team is composed of experienced and certified caregivers who
-							are dedicated to providing the best possible care.
-						</p>
-					</motion.article>
-
-					<motion.article
-						className="bg-white p-6 rounded-lg shadow-md text-center"
-						initial={{ opacity: 0, scale: 0.8 }}
-						animate={{ opacity: 1, scale: 1 }}
-						transition={{ delay: 0.5, duration: 0.5 }}>
-						<h3 className="text-2xl font-bold text-blue-600 mb-4">
-							24/7 Care & Support
-						</h3>
-						<p className="text-gray-500">
-							Our dedicated caregivers provide round-the-clock assistance,
-							ensuring safety and comfort at all times. Whether it is help with
-							daily activities, medical needs, or companionship, we are here to
-							support you every step of the way.
-						</p>
-					</motion.article>
-
-					<motion.article
-						className="bg-white p-6 rounded-lg shadow-md text-center"
-						initial={{ opacity: 0, scale: 0.8 }}
-						animate={{ opacity: 1, scale: 1 }}
-						transition={{ delay: 0.7, duration: 0.5 }}>
-						<h3 className="text-2xl font-bold text-blue-600 mb-4">
-							Personalized Care Plans
-						</h3>
-						<p className="text-gray-500">
-							We create personalized care plans tailored to the individual needs
-							and preferences of your loved ones.
-						</p>
-					</motion.article>
-					<motion.article
-						className="bg-white p-6 rounded-lg shadow-md text-center"
-						initial={{ opacity: 0, scale: 0.8 }}
-						animate={{ opacity: 1, scale: 1 }}
-						transition={{ delay: 0.7, duration: 0.5 }}>
-						<h3 className="text-2xl font-bold text-blue-600 mb-4">
-							Personal Care
-						</h3>
-						<p className="text-gray-500">
-							Our personal care services are designed to assist with daily
-							activities, ensuring that clients can maintain their independence
-							and dignity. Our caregivers assist with such activities of daily
-							living as bathing, dressing, grooming, and mobility.
-						</p>
-					</motion.article>
-					<motion.article
-						className="bg-white p-6 rounded-lg shadow-md text-center"
-						initial={{ opacity: 0, scale: 0.8 }}
-						animate={{ opacity: 1, scale: 1 }}
-						transition={{ delay: 0.7, duration: 0.5 }}>
-						<h3 className="text-2xl font-bold text-blue-600 mb-4">
-							Household Assistance
-						</h3>
-						<p className="text-gray-500">
-							We take care of household chores to create a clean, safe, and
-							comfortable living environment, ie, light housekeeping, laundry,
-							meal preparation, and grocery shopping.
-						</p>
-					</motion.article>
-					<motion.article
-						className="bg-white p-6 rounded-lg shadow-md text-center"
-						initial={{ opacity: 0, scale: 0.8 }}
-						animate={{ opacity: 1, scale: 1 }}
-						transition={{ delay: 0.7, duration: 0.5 }}>
-						<h3 className="text-2xl font-bold text-blue-600 mb-4">
-							Companionship
-						</h3>
-						<p className="text-gray-500">
-							We provide companionship to combat loneliness and enhance quality
-							of life. Social interaction, emotional support, accompaniment to
-							appointments, and help in engaging in hobbies are some of the
-							aspects of companionship that our carers are trained to give.
-						</p>
-					</motion.article>
-					<motion.article
-						className="bg-white p-6 rounded-lg shadow-md text-center"
-						initial={{ opacity: 0, scale: 0.8 }}
-						animate={{ opacity: 1, scale: 1 }}
-						transition={{ delay: 0.7, duration: 0.5 }}>
-						<h3 className="text-2xl font-bold text-blue-600 mb-4">
-							Specialised Care
-						</h3>
-						<p className="text-gray-500">
-							We offer specialised care for those with specific health
-							conditions or recovery needs including Dementia and
-							Alzheimer&#39;s care, post-surgery and rehabilitation support, as
-							well as palliative and end-of-life care.
-						</p>
-					</motion.article>
-					<motion.article
-						className="bg-white p-6 rounded-lg shadow-md text-center"
-						initial={{ opacity: 0, scale: 0.8 }}
-						animate={{ opacity: 1, scale: 1 }}
-						transition={{ delay: 0.7, duration: 0.5 }}>
-						<h3 className="text-2xl font-bold text-blue-600 mb-4">
-							Emergency Response
-						</h3>
-						<p className="text-gray-500">
-							Trained in emergency procedures, our caregivers can quickly and
-							effectively respond to all unexpected situations.
-						</p>
-					</motion.article>
-					<motion.article
-						className="bg-white p-6 rounded-lg shadow-md text-center"
-						initial={{ opacity: 0, scale: 0.8 }}
-						animate={{ opacity: 1, scale: 1 }}
-						transition={{ delay: 0.7, duration: 0.5 }}>
-						<h3 className="text-2xl font-bold text-blue-600 mb-4">
-							Assisted Living
-						</h3>
-						<p className="text-gray-500">
-							Our assisted living communities are carefully designed to promote
-							independence and well-being while offering personalized assistance
-							with daily tasks.
-						</p>
-					</motion.article>
-					<motion.article
-						className="bg-white p-6 rounded-lg shadow-md text-center"
-						initial={{ opacity: 0, scale: 0.8 }}
-						animate={{ opacity: 1, scale: 1 }}
-						transition={{ delay: 0.7, duration: 0.5 }}>
-						<h3 className="text-2xl font-bold text-blue-600 mb-4">
-							Memory Care
-						</h3>
-						<p className="text-gray-500">
-							Our memory care program provides a safe and secure environment
-							where residents receive specialized care tailored to their
-							cognitive needs.
-						</p>
-					</motion.article>
-					<motion.article
-						className="bg-white p-6 rounded-lg shadow-md text-center"
-						initial={{ opacity: 0, scale: 0.8 }}
-						animate={{ opacity: 1, scale: 1 }}
-						transition={{ delay: 0.7, duration: 0.5 }}>
-						<h3 className="text-2xl font-bold text-blue-600 mb-4">
-							Respite Care
-						</h3>
-						<p className="text-gray-500">
-							Our respite care services offer temporary relief for caregivers
-							while ensuring that their loved ones receive the highest standard
-							of care in a welcoming and supportive setting.
-						</p>
-					</motion.article>
+					{services.map((service) => (
+						<motion.article
+							key={service.index}
+							className="bg-white p-6 rounded-lg shadow-md text-center"
+							initial={{ opacity: 0, scale: 0.8 }}
+							animate={{ opacity: 1, scale: 1 }}
+							transition={{ delay: 0.3, duration: 0.5 }}>
+							<div className="w-20 h-20 mx-auto mb-4">
+								{<service.icon className="w-full h-full text-red-700" />}
+							</div>
+							<h3 className="text-2xl font-bold text-blue-600 mb-4">
+								{service.title}
+							</h3>
+							<p className="text-gray-500">{service.text}</p>
+						</motion.article>
+					))}
 				</div>
 			</section>
 

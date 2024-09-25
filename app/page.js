@@ -156,9 +156,9 @@ export default function Home() {
 							animate={{ opacity: 1, scale: 1 }}
 							transition={{ delay: 0.3, duration: 0.5 }}>
 							<div className="w-20 h-20 mx-auto mb-4">
-								{<service.icon className="w-full h-full text-red-700" />}
+								{<service.icon className="w-full h-full text-[#cca6c8]" />}
 							</div>
-							<h3 className="text-2xl font-bold text-blue-600 mb-4">
+							<h3 className="text-2xl font-bold text-blue-800 mb-4">
 								{service.title}
 							</h3>
 							<p className="text-gray-500">{service.text}</p>
@@ -191,7 +191,7 @@ export default function Home() {
 							alt="Team Member"
 							className="w-64 h-64 mx-auto rounded-full mb-4"
 						/>
-						<h3 className="text-xl font-semibold text-blue-600">James</h3>
+						<h3 className="text-xl font-semibold text-blue-800">James</h3>
 						<p className="text-gray-500">Lead Caregiver</p>
 					</motion.div>
 
@@ -208,7 +208,7 @@ export default function Home() {
 							alt="Team Member"
 							className="w-64 h-64 mx-auto rounded-full mb-4"
 						/>
-						<h3 className="text-xl font-semibold text-blue-600">Ken</h3>
+						<h3 className="text-xl font-semibold text-blue-800">Ken</h3>
 						<p className="text-gray-500">Registered Nurse</p>
 					</motion.div>
 					<motion.div
@@ -223,39 +223,12 @@ export default function Home() {
 							alt="Team Member"
 							className="w-64 h-64 mx-auto rounded-full mb-4"
 						/>
-						<h3 className="text-xl font-semibold text-blue-600">Mark</h3>
+						<h3 className="text-xl font-semibold text-blue-800">Mark</h3>
 						<p className="text-gray-500">Registered Nurse</p>
 					</motion.div>
 
 					{/* Additional Team Members */}
 				</div>
-			</section>
-
-			{/* Call to Action / Contact Section */}
-			<section className="p-10 text-center bg-blue-600 text-white rounded-lg">
-				<motion.h2
-					className="text-4xl font-bold mb-4"
-					initial={{ opacity: 0 }}
-					animate={{ opacity: 1 }}
-					transition={{ duration: 1 }}>
-					Ready to Get Started?
-				</motion.h2>
-				<motion.p
-					className="text-lg mb-6"
-					initial={{ opacity: 0 }}
-					animate={{ opacity: 1 }}
-					transition={{ delay: 0.2 }}>
-					Contact us today to learn more about our live-in care services and how
-					we can help you.
-				</motion.p>
-				<motion.a
-					href="/appointment"
-					className="bg-white text-blue-600 py-3 px-8 rounded-lg font-semibold hover:bg-blue-700 hover:text-white transition-all duration-300"
-					initial={{ scale: 0.8 }}
-					animate={{ scale: 1 }}
-					transition={{ delay: 0.4 }}>
-					Book an Appointment
-				</motion.a>
 			</section>
 
 			{/* Testimonials Section */}
@@ -279,7 +252,7 @@ export default function Home() {
 							&#34;The caregivers were professional and compassionate. They
 							helped my mother feel at ease and comfortable in her home.&#34;
 						</p>
-						<h4 className="text-lg font-bold text-blue-600">- Mark</h4>
+						<h4 className="text-lg font-bold text-blue-800">- Mark</h4>
 					</motion.div>
 
 					<motion.div
@@ -292,9 +265,36 @@ export default function Home() {
 							&#34;We received personalized care plans that perfectly matched
 							our needs. Highly recommended!&#34;
 						</p>
-						<h4 className="text-lg font-bold text-blue-600">- John</h4>
+						<h4 className="text-lg font-bold text-blue-800">- John</h4>
 					</motion.div>
 				</div>
+			</section>
+
+			{/* Call to Action / Contact Section */}
+			<section className="p-10 text-center bg-blue-800 text-white rounded-lg">
+				<motion.h2
+					className="text-4xl font-bold mb-4"
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1 }}
+					transition={{ duration: 1 }}>
+					Ready to Get Started?
+				</motion.h2>
+				<motion.p
+					className="text-lg mb-6"
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1 }}
+					transition={{ delay: 0.2 }}>
+					Contact us today to learn more about our live-in care services and how
+					we can help you.
+				</motion.p>
+				<motion.a
+					href="/appointment"
+					className="bg-white text-blue-600 py-3 px-8 rounded-lg font-semibold hover:bg-blue-700 hover:text-white transition-all duration-300"
+					initial={{ scale: 0.8 }}
+					animate={{ scale: 1 }}
+					transition={{ delay: 0.4 }}>
+					Book an Appointment
+				</motion.a>
 			</section>
 		</div>
 	);

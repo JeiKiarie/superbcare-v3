@@ -9,7 +9,7 @@ const MobileMenu = () => {
 
 	return (
 		<div
-			className={`fixed inset-0 bg-blue-700 text-white transform ${
+			className={`fixed inset-0 bg-[#cca6c8] text-white transform ${
 				isOpen ? 'translate-x-0' : '-translate-x-full'
 			} transition-transform duration-300 z-50 md:hidden`}>
 			<button

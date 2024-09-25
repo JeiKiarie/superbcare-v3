@@ -136,7 +136,7 @@ export default function Header() {
 
 			{/* Mobile Menu */}
 			{isOpen && (
-				<div className="lg:hidden bg-blue-700 text-white shadow-lg">
+				<div className="lg:hidden bg-[#cca6c8] text-white shadow-lg">
 					<nav className="space-y-4 p-6">
 						<Link
 							className="block text-lg font-medium hover:text-gray-300"
@@ -159,7 +159,7 @@ export default function Header() {
 							Contact Us
 						</Link>
 						<Link
-							className="block bg-white text-blue-700 font-semibold py-2 px-4 rounded-lg text-center hover:bg-blue-100"
+							className="block bg-white text-blue-800 font-semibold py-2 px-4 rounded-lg text-center hover:bg-blue-100"
 							href="/appointment">
 							Book Appointment
 						</Link>

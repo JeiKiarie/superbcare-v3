@@ -65,7 +65,7 @@ export default function SearchPage() {
 					</ul>
 				) : (
 					<p className="text-center text-gray-500">
-						No results found for "{searchQuery}".
+						No results found for &#34;{searchQuery}&#34;.
 					</p>
 				)}
 			</div>

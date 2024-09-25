@@ -218,7 +218,7 @@ export default function Home() {
 							&#34;The caregivers were professional and compassionate. They
 							helped my mother feel at ease and comfortable in her home.&#34;
 						</p>
-						<h4 className="text-lg font-bold text-blue-600">- Jane Doe</h4>
+						<h4 className="text-lg font-bold text-blue-600">- Mark</h4>
 					</motion.div>
 
 					<motion.div
@@ -231,7 +231,7 @@ export default function Home() {
 							&#34;We received personalized care plans that perfectly matched
 							our needs. Highly recommended!&#34;
 						</p>
-						<h4 className="text-lg font-bold text-blue-600">- John Smith</h4>
+						<h4 className="text-lg font-bold text-blue-600">- John</h4>
 					</motion.div>
 				</div>
 			</section>

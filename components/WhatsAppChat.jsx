@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import ReactWhatsapp from 'react-whatsapp';
 
 const WhatsAppChat = () => (
@@ -6,7 +7,9 @@ const WhatsAppChat = () => (
 			number="+441234567890"
 			message="Hello, I need more information about your care services!"
 			className="bg-green-500 text-white p-4 rounded-full hover:bg-green-600 transition">
-			<img
+			<Image
+				width={50}
+				height={50}
 				src="/images/whatsapp-icon.png"
 				alt="WhatsApp Chat"
 				className="w-8 h-8"

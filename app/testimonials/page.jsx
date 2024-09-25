@@ -14,7 +14,7 @@ export default function TestimonialsPage() {
 					</div>
 					<div className="bg-white p-6 rounded-lg shadow-md">
 						<p className="text-gray-700">
-							&#34;I couldn't have asked for better care for my father.&#34;
+							&#34;I couldn&#39;t have asked for better care for my father.&#34;
 						</p>
 						<p className="text-blue-700 mt-4 font-semibold">- Mark R.</p>
 					</div>

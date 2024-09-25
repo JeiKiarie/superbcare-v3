@@ -289,7 +289,7 @@ export default function Home() {
 				</motion.p>
 				<motion.a
 					href="/appointment"
-					className="bg-white text-blue-600 py-3 px-8 rounded-lg font-semibold hover:bg-blue-800 hover:text-white transition-all duration-300"
+					className="bg-white text-blue-600 py-3 px-4 rounded-lg font-semibold hover:bg-blue-800 hover:text-white transition-all duration-300"
 					initial={{ scale: 0.8 }}
 					animate={{ scale: 1 }}
 					transition={{ delay: 0.4 }}>

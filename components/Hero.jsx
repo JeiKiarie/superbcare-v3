@@ -12,9 +12,10 @@ const Hero = () => {
 				initial={{ opacity: 0, y: -50 }}
 				animate={{ opacity: 1, y: 0 }}
 				transition={{ duration: 1 }}>
-				<h1 className="text-5xl font-bold mb-4 text-center">
-					Professional Live-In Care Services. <br />
-					<span className="text-3xl">
+				<h1 className="text-3xl md:text-5xl font-bold text-center mb-4">
+					Professional Live-In Care Services.
+					<br />
+					<span className="text-2xl">
 						Bringing Compassionate Care to Your Home.
 					</span>
 				</h1>

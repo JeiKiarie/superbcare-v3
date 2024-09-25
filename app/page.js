@@ -118,7 +118,7 @@ export default function Home() {
 			{/* About Us Section */}
 			<section className="bg-gray-100 p-10 rounded-lg">
 				<motion.h2
-					className="text-4xl font-semibold text-center text-gray-800 mb-10"
+					className="text-3xl md:text-4xl font-semibold text-center text-gray-800 mb-10"
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ duration: 1 }}>
@@ -140,7 +140,7 @@ export default function Home() {
 			{/* Why Choose Us Section */}
 			<section className="p-10">
 				<motion.h2
-					className="text-4xl font-semibold text-center text-gray-800 mb-8"
+					className="text-3xl md:text-4xl font-semibold text-center text-gray-800 mb-8"
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ duration: 1 }}>
@@ -151,14 +151,14 @@ export default function Home() {
 					{services.map((service) => (
 						<motion.article
 							key={service.index}
-							className="bg-white p-6 rounded-lg shadow-md text-center"
+							className="bg-white p-6 rounded-lg shadow-md text-justify"
 							initial={{ opacity: 0, scale: 0.8 }}
 							animate={{ opacity: 1, scale: 1 }}
 							transition={{ delay: 0.3, duration: 0.5 }}>
 							<div className="w-20 h-20 mx-auto mb-4">
 								{<service.icon className="w-full h-full text-[#cca6c8]" />}
 							</div>
-							<h3 className="text-2xl font-bold text-blue-800 mb-4">
+							<h3 className="text-2xl text-center font-bold text-blue-800 mb-4">
 								{service.title}
 							</h3>
 							<p className="text-gray-500">{service.text}</p>
@@ -170,7 +170,7 @@ export default function Home() {
 			{/* Team Section */}
 			<section className="bg-gray-100 p-10 rounded-lg">
 				<motion.h2
-					className="text-4xl font-semibold text-center text-gray-800 mb-8"
+					className="text-3xl md:text-4xl font-semibold text-center text-gray-800 mb-8"
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ duration: 1 }}>
@@ -189,7 +189,7 @@ export default function Home() {
 							height={200}
 							src={kiarie}
 							alt="Team Member"
-							className="w-64 h-64 mx-auto rounded-full mb-4"
+							className="w-40 h-40 md:w-64 md:h-64 mx-auto rounded-full mb-4"
 						/>
 						<h3 className="text-xl font-semibold text-blue-800">James</h3>
 						<p className="text-gray-500">Lead Caregiver</p>
@@ -206,7 +206,7 @@ export default function Home() {
 							height={200}
 							src={kiarie}
 							alt="Team Member"
-							className="w-64 h-64 mx-auto rounded-full mb-4"
+							className="w-40 h-40 md:w-64 md:h-64 mx-auto rounded-full mb-4"
 						/>
 						<h3 className="text-xl font-semibold text-blue-800">Ken</h3>
 						<p className="text-gray-500">Registered Nurse</p>
@@ -221,7 +221,7 @@ export default function Home() {
 							height={200}
 							src={kiarie}
 							alt="Team Member"
-							className="w-64 h-64 mx-auto rounded-full mb-4"
+							className="w-40 h-40 md:w-64 md:h-64 mx-auto rounded-full mb-4"
 						/>
 						<h3 className="text-xl font-semibold text-blue-800">Mark</h3>
 						<p className="text-gray-500">Registered Nurse</p>
@@ -234,7 +234,7 @@ export default function Home() {
 			{/* Testimonials Section */}
 			<section className="bg-gray-100 p-10 rounded-lg">
 				<motion.h2
-					className="text-4xl font-semibold text-center text-gray-800 mb-10"
+					className="text-3xl md:text-4xl font-semibold text-center text-gray-800 mb-10"
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ duration: 1 }}>
@@ -273,7 +273,7 @@ export default function Home() {
 			{/* Call to Action / Contact Section */}
 			<section className="p-10 text-center bg-blue-800 text-white rounded-lg">
 				<motion.h2
-					className="text-4xl font-bold mb-4"
+					className="text-3xl md:text-4xl font-bold mb-4"
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ duration: 1 }}>

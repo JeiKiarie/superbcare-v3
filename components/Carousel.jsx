@@ -2,13 +2,14 @@
 
 import Slider from 'react-slick';
 import Image from 'next/image'; // Optional: For optimized images in Next.js
-import image1 from '/public/image1.jpg';
-import image3 from '/public/image3.webp';
-import image4 from '/public/image4.jpg';
-
+import image1 from '../public/image1.jpg';
+import image3 from '../public/image5.webp';
+import image4 from '../public/image4.jpg';
+console.log(image1);
 const Carousel = () => {
 	const slickSettings = {
 		dots: true,
+
 		infinite: true,
 		speed: 500,
 		pauseOnHover: false,
@@ -23,7 +24,7 @@ const Carousel = () => {
 			title: 'Live-In Care',
 			description:
 				'Around-the-clock care services to ensure your loved ones receive personalized assistance at home.',
-			imageUrl: '../../public/image1.jpg', // Replace with actual image paths
+			imageUrl: image1, // Replace with actual image paths
 		},
 		{
 			title: 'Elderly Care',
@@ -45,10 +46,19 @@ const Carousel = () => {
 				<div key={index}>
 					{/* Carousel Slide with Background Image */}
 					<div
-						className="relative h-[400px] md:h-[500px] lg:h-[600px] w-full bg-cover bg-center flex items-center justify-center"
-						style={{
-							backgroundImage: `url(${slide.imageUrl})`,
-						}}>
+						className="relative h-[50vh] md:h-[75vh] lg:h-[75vh] w-full bg-cover bg-center flex items-center justify-center"
+						// style={{
+						// 	backgroundImage: `url(${slide.imageUrl})`,
+						// }}
+					>
+						<Image
+							src={slide.imageUrl}
+							alt={slide.alt}
+							layout="fill"
+							objectFit="cover"
+							className="w-full h-full"
+						/>
+
 						{/* Overlay for better text readability */}
 						<div className="absolute inset-0 bg-black bg-opacity-50"></div>
 

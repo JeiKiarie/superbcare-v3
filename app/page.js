@@ -26,6 +26,155 @@ export default function Home() {
 				<Hero />
 			</section>
 
+			{/* About Us Section */}
+			<section className="bg-gray-100 p-10 rounded-lg">
+				<motion.h2
+					className="text-4xl font-semibold text-center text-gray-800 mb-10"
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1 }}
+					transition={{ duration: 1 }}>
+					About Us
+				</motion.h2>
+
+				<motion.p
+					className="text-lg text-center text-gray-600 max-w-3xl mx-auto"
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1 }}
+					transition={{ delay: 0.2 }}>
+					We are a UK-based company providing live-in care services for the
+					elderly. Our mission is to improve the quality of life for elderly
+					individuals by offering professional, compassionate, and dedicated
+					care in the comfort of their own homes.
+				</motion.p>
+			</section>
+
+			{/* Why Choose Us Section */}
+			<section className="p-10">
+				<motion.h2
+					className="text-4xl font-semibold text-center text-gray-800 mb-8"
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1 }}
+					transition={{ duration: 1 }}>
+					Why Choose Us?
+				</motion.h2>
+
+				<div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+					<motion.div
+						className="bg-white p-6 rounded-lg shadow-md text-center"
+						initial={{ opacity: 0, scale: 0.8 }}
+						animate={{ opacity: 1, scale: 1 }}
+						transition={{ delay: 0.3, duration: 0.5 }}>
+						<h3 className="text-2xl font-bold text-blue-600 mb-4">
+							Experienced Caregivers
+						</h3>
+						<p className="text-gray-500">
+							Our team is composed of experienced and certified caregivers who
+							are dedicated to providing the best possible care.
+						</p>
+					</motion.div>
+
+					<motion.div
+						className="bg-white p-6 rounded-lg shadow-md text-center"
+						initial={{ opacity: 0, scale: 0.8 }}
+						animate={{ opacity: 1, scale: 1 }}
+						transition={{ delay: 0.5, duration: 0.5 }}>
+						<h3 className="text-2xl font-bold text-blue-600 mb-4">
+							24/7 Availability
+						</h3>
+						<p className="text-gray-500">
+							We offer round-the-clock care and support, ensuring that your
+							loved ones are always looked after.
+						</p>
+					</motion.div>
+
+					<motion.div
+						className="bg-white p-6 rounded-lg shadow-md text-center"
+						initial={{ opacity: 0, scale: 0.8 }}
+						animate={{ opacity: 1, scale: 1 }}
+						transition={{ delay: 0.7, duration: 0.5 }}>
+						<h3 className="text-2xl font-bold text-blue-600 mb-4">
+							Personalized Care Plans
+						</h3>
+						<p className="text-gray-500">
+							We create personalized care plans tailored to the individual needs
+							and preferences of your loved ones.
+						</p>
+					</motion.div>
+				</div>
+			</section>
+
+			{/* Team Section */}
+			<section className="bg-gray-100 p-10 rounded-lg">
+				<motion.h2
+					className="text-4xl font-semibold text-center text-gray-800 mb-8"
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1 }}
+					transition={{ duration: 1 }}>
+					Meet Our Team
+				</motion.h2>
+
+				<div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+					{/* Sample Team Member */}
+					<motion.div
+						className="bg-white p-6 rounded-lg shadow-md text-center"
+						initial={{ opacity: 0 }}
+						animate={{ opacity: 1 }}
+						transition={{ delay: 0.3 }}>
+						<img
+							src="/images/team-member-1.jpg"
+							alt="Team Member"
+							className="w-32 h-32 mx-auto rounded-full mb-4"
+						/>
+						<h3 className="text-xl font-semibold text-blue-600">John Doe</h3>
+						<p className="text-gray-500">Lead Caregiver</p>
+					</motion.div>
+
+					{/* Add more team members as necessary */}
+					<motion.div
+						className="bg-white p-6 rounded-lg shadow-md text-center"
+						initial={{ opacity: 0 }}
+						animate={{ opacity: 1 }}
+						transition={{ delay: 0.5 }}>
+						<img
+							src="/images/team-member-2.jpg"
+							alt="Team Member"
+							className="w-32 h-32 mx-auto rounded-full mb-4"
+						/>
+						<h3 className="text-xl font-semibold text-blue-600">Jane Smith</h3>
+						<p className="text-gray-500">Registered Nurse</p>
+					</motion.div>
+
+					{/* Additional Team Members */}
+				</div>
+			</section>
+
+			{/* Call to Action / Contact Section */}
+			<section className="p-10 text-center bg-blue-600 text-white rounded-lg">
+				<motion.h2
+					className="text-4xl font-bold mb-4"
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1 }}
+					transition={{ duration: 1 }}>
+					Ready to Get Started?
+				</motion.h2>
+				<motion.p
+					className="text-lg mb-6"
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1 }}
+					transition={{ delay: 0.2 }}>
+					Contact us today to learn more about our live-in care services and how
+					we can help you.
+				</motion.p>
+				<motion.a
+					href="/appointment"
+					className="bg-white text-blue-600 py-3 px-8 rounded-lg font-semibold hover:bg-blue-700 hover:text-white transition-all duration-300"
+					initial={{ scale: 0.8 }}
+					animate={{ scale: 1 }}
+					transition={{ delay: 0.4 }}>
+					Book an Appointment
+				</motion.a>
+			</section>
+
 			{/* Testimonials Section */}
 			<section className="bg-gray-100 p-10 rounded-lg">
 				<motion.h2

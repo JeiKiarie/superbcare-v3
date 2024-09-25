@@ -8,6 +8,8 @@ import {
 	FaSearch,
 	FaFacebook,
 } from 'react-icons/fa'; // Import FontAwesome Icons
+import Image from 'next/image';
+import Logo from '/public/SuperbLogo.webp';
 
 export default function Header() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -17,44 +19,48 @@ export default function Header() {
 	};
 
 	return (
-		<header className="bg-gradient-to-r from-blue-700 to-blue-500 text-white shadow-lg sticky top-0 z-50">
-			<div className="container mx-auto flex justify-between items-center py-4 px-6">
+		<header className="bg-gradient-to-r from-white to-[#cca6c8] text-blue-800 shadow-lg sticky top-0 z-50">
+			<div className="container flex justify-between items-center py-2 px-1">
 				{/* Logo */}
 				<div>
-					<Link
-						className="text-3xl font-bold tracking-wider hover:text-gray-300"
-						href="/">
-						<span className="bg-white text-blue-700 px-2 py-1 rounded-full">
+					<Link href="/">
+						<Image
+							className="hover:opacity-50"
+							width={100}
+							height={100}
+							alt="logo"
+							src={Logo}></Image>
+						{/* <span className="bg-white text-blue-700 px-2 py-1 rounded-full">
 							Care
 						</span>{' '}
-						Services
+						Services */}
 					</Link>
 				</div>
 
 				{/* Desktop Navigation */}
-				<div className="hidden md:flex space-x-8 items-center">
+				<div className="hidden lg:flex space-x-8 items-center">
 					<Link
-						className="text-lg font-medium hover:text-gray-300"
+						className="text-lg font-medium hover:opacity-50"
 						href="/">
 						Home
 					</Link>
 					<Link
-						className="text-lg font-medium hover:text-gray-300"
+						className="text-lg font-medium hover:opacity-50"
 						href="/services">
 						Services
 					</Link>
 					<Link
-						className="text-lg font-medium hover:text-gray-300"
+						className="text-lg font-medium hover:opacity-50"
 						href="/about">
 						About Us
 					</Link>
 					<Link
-						className="text-lg font-medium hover:text-gray-300"
+						className="text-lg font-medium hover:opacity-50"
 						href="/contact-us">
 						Contact Us
 					</Link>
 					<Link
-						className="bg-white text-blue-700 font-semibold py-2 px-4 rounded-lg hover:bg-blue-100"
+						className="bg-white text-blue-800 font-semibold py-2 px-4 rounded-lg hover:bg-blue-100"
 						href="/appointment">
 						Book Appointment
 					</Link>
@@ -91,7 +97,7 @@ export default function Header() {
 				</div>
 
 				{/* Mobile Hamburger Menu Button */}
-				<div className="md:hidden">
+				<div className="lg:hidden">
 					<button
 						onClick={toggleMenu}
 						className="focus:outline-none text-white">
@@ -130,7 +136,7 @@ export default function Header() {
 
 			{/* Mobile Menu */}
 			{isOpen && (
-				<div className="md:hidden bg-blue-700 text-white shadow-lg">
+				<div className="lg:hidden bg-blue-700 text-white shadow-lg">
 					<nav className="space-y-4 p-6">
 						<Link
 							className="block text-lg font-medium hover:text-gray-300"

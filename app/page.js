@@ -95,7 +95,7 @@ const services = [
 
 export default function Home() {
 	return (
-		<div className="container mx-auto p-6">
+		<div className="mx-auto py-1">
 			{/* Carousel Section */}
 			<section className="mb-16">
 				{/* <motion.div
@@ -138,7 +138,7 @@ export default function Home() {
 			</section>
 
 			{/* Why Choose Us Section */}
-			<section className="p-10">
+			<section className="p-10 container mx-auto">
 				<motion.h2
 					className="text-3xl md:text-4xl font-semibold text-center text-gray-800 mb-8"
 					initial={{ opacity: 0 }}
@@ -177,7 +177,7 @@ export default function Home() {
 					Meet Our Team
 				</motion.h2>
 
-				<div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+				<div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
 					{/* Sample Team Member */}
 					<motion.div
 						className="bg-white p-6 rounded-lg shadow-md text-center"
@@ -241,7 +241,7 @@ export default function Home() {
 					What Our Clients Say
 				</motion.h2>
 
-				<div className="flex flex-col md:flex-row justify-around items-center space-y-6 md:space-y-0">
+				<div className="container mx-auto flex flex-col md:flex-row justify-around items-center space-y-6 md:space-y-0">
 					<motion.div
 						className="bg-white p-6 rounded-lg shadow-md max-w-md"
 						whileHover={{ scale: 1.05 }}

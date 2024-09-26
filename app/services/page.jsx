@@ -130,9 +130,9 @@ export default function Services() {
 						animate={{ opacity: 1, scale: 1 }}
 						transition={{ delay: 0.3, duration: 0.5 }}>
 						<p className="text-lg text-gray-500 mb-4">
-							&#34The caregivers at [Company Name] have been a blessing to our
-							family. Their attention to detail and compassion have made all the
-							difference in our mother's care.&#34
+							&#34The caregivers at Superb Care Services Ltd have been a
+							blessing to our family. Their attention to detail and compassion
+							have made all the difference in our mother&#39s care.&#34
 						</p>
 						<p className="font-semibold text-blue-600">– John Smith</p>
 					</motion.div>
@@ -155,8 +155,9 @@ export default function Services() {
 						animate={{ opacity: 1, scale: 1 }}
 						transition={{ delay: 0.7, duration: 0.5 }}>
 						<p className="text-lg text-gray-500 mb-4">
-							&#34The team at [Company Name] is always professional, kind, and
-							caring. They've made a real difference in our lives.&#34
+							&#34The team at Superb Care Services Ltd is always professional,
+							kind, and caring. They&#39ve made a real difference in our
+							lives.&#34
 						</p>
 						<p className="font-semibold text-blue-600">– Emily Davis</p>
 					</motion.div>

@@ -43,34 +43,36 @@ const services = [
 
 export default function Services() {
 	return (
-		<div className="container mx-auto p-6 space-y-16">
+		<main className="mx-auto space-y-16">
 			{/* Hero Section */}
-			<section className="text-center py-12 bg-blue-600 text-white rounded-lg">
-				<motion.h1
-					className="text-5xl font-bold mb-4"
-					initial={{ opacity: 0 }}
-					animate={{ opacity: 1 }}
-					transition={{ duration: 1 }}>
-					Our Comprehensive Care Services
-				</motion.h1>
-				<motion.p
-					className="text-lg mb-8"
-					initial={{ opacity: 0 }}
-					animate={{ opacity: 1 }}
-					transition={{ delay: 0.2 }}>
-					At [Company Name], we offer a variety of personalized care services to
-					meet the needs of your loved ones, ensuring their comfort and dignity
-					at all times.
-				</motion.p>
-				<Link href="/contact">
-					<motion.a
-						className="bg-white text-blue-600 py-3 px-8 rounded-lg font-semibold hover:bg-blue-700 hover:text-white transition-all duration-300"
-						initial={{ scale: 0.8 }}
-						animate={{ scale: 1 }}
-						transition={{ delay: 0.4 }}>
-						Contact Us for More Information
-					</motion.a>
-				</Link>
+			<section className="text-center py-12 bg-blue-600 text-white rounded-lg mt-2">
+				<article className="container mx-auto">
+					<motion.h1
+						className="text-5xl font-bold mb-4"
+						initial={{ opacity: 0 }}
+						animate={{ opacity: 1 }}
+						transition={{ duration: 1 }}>
+						Our Comprehensive Care Services
+					</motion.h1>
+					<motion.p
+						className="text-lg mb-8 text-justify w-1/2 mx-auto"
+						initial={{ opacity: 0 }}
+						animate={{ opacity: 1 }}
+						transition={{ delay: 0.2 }}>
+						At Superb Care Services Ltd, we offer a variety of personalized care
+						services to meet the needs of your loved ones, ensuring their
+						comfort and dignity at all times.
+					</motion.p>
+					<Link href="/contact">
+						<motion.a
+							className="bg-white text-blue-600 py-3 px-8 rounded-lg font-semibold hover:bg-blue-700 hover:text-white transition-all duration-300"
+							initial={{ scale: 0.8 }}
+							animate={{ scale: 1 }}
+							transition={{ delay: 0.4 }}>
+							Contact Us for More Information
+						</motion.a>
+					</Link>
+				</article>
 			</section>
 
 			{/* Service Categories */}
@@ -185,6 +187,6 @@ export default function Services() {
 					</motion.a>
 				</Link>
 			</section>
-		</div>
+		</main>
 	);
 }

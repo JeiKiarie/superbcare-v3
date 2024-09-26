@@ -55,7 +55,7 @@ const Carousel = () => {
 							src={slide.imageUrl}
 							alt={slide.alt}
 							layout="fill"
-							objectFit="cover"
+							// objectFit="cover"
 							className="w-full h-full"
 						/>
 

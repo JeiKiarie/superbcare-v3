@@ -49,7 +49,7 @@ export default function Services() {
 			<section className="text-center py-12 bg-blue-600 text-white rounded-lg mt-2">
 				<article className="container mx-auto">
 					<motion.h1
-						className="text-5xl font-bold mb-4"
+						className="text-3xl md:text-5xl font-bold mb-4"
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
 						transition={{ duration: 1 }}>

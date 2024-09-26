@@ -4,8 +4,8 @@ export default function AboutPage() {
 			<section className="container mx-auto py-16 px-6">
 				<h1 className="text-4xl font-bold text-blue-700 mb-8">About Us</h1>
 				<p className="text-gray-700 mb-4">
-					Elderly Care UK has been a trusted provider of home-based care for
-					over 15 years.
+					Superb Care Services Ltd has been a trusted provider of home-based
+					care for over 15 years.
 				</p>
 				<p className="text-gray-700 mb-4">
 					Our mission is to offer reliable, compassionate care that improves the

@@ -19,7 +19,7 @@ export default function Header() {
 	};
 
 	return (
-		<header className="bg-gradient-to-r from-white to-[#cca6c8] text-blue-800 shadow-lg sticky top-0 z-50">
+		<header className="bg-gradient-to-r from-white via-white to-[#cca6c8] text-blue-800 shadow-lg sticky top-0 z-50">
 			<div className="container flex justify-between items-center py-2 px-1">
 				{/* Logo */}
 				<div>
@@ -140,27 +140,32 @@ export default function Header() {
 				<div className="lg:hidden bg-[#cca6c8] text-white shadow-lg">
 					<nav className="space-y-4 p-6">
 						<Link
+							onClick={toggleMenu}
 							className="block text-lg font-medium hover:text-gray-300"
 							href="/">
 							Home
 						</Link>
 						<Link
+							onClick={toggleMenu}
 							className="block text-lg font-medium hover:text-gray-300"
 							href="/about-us">
 							About Us
 						</Link>
 						<Link
+							onClick={toggleMenu}
 							className="block text-lg font-medium hover:text-gray-300"
 							href="/services">
 							Services
 						</Link>
 
 						<Link
+							onClick={toggleMenu}
 							className="block text-lg font-medium hover:text-gray-300"
 							href="/contact-us">
 							Contact Us
 						</Link>
 						<Link
+							onClick={toggleMenu}
 							className="block bg-white text-blue-800 font-semibold py-2 px-4 rounded-lg text-center hover:bg-blue-100"
 							href="/appointment">
 							Book Appointment

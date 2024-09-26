@@ -147,7 +147,7 @@ const DementiaCarePage = () => {
 							Dementia care includes a wide range of services such as memory
 							assistance, daily routines, cognitive stimulation activities, and
 							safety monitoring. Each care plan is personalized to the
-							individual's needs.
+							individual&#39s needs.
 						</p>
 					</motion.div>
 
@@ -177,7 +177,7 @@ const DementiaCarePage = () => {
 						<p className="text-gray-600">
 							Signs include memory loss, confusion, difficulty with daily tasks,
 							and changes in behavior. We offer consultations to assess your
-							loved one's needs and recommend appropriate care options.
+							loved one&#39s needs and recommend appropriate care options.
 						</p>
 					</motion.div>
 				</div>

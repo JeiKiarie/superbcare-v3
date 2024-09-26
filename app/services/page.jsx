@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import Link from 'next/link';
 
 const services = [
@@ -84,7 +85,7 @@ export default function Services() {
 					transition={{ duration: 1 }}>
 					Our Service Categories
 				</motion.h2>
-				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 					{services.map((service, index) => (
 						<motion.div
 							key={index}
@@ -92,7 +93,9 @@ export default function Services() {
 							initial={{ opacity: 0, y: 20 }}
 							animate={{ opacity: 1, y: 0 }}
 							transition={{ delay: 0.2 * index }}>
-							<img
+							<Image
+								width={500}
+								height={500}
 								src={service.imageUrl}
 								alt={service.title}
 								className="w-full h-48 object-cover rounded-lg mb-6"
@@ -120,16 +123,16 @@ export default function Services() {
 					transition={{ duration: 1 }}>
 					What Our Clients Say
 				</motion.h2>
-				<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+				<div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
 					<motion.div
 						className="bg-white p-8 rounded-lg shadow-md"
 						initial={{ opacity: 0, scale: 0.8 }}
 						animate={{ opacity: 1, scale: 1 }}
 						transition={{ delay: 0.3, duration: 0.5 }}>
 						<p className="text-lg text-gray-500 mb-4">
-							"The caregivers at [Company Name] have been a blessing to our
+							&#34The caregivers at [Company Name] have been a blessing to our
 							family. Their attention to detail and compassion have made all the
-							difference in our mother's care."
+							difference in our mother's care.&#34
 						</p>
 						<p className="font-semibold text-blue-600">– John Smith</p>
 					</motion.div>
@@ -140,8 +143,8 @@ export default function Services() {
 						animate={{ opacity: 1, scale: 1 }}
 						transition={{ delay: 0.5, duration: 0.5 }}>
 						<p className="text-lg text-gray-500 mb-4">
-							"The live-in care service has been exceptional. Knowing that my
-							father is being looked after 24/7 gives me peace of mind."
+							&#34The live-in care service has been exceptional. Knowing that my
+							father is being looked after 24/7 gives me peace of mind.&#34
 						</p>
 						<p className="font-semibold text-blue-600">– Sarah Thompson</p>
 					</motion.div>
@@ -152,8 +155,8 @@ export default function Services() {
 						animate={{ opacity: 1, scale: 1 }}
 						transition={{ delay: 0.7, duration: 0.5 }}>
 						<p className="text-lg text-gray-500 mb-4">
-							"The team at [Company Name] is always professional, kind, and
-							caring. They've made a real difference in our lives."
+							&#34The team at [Company Name] is always professional, kind, and
+							caring. They've made a real difference in our lives.&#34
 						</p>
 						<p className="font-semibold text-blue-600">– Emily Davis</p>
 					</motion.div>

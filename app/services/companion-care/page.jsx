@@ -173,7 +173,7 @@ const CompanionCarePage = () => {
 							How do you match caregivers with clients?
 						</h4>
 						<p className="text-gray-600">
-							We carefully assess each client's personality and interests to
+							We carefully assess each client&#39s personality and interests to
 							match them with a compatible caregiver who can provide meaningful
 							companionship.
 						</p>

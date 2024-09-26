@@ -72,7 +72,7 @@ const RespiteCarePage = () => {
 						</h4>
 						<p className="text-gray-600">
 							We offer flexible schedules for respite care, ensuring you can
-							take time off when needed, whether it's a few hours, a day, or
+							take time off when needed, whether it is a few hours, a day, or
 							longer.
 						</p>
 					</motion.div>
@@ -116,7 +116,7 @@ const RespiteCarePage = () => {
 						</h4>
 						<p className="text-gray-600">
 							Our caregivers are experienced and compassionate, ensuring your
-							loved one is safe, comfortable, and well-cared for while you're
+							loved one is safe, comfortable, and well-cared for while you are
 							away.
 						</p>
 					</motion.div>
@@ -159,7 +159,7 @@ const RespiteCarePage = () => {
 						<p className="text-gray-600">
 							Our respite care services include personal care, companionship,
 							medication management, and daily activity support. We customize
-							the care plan based on your loved one's needs.
+							the care plan based on your loved one&#39s needs.
 						</p>
 					</motion.div>
 
@@ -173,7 +173,7 @@ const RespiteCarePage = () => {
 						</h4>
 						<p className="text-gray-600">
 							Yes, we offer emergency respite care services to assist families
-							in urgent situations. Contact us, and we'll arrange care as
+							in urgent situations. Contact us, and we will arrange care as
 							quickly as possible.
 						</p>
 					</motion.div>

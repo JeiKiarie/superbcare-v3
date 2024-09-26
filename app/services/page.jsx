@@ -64,13 +64,13 @@ export default function Services() {
 						comfort and dignity at all times.
 					</motion.p>
 					<Link href="/contact">
-						<motion.a
+						<motion.button
 							className="bg-white text-blue-600 py-3 px-8 rounded-lg font-semibold hover:bg-blue-700 hover:text-white transition-all duration-300"
 							initial={{ scale: 0.8 }}
 							animate={{ scale: 1 }}
 							transition={{ delay: 0.4 }}>
 							Contact Us for More Information
-						</motion.a>
+						</motion.button>
 					</Link>
 				</article>
 			</section>
@@ -178,13 +178,13 @@ export default function Services() {
 					and how we can support your loved ones.
 				</motion.p>
 				<Link href="/appointment">
-					<motion.a
+					<motion.button
 						className="bg-white text-blue-600 py-3 px-8 rounded-lg font-semibold hover:bg-blue-700 hover:text-white transition-all duration-300"
 						initial={{ scale: 0.8 }}
 						animate={{ scale: 1 }}
 						transition={{ delay: 0.4 }}>
 						Book an Appointment
-					</motion.a>
+					</motion.button>
 				</Link>
 			</section>
 		</main>

@@ -46,14 +46,15 @@ export default function Header() {
 					</Link>
 					<Link
 						className="text-lg font-medium hover:opacity-50"
-						href="/services">
-						Services
-					</Link>
-					<Link
-						className="text-lg font-medium hover:opacity-50"
 						href="/about">
 						About Us
 					</Link>
+					<Link
+						className="text-lg font-medium hover:opacity-50"
+						href="/services">
+						Services
+					</Link>
+
 					<Link
 						className="text-lg font-medium hover:opacity-50"
 						href="/contact-us">
@@ -145,14 +146,15 @@ export default function Header() {
 						</Link>
 						<Link
 							className="block text-lg font-medium hover:text-gray-300"
-							href="/services">
-							Services
-						</Link>
-						<Link
-							className="block text-lg font-medium hover:text-gray-300"
 							href="/about-us">
 							About Us
 						</Link>
+						<Link
+							className="block text-lg font-medium hover:text-gray-300"
+							href="/services">
+							Services
+						</Link>
+
 						<Link
 							className="block text-lg font-medium hover:text-gray-300"
 							href="/contact-us">

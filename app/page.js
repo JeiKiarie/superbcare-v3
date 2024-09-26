@@ -49,7 +49,7 @@ const services = [
 
 	{
 		id: 5,
-		title: '24/7 Care & Support',
+		title: '24/7 Placement & Support for Care Leavers',
 		icon: BiTimeFive,
 		text: `Our dedicated caregivers provide round-the-clock assistance, ensuring safety and comfort at all times. Whether it’s help with daily activities, medical needs, or companionship, we are here to support you every step of the way.`,
 	},
@@ -151,7 +151,7 @@ export default function Home() {
 					{services.map((service) => (
 						<motion.article
 							key={service.index}
-							className="bg-white p-6 rounded-lg shadow-md text-justify"
+							className="bg-white p-6 rounded-lg shadow-md text-justify hover:bg-slate-50"
 							initial={{ opacity: 0, scale: 0.8 }}
 							animate={{ opacity: 1, scale: 1 }}
 							transition={{ delay: 0.3, duration: 0.5 }}>

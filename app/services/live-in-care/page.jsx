@@ -2,15 +2,29 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import liveInCare from '/public/live-in-care.jpg';
+import Image from 'next/image';
 
 const LiveInCarePage = () => {
 	return (
-		<div className="container mx-auto p-6 space-y-12">
+		<>
+			{/* <div className="container mx-auto p-6 space-y-12"> */}
 			{/* Hero Section */}
 			<section
-				className="relative h-96 bg-cover bg-center text-white"
-				style={{ backgroundImage: 'url(/images/live-in-care-bg.jpg)' }}>
-				<div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+				className="relative h-96 w-full bg-cover bg-center text-white"
+				// style={{ backgroundImage: `url(${liveInCare})` }}
+			>
+				<div className="absolute inset-0 z-0 overflow-hidden">
+					<Image
+						src={liveInCare}
+						alt="Hero Background"
+						layout="fill"
+						// objectPosition={objectPosition}
+						className="w-full h-full object-cover"
+					/>
+					<div className="absolute inset-0 bg-gradient-to-t from-black to-black opacity-40"></div>
+				</div>
+				{/* <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
 					<motion.h1
 						className="text-5xl font-bold"
 						initial={{ opacity: 0 }}
@@ -18,7 +32,7 @@ const LiveInCarePage = () => {
 						transition={{ duration: 1 }}>
 						Live-In Care Services
 					</motion.h1>
-				</div>
+				</div> */}
 			</section>
 
 			{/* Detailed Service Section */}
@@ -195,16 +209,17 @@ const LiveInCarePage = () => {
 					we can assist you or your loved ones.
 				</motion.p>
 				<Link href="/appointment">
-					<motion.a
+					<motion.button
 						className="bg-white text-blue-600 py-3 px-8 rounded-lg font-semibold hover:bg-blue-700 hover:text-white transition"
 						initial={{ scale: 0.9 }}
 						animate={{ scale: 1 }}
 						transition={{ delay: 0.4 }}>
-						Book an Appointment
-					</motion.a>
+						Book Appointment
+					</motion.button>
 				</Link>
 			</section>
-		</div>
+		</>
+		// </div>
 	);
 };
 

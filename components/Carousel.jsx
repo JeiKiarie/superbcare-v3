@@ -3,7 +3,7 @@
 import Slider from 'react-slick';
 import Image from 'next/image'; // Optional: For optimized images in Next.js
 import image1 from '../public/image1.jpg';
-import image3 from '../public/image5.webp';
+import image3 from '../public/palliative-care.webp';
 import image4 from '../public/image4.jpg';
 import { motion } from 'framer-motion';
 console.log(image1);

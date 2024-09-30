@@ -3,50 +3,56 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
+import elderlyCare from '/public/elderly-care.jpg';
+import dementiaCare from '/public/dementia-care.jpg';
+import respiteCare from '/public/respite-care.jpg';
+import palliativeCare from '/public/palliative-care.jpg';
+import LiveInCare from '/public/live-in-care.jpg';
 
 const services = [
+	{
+		title: 'Live-In Care',
+		description:
+			'Our live-in care services provide around-the-clock care for your loved ones, allowing them to remain in the comfort of their home. We offer personalized care plans tailored to their needs, ensuring they receive the highest level of care at all times.',
+		imageUrl: LiveInCare,
+		link: '/services/live-in-care',
+	},
 	{
 		title: 'Elderly Care',
 		description:
 			'Our elderly care services provide personalized support, ensuring the comfort and dignity of your loved ones at home. We offer assistance with daily tasks such as bathing, dressing, medication management, and companionship to improve their overall quality of life.',
-		imageUrl: '/images/elderly-care.jpg',
+		imageUrl: elderlyCare,
 		link: '/services/elderly-care',
 	},
 	{
 		title: 'Dementia Care',
 		description:
 			'We provide specialized care for individuals with dementia, offering a structured environment and emotional support. Our caregivers are trained to handle the complexities of dementia and ensure a safe, caring space for those affected.',
-		imageUrl: '/images/dementia-care.jpg',
+		imageUrl: dementiaCare,
 		link: '/services/dementia-care',
 	},
 	{
 		title: 'Respite Care',
 		description:
 			'We offer respite care services to provide temporary relief for primary caregivers. Whether you need support for a few hours, a day, or longer, we are here to help so you can take time off while ensuring your loved one remains in good hands.',
-		imageUrl: '/images/respite-care.jpg',
+		imageUrl: respiteCare,
 		link: '/services/respite-care',
 	},
 	{
 		title: 'Palliative Care',
 		description:
 			'Our palliative care services focus on improving the quality of life for individuals facing serious illnesses. We provide comfort, emotional support, and pain management, working closely with medical professionals to ensure compassionate care.',
-		imageUrl: '/images/palliative-care.jpg',
+		imageUrl: palliativeCare,
 		link: '/services/palliative-care',
 	},
-	{
-		title: 'Live-In Care',
-		description:
-			'Our live-in care services provide around-the-clock care for your loved ones, allowing them to remain in the comfort of their home. We offer personalized care plans tailored to their needs, ensuring they receive the highest level of care at all times.',
-		imageUrl: '/images/live-in-care.jpg',
-		link: '/services/live-in-care',
-	},
+	
 ];
 
 export default function Services() {
 	return (
 		<main className="mx-auto space-y-16">
 			{/* Hero Section */}
-			<section className="text-center py-12 bg-blue-600 text-white rounded-lg mt-2">
+			<section className="text-center py-12 bg-[#cca6c8] text-white rounded-lg mt-2">
 				<article className="container mx-auto">
 					<motion.h1
 						className="text-3xl md:text-5xl font-bold mb-4"
@@ -130,9 +136,9 @@ export default function Services() {
 						animate={{ opacity: 1, scale: 1 }}
 						transition={{ delay: 0.3, duration: 0.5 }}>
 						<p className="text-lg text-gray-500 mb-4">
-							&#34The caregivers at Superb Care Services Ltd have been a
+							&#34;The caregivers at Superb Care Services Ltd have been a
 							blessing to our family. Their attention to detail and compassion
-							have made all the difference in our mother&#39s care.&#34
+							have made all the difference in our mother&#39;s care.&#34;
 						</p>
 						<p className="font-semibold text-blue-600">– John Smith</p>
 					</motion.div>
@@ -143,8 +149,8 @@ export default function Services() {
 						animate={{ opacity: 1, scale: 1 }}
 						transition={{ delay: 0.5, duration: 0.5 }}>
 						<p className="text-lg text-gray-500 mb-4">
-							&#34The live-in care service has been exceptional. Knowing that my
-							father is being looked after 24/7 gives me peace of mind.&#34
+							&#34;The live-in care service has been exceptional. Knowing that
+							my father is being looked after 24/7 gives me peace of mind.&#34;
 						</p>
 						<p className="font-semibold text-blue-600">– Sarah Thompson</p>
 					</motion.div>
@@ -155,9 +161,9 @@ export default function Services() {
 						animate={{ opacity: 1, scale: 1 }}
 						transition={{ delay: 0.7, duration: 0.5 }}>
 						<p className="text-lg text-gray-500 mb-4">
-							&#34The team at Superb Care Services Ltd is always professional,
-							kind, and caring. They&#39ve made a real difference in our
-							lives.&#34
+							&#34;The team at Superb Care Services Ltd is always professional,
+							kind, and caring. They&#39;ve made a real difference in our
+							lives.&#34;
 						</p>
 						<p className="font-semibold text-blue-600">– Emily Davis</p>
 					</motion.div>

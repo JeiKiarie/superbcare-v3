@@ -11,7 +11,7 @@ const LiveInCarePage = () => {
 			{/* <div className="container mx-auto p-6 space-y-12"> */}
 			{/* Hero Section */}
 			<section
-				className="relative h-96 w-full bg-cover bg-center text-white"
+				className="relative h-[76vh] w-full bg-cover bg-center text-white"
 				// style={{ backgroundImage: `url(${liveInCare})` }}
 			>
 				<div className="absolute inset-0 z-0 overflow-hidden">
@@ -24,7 +24,7 @@ const LiveInCarePage = () => {
 					/>
 					<div className="absolute inset-0 bg-gradient-to-t from-black to-black opacity-40"></div>
 				</div>
-				{/* <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+				<div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
 					<motion.h1
 						className="text-5xl font-bold"
 						initial={{ opacity: 0 }}
@@ -32,7 +32,7 @@ const LiveInCarePage = () => {
 						transition={{ duration: 1 }}>
 						Live-In Care Services
 					</motion.h1>
-				</div> */}
+				</div>
 			</section>
 
 			{/* Detailed Service Section */}

@@ -4,27 +4,24 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import liveInCare from '/public/live-in-care.jpg';
 import Image from 'next/image';
+import { GiTick } from 'react-icons/gi';
+import { BiCheckCircle } from 'react-icons/bi';
 
 const LiveInCarePage = () => {
 	return (
 		<>
-			{/* <div className="container mx-auto p-6 space-y-12"> */}
 			{/* Hero Section */}
-			<section
-				className="relative h-[76vh] w-full bg-cover bg-center text-white"
-				// style={{ backgroundImage: `url(${liveInCare})` }}
-			>
+			<section className="relative h-[76vh] w-full bg-cover bg-center text-white mb-8">
 				<div className="absolute inset-0 z-0 overflow-hidden">
 					<Image
 						src={liveInCare}
 						alt="Hero Background"
-						layout="fill"
-						// objectPosition={objectPosition}
+						// layout="fill"
 						className="w-full h-full object-cover"
 					/>
 					<div className="absolute inset-0 bg-gradient-to-t from-black to-black opacity-40"></div>
 				</div>
-				<div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+				<div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
 					<motion.h1
 						className="text-5xl font-bold"
 						initial={{ opacity: 0 }}
@@ -36,13 +33,13 @@ const LiveInCarePage = () => {
 			</section>
 
 			{/* Detailed Service Section */}
-			<section className="space-y-6">
+			<section className="container mx-auto space-y-6 mb-4">
 				<motion.h2
-					className="text-4xl font-semibold text-gray-800"
+					className="text-4xl font-semibold text-blue-800 text-center"
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ duration: 1 }}>
-					Personalized Care in the Comfort of Home
+					Personalized Care in the Comfort of Your Home
 				</motion.h2>
 				<motion.p
 					className="text-lg text-gray-600 leading-8"
@@ -54,16 +51,36 @@ const LiveInCarePage = () => {
 					caregivers live in the home, ensuring personalized care around the
 					clock.
 				</motion.p>
-				<motion.ul
-					className="list-disc pl-5 text-gray-600 space-y-3"
-					initial={{ opacity: 0 }}
-					animate={{ opacity: 1 }}
-					transition={{ delay: 0.3 }}>
-					<li>24/7 support tailored to individual needs</li>
-					<li>Companionship to reduce feelings of isolation</li>
-					<li>Assistance with personal care and household tasks</li>
-					<li>Customized care plans to suit each client’s requirements</li>
-				</motion.ul>
+				<motion className="div flex flex-col items-center justify-center">
+					<motion.ul
+						className="list-none pl-5 text-gray-600 space-y-3"
+						initial={{ opacity: 0 }}
+						animate={{ opacity: 1 }}
+						transition={{ delay: 0.3 }}>
+						<div className="flex gap-2 items-center">
+							<BiCheckCircle className="inline text-3xl text-[#cca6c8]" />
+							<li className="">24/7 support tailored to individual needs</li>
+						</div>
+						<div className="flex gap-2 items-center">
+							<BiCheckCircle className="inline text-3xl text-[#cca6c8]" />
+							<li className="">
+								Companionship to reduce feelings of isolation
+							</li>
+						</div>
+						<div className="flex gap-2 items-center">
+							<BiCheckCircle className="inline text-3xl text-[#cca6c8]" />
+							<li className="">
+								Assistance with personal care and household tasks
+							</li>
+						</div>
+						<div className="flex gap-2 items-center">
+							<BiCheckCircle className="inline text-3xl text-[#cca6c8]" />
+							<li className="">
+								Customized care plans to suit each client’s requirements
+							</li>
+						</div>
+					</motion.ul>
+				</motion>
 			</section>
 
 			{/* Benefits Section */}
@@ -81,7 +98,7 @@ const LiveInCarePage = () => {
 						initial={{ opacity: 0, y: 20 }}
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ delay: 0.2 }}>
-						<h4 className="text-xl font-semibold text-blue-600 mb-4">
+						<h4 className="text-xl font-semibold text-blue-600 mb-4 text-center">
 							Comprehensive Support
 						</h4>
 						<p className="text-gray-600">
@@ -95,7 +112,7 @@ const LiveInCarePage = () => {
 						initial={{ opacity: 0, y: 20 }}
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ delay: 0.3 }}>
-						<h4 className="text-xl font-semibold text-blue-600 mb-4">
+						<h4 className="text-xl font-semibold text-blue-600 mb-4 text-center">
 							Peace of Mind
 						</h4>
 						<p className="text-gray-600">
@@ -109,7 +126,7 @@ const LiveInCarePage = () => {
 						initial={{ opacity: 0, y: 20 }}
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ delay: 0.4 }}>
-						<h4 className="text-xl font-semibold text-blue-600 mb-4">
+						<h4 className="text-xl font-semibold text-blue-600 mb-4 text-center">
 							Independence at Home
 						</h4>
 						<p className="text-gray-600">
@@ -124,7 +141,7 @@ const LiveInCarePage = () => {
 						initial={{ opacity: 0, y: 20 }}
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ delay: 0.5 }}>
-						<h4 className="text-xl font-semibold text-blue-600 mb-4">
+						<h4 className="text-xl font-semibold text-blue-600 mb-4 text-center">
 							Tailored Care Plans
 						</h4>
 						<p className="text-gray-600">
@@ -192,13 +209,13 @@ const LiveInCarePage = () => {
 			</section>
 
 			{/* Call to Action Section */}
-			<section className="text-center py-12 bg-blue-600 text-white rounded-lg">
+			<section className="text-center py-12 bg-[#cca6c8] text-white rounded-lg">
 				<motion.h2
 					className="text-4xl font-bold mb-4"
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ duration: 1 }}>
-					Experience Personalized Care at Home
+					Experience Personalised Care at Home
 				</motion.h2>
 				<motion.p
 					className="text-lg mb-8"
@@ -219,7 +236,6 @@ const LiveInCarePage = () => {
 				</Link>
 			</section>
 		</>
-		// </div>
 	);
 };
 

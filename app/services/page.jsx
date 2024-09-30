@@ -56,7 +56,7 @@ export default function Services() {
 						Our Comprehensive Care Services
 					</motion.h1>
 					<motion.p
-						className="text-lg mb-8 text-justify w-1/2 mx-auto"
+						className="text-lg mb-8 text-justify md:text-center w-3/4 mx-auto"
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
 						transition={{ delay: 0.2 }}>

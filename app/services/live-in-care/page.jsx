@@ -76,7 +76,7 @@ const LiveInCarePage = () => {
 						<div className="flex gap-2 items-center">
 							<BiCheckCircle className="inline text-3xl text-[#cca6c8]" />
 							<li className="">
-								Customized care plans to suit each client’s requirements
+								Customized care plans to suit each client&#39;s requirements
 							</li>
 						</div>
 					</motion.ul>

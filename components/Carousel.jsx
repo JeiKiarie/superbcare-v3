@@ -5,6 +5,7 @@ import Image from 'next/image'; // Optional: For optimized images in Next.js
 import image1 from '../public/image1.jpg';
 import image3 from '../public/image5.webp';
 import image4 from '../public/image4.jpg';
+import { motion } from 'framer-motion';
 console.log(image1);
 const Carousel = () => {
 	const slickSettings = {
@@ -41,38 +42,41 @@ const Carousel = () => {
 	];
 
 	return (
-		<Slider {...slickSettings}>
-			{slides.map((slide, index) => (
-				<div key={index}>
-					{/* Carousel Slide with Background Image */}
+		<div className="carousel relative w-full overflow-hidden">
+			<Slider {...slickSettings}>
+				{slides.map((slide, index) => (
 					<div
-						className="relative h-[50vh] md:h-[75vh] lg:h-[75vh] w-full bg-cover bg-center flex items-center justify-center"
-						// style={{
-						// 	backgroundImage: `url(${slide.imageUrl})`,
-						// }}
-					>
+						key={index}
+						className="relative w-full h-[calc(100vh-25rem)] md:h-[calc(100vh-10rem)]">
 						<Image
 							src={slide.imageUrl}
 							alt={slide.alt}
 							layout="fill"
-							// objectFit="cover"
+							objectFit="cover"
 							className="w-full h-full"
 						/>
-
-						{/* Overlay for better text readability */}
-						<div className="absolute inset-0 bg-black bg-opacity-50"></div>
-
-						{/* Content on top of the background image */}
-						<div className="relative z-10 text-center text-white px-6">
-							<h3 className="text-3xl md:text-5xl font-bold mb-4">
-								{slide.title}
-							</h3>
-							<p className="text-lg md:text-xl">{slide.description}</p>
+						<div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-center text-white p-6">
+							<div>
+								<motion.h2
+									className="text-3xl md:text-5xl font-extrabold mb-4"
+									initial={{ opacity: 0, y: -50 }}
+									animate={{ opacity: 1, y: 0 }}
+									transition={{ duration: 0.8 }}>
+									{slide.title}
+								</motion.h2>
+								<motion.p
+									className="text-lg md:text-2xl"
+									initial={{ opacity: 0, y: 20 }}
+									animate={{ opacity: 1, y: 0 }}
+									transition={{ duration: 0.8 }}>
+									{slide.description}
+								</motion.p>
+							</div>
 						</div>
 					</div>
-				</div>
-			))}
-		</Slider>
+				))}
+			</Slider>
+		</div>
 	);
 };
 

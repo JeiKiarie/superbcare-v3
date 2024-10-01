@@ -45,7 +45,6 @@ const services = [
 		imageUrl: palliativeCare,
 		link: '/services/palliative-care',
 	},
-	
 ];
 
 export default function Services() {
@@ -171,7 +170,7 @@ export default function Services() {
 			</section>
 
 			{/* Call to Action Section */}
-			<section className="text-center py-12 bg-blue-600 text-white rounded-lg">
+			<section className="text-center py-12 px-4 bg-blue-600 text-white rounded-lg">
 				<motion.h2
 					className="text-4xl font-bold mb-4"
 					initial={{ opacity: 0 }}
@@ -180,7 +179,7 @@ export default function Services() {
 					Ready to Get Started?
 				</motion.h2>
 				<motion.p
-					className="text-lg mb-8"
+					className="text-lg mb-8 text-justify md:text-center"
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ delay: 0.2 }}>

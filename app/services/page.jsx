@@ -8,6 +8,7 @@ import dementiaCare from '/public/dementia-care1.jpg';
 import respiteCare from '/public/respite-care.jpg';
 import palliativeCare from '/public/palliative-care.jpg';
 import LiveInCare from '/public/live-in-care.jpg';
+import companionCare from '/public/companion-care.jpg';
 
 const services = [
 	{
@@ -44,6 +45,13 @@ const services = [
 			'Our palliative care services focus on improving the quality of life for individuals facing serious illnesses. We provide comfort, emotional support, and pain management, working closely with medical professionals to ensure compassionate care.',
 		imageUrl: palliativeCare,
 		link: '/services/palliative-care',
+	},
+	{
+		title: 'Companion Care',
+		description:
+			' We provide companionship to ensure your loved ones never feel lonely, keeping them engaged and happy.',
+		imageUrl: companionCare,
+		link: '/services/companion-care',
 	},
 ];
 

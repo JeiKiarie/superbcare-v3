@@ -33,7 +33,7 @@ const AboutPage = () => {
 			</section>
 
 			{/* Mission Statement Section */}
-			<section className="container mx-auto mb-4 space-y-6">
+			<section className="container mx-auto mb-4 space-y-6 px-4">
 				<motion.h2
 					className="text-4xl font-semibold text-blue-800 text-center"
 					initial={{ opacity: 0 }}

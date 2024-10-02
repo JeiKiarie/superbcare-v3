@@ -196,7 +196,7 @@ const RespiteCarePage = () => {
 							<p className="text-gray-600 text-justify">
 								Our respite care services include personal care, companionship,
 								medication management, and daily activity support. We customize
-								the care plan based on your loved one&#39s needs.
+								the care plan based on your loved one&#39;s needs.
 							</p>
 						</div>
 					</motion.div>

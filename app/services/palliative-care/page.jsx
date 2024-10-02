@@ -95,7 +95,7 @@ const PalliativeCarePage = () => {
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ duration: 1 }}>
-					Why Choose Our Palliative Care?
+					Why Choose Our Palliative Care Services?
 				</motion.h3>
 				<div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
 					<motion.div

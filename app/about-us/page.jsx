@@ -176,7 +176,9 @@ const AboutPage = () => {
 							alt="Team Member"
 							className="w-32 h-32 rounded-full mx-auto mb-4"
 						/>
-						<h4 className="text-xl font-semibold text-gray-800">Jane Doe</h4>
+						<h4 className="text-xl font-semibold text-gray-800">
+							Michael Edwards
+						</h4>
 						<p className="text-gray-600">Founder & CEO</p>
 					</motion.div>
 
@@ -190,7 +192,9 @@ const AboutPage = () => {
 							alt="Team Member"
 							className="w-32 h-32 rounded-full mx-auto mb-4"
 						/>
-						<h4 className="text-xl font-semibold text-gray-800">John Smith</h4>
+						<h4 className="text-xl font-semibold text-gray-800">
+							John O'Brien
+						</h4>
 						<p className="text-gray-600">Head of Care</p>
 					</motion.div>
 
@@ -204,9 +208,7 @@ const AboutPage = () => {
 							alt="Team Member"
 							className="w-32 h-32 rounded-full mx-auto mb-4"
 						/>
-						<h4 className="text-xl font-semibold text-gray-800">
-							Sarah Johnson
-						</h4>
+						<h4 className="text-xl font-semibold text-gray-800">Sarah James</h4>
 						<p className="text-gray-600">Care Coordinator</p>
 					</motion.div>
 				</div>

@@ -4,10 +4,11 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import liveInCare from '/public/live-in-care.jpg';
 import Image from 'next/image';
-import { GiTick } from 'react-icons/gi';
 import { BiCheckCircle } from 'react-icons/bi';
+import { useRouter } from 'next/navigation';
 
 const LiveInCarePage = () => {
+	const router = useRouter();
 	return (
 		<>
 			{/* Hero Section */}
@@ -105,7 +106,7 @@ const LiveInCarePage = () => {
 						<h4 className="text-xl font-semibold text-blue-600 mb-4 text-center">
 							Comprehensive Support
 						</h4>
-						<p className="text-gray-600">
+						<p className="text-gray-600 text-justify">
 							Our caregivers are trained to provide assistance with all aspects
 							of daily living, ensuring safety and comfort at all times.
 						</p>
@@ -119,7 +120,7 @@ const LiveInCarePage = () => {
 						<h4 className="text-xl font-semibold text-blue-600 mb-4 text-center">
 							Peace of Mind
 						</h4>
-						<p className="text-gray-600">
+						<p className="text-gray-600 text-justify">
 							Family members can rest easy knowing their loved ones are cared
 							for by professionals, reducing worry and stress.
 						</p>
@@ -133,7 +134,7 @@ const LiveInCarePage = () => {
 						<h4 className="text-xl font-semibold text-blue-600 mb-4 text-center">
 							Independence at Home
 						</h4>
-						<p className="text-gray-600">
+						<p className="text-gray-600 text-justify">
 							Our live-in care services promote independence while providing
 							necessary support, allowing clients to remain in their familiar
 							environment.
@@ -148,7 +149,7 @@ const LiveInCarePage = () => {
 						<h4 className="text-xl font-semibold text-blue-600 mb-4 text-center">
 							Tailored Care Plans
 						</h4>
-						<p className="text-gray-600">
+						<p className="text-gray-600 text-justify">
 							Each care plan is customized to meet the specific needs and
 							preferences of the individual, ensuring the best possible care.
 						</p>
@@ -192,7 +193,7 @@ const LiveInCarePage = () => {
 							<h4 className="font-semibold text-blue-600 mb-2">
 								Who needs live-in care?
 							</h4>
-							<p className="text-gray-600">
+							<p className="text-gray-600 text-justify">
 								Live-in care is ideal for individuals who require constant
 								support but wish to maintain their independence and remain in
 								their own homes.
@@ -209,7 +210,7 @@ const LiveInCarePage = () => {
 							<h4 className="font-semibold text-blue-600 mb-2">
 								How do I choose a caregiver?
 							</h4>
-							<p className="text-gray-600">
+							<p className="text-gray-600 text-justify">
 								We carefully match caregivers with clients based on their
 								specific needs, preferences, and personality to ensure a good
 								fit.
@@ -236,15 +237,25 @@ const LiveInCarePage = () => {
 					Contact us today to learn more about our live-in care services and how
 					we can assist you or your loved ones.
 				</motion.p>
-				<Link href="/appointment">
+				<div className="flex flex-col items-center justify-center md:flex-row gap-4">
+					<Link href="/appointment">
+						<motion.button
+							className="bg-white text-blue-600 py-3 px-8 rounded-lg font-semibold hover:bg-blue-700 hover:text-white transition"
+							initial={{ scale: 0.9 }}
+							animate={{ scale: 1 }}
+							transition={{ delay: 0.4 }}>
+							Book Appointment
+						</motion.button>
+					</Link>
 					<motion.button
+						onClick={() => router.back()}
 						className="bg-white text-blue-600 py-3 px-8 rounded-lg font-semibold hover:bg-blue-700 hover:text-white transition"
 						initial={{ scale: 0.9 }}
 						animate={{ scale: 1 }}
 						transition={{ delay: 0.4 }}>
-						Book Appointment
+						Back to Services
 					</motion.button>
-				</Link>
+				</div>
 			</section>
 		</>
 	);

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import elderlyCare from '/public/elderly-care.jpg';
-import dementiaCare from '/public/dementia-care.jpg';
+import dementiaCare from '/public/dementia-care1.jpg';
 import respiteCare from '/public/respite-care.jpg';
 import palliativeCare from '/public/palliative-care.jpg';
 import LiveInCare from '/public/live-in-care.jpg';
@@ -84,7 +84,7 @@ export default function Services() {
 			{/* Service Categories */}
 			<section>
 				<motion.h2
-					className="text-4xl font-semibold text-center text-gray-800 mb-12"
+					className="text-4xl font-semibold text-center text-blue-800 mb-12"
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ duration: 1 }}>
@@ -94,7 +94,7 @@ export default function Services() {
 					{services.map((service, index) => (
 						<motion.div
 							key={index}
-							className="bg-white rounded-lg shadow-md p-6 text-center"
+							className="bg-white rounded-lg shadow-md p-6 text-center hover:bg-slate-200"
 							initial={{ opacity: 0, y: 20 }}
 							animate={{ opacity: 1, y: 0 }}
 							transition={{ delay: 0.2 * index }}>
@@ -122,7 +122,7 @@ export default function Services() {
 			{/* Testimonials Section */}
 			<section className="bg-gray-100 py-16 rounded-lg">
 				<motion.h2
-					className="text-4xl font-semibold text-center text-gray-800 mb-12"
+					className="text-4xl font-semibold text-center text-blue-800 mb-12"
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ duration: 1 }}>

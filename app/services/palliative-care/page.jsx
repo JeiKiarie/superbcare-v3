@@ -58,13 +58,13 @@ const PalliativeCarePage = () => {
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
 						transition={{ delay: 0.3 }}>
-						<div className="flex items-center gap-4">
+						<div className="flex md:items-center gap-4">
 							<div>
 								<BiCheckCircle className="inline text-3xl text-[#cca6c8]" />
 							</div>
 							<li>Symptom management for comfort and relief</li>
 						</div>
-						<div className="flex items-center gap-4">
+						<div className="flex md:items-center gap-4">
 							<div>
 								<BiCheckCircle className="inline text-3xl text-[#cca6c8]" />
 							</div>
@@ -72,13 +72,13 @@ const PalliativeCarePage = () => {
 								Emotional and psychological support for patients and families
 							</li>
 						</div>
-						<div className="flex items-center gap-4">
+						<div className="flex md:items-center gap-4">
 							<div>
 								<BiCheckCircle className="inline text-3xl text-[#cca6c8]" />
 							</div>
 							<li>Coordination of care with healthcare providers</li>
 						</div>
-						<div className="flex items-center gap-4">
+						<div className="flex md:items-center gap-4">
 							<div>
 								<BiCheckCircle className="inline text-3xl text-[#cca6c8]" />
 							</div>

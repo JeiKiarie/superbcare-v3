@@ -48,7 +48,7 @@ export default function Header() {
 					</Link>
 					<Link
 						className="text-lg font-medium hover:opacity-50"
-						href="/about">
+						href="/about-us">
 						About Us
 					</Link>
 					<Link

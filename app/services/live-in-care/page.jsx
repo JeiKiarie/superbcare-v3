@@ -58,25 +58,25 @@ const LiveInCarePage = () => {
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
 						transition={{ delay: 0.3 }}>
-						<div className="flex items-center gap-4">
+						<div className="flex md:items-center gap-4">
 							<div>
 								<BiCheckCircle className="inline text-3xl text-[#cca6c8]" />
 							</div>
 							<li>24/7 support tailored to individual needs</li>
 						</div>
-						<div className="flex items-center gap-4">
+						<div className="flex md:items-center gap-4">
 							<div>
 								<BiCheckCircle className="inline text-3xl text-[#cca6c8]" />
 							</div>
 							<li>Companionship to reduce feelings of isolation</li>
 						</div>
-						<div className="flex items-center gap-4">
+						<div className="flex md:items-center gap-4">
 							<div>
 								<BiCheckCircle className="inline text-3xl text-[#cca6c8]" />
 							</div>
 							<li>Assistance with personal care and household tasks</li>
 						</div>
-						<div className="flex items-center gap-4">
+						<div className="flex md:items-center gap-4">
 							<div>
 								<BiCheckCircle className="inline text-3xl text-[#cca6c8]" />
 							</div>

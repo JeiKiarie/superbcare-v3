@@ -193,7 +193,7 @@ const AboutPage = () => {
 							className="w-32 h-32 rounded-full mx-auto mb-4"
 						/>
 						<h4 className="text-xl font-semibold text-gray-800">
-							John O'Brien
+							John Ferguson
 						</h4>
 						<p className="text-gray-600">Head of Care</p>
 					</motion.div>

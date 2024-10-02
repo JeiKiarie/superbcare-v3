@@ -116,7 +116,7 @@ const AboutPage = () => {
 						initial={{ opacity: 0, y: 20 }}
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ delay: 0.2 }}>
-						<h4 className="text-xl font-semibold text-blue-600 mb-4">
+						<h4 className="text-xl font-semibold text-blue-600 mb-4 text-center">
 							Compassion
 						</h4>
 						<p className="text-gray-600">
@@ -130,7 +130,7 @@ const AboutPage = () => {
 						initial={{ opacity: 0, y: 20 }}
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ delay: 0.3 }}>
-						<h4 className="text-xl font-semibold text-blue-600 mb-4">
+						<h4 className="text-xl font-semibold text-blue-600 mb-4 text-center">
 							Integrity
 						</h4>
 						<p className="text-gray-600">
@@ -145,7 +145,7 @@ const AboutPage = () => {
 						initial={{ opacity: 0, y: 20 }}
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ delay: 0.4 }}>
-						<h4 className="text-xl font-semibold text-blue-600 mb-4">
+						<h4 className="text-xl font-semibold text-blue-600 mb-4 text-center">
 							Excellence
 						</h4>
 						<p className="text-gray-600">

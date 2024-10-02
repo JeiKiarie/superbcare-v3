@@ -46,7 +46,7 @@ const AboutPage = () => {
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ delay: 0.2 }}>
-					At [Company Name], our mission is to provide compassionate,
+					At Supeb Care Services Ltd, our mission is to provide compassionate,
 					personalized care that empowers individuals to maintain their
 					independence and quality of life at home. We are dedicated to
 					supporting our clients and their families by delivering exceptional
@@ -70,9 +70,9 @@ const AboutPage = () => {
 						animate={{ opacity: 1, x: 0 }}
 						transition={{ duration: 1 }}>
 						<p>
-							Founded in [Year], [Company Name] was born out of a desire to
-							provide an alternative to institutional care for the elderly and
-							individuals with disabilities. Our founder, [Founder Name], was
+							Founded in 2018, Supeb Care Services Ltd was born out of a desire
+							to provide an alternative to institutional care for the elderly
+							and individuals with disabilities. Our founder, Ruth West, was
 							inspired by personal experiences of seeing loved ones struggle to
 							find quality, compassionate care in a home setting.
 						</p>
@@ -171,14 +171,12 @@ const AboutPage = () => {
 						initial={{ opacity: 0, y: 20 }}
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ delay: 0.2 }}>
-						<img
+						<Image
 							src="/images/team-member1.jpg"
 							alt="Team Member"
 							className="w-32 h-32 rounded-full mx-auto mb-4"
 						/>
-						<h4 className="text-xl font-semibold text-gray-800">
-							Michael Edwards
-						</h4>
+						<h4 className="text-xl font-semibold text-gray-800">Ruth West</h4>
 						<p className="text-gray-600">Founder & CEO</p>
 					</motion.div>
 
@@ -187,7 +185,7 @@ const AboutPage = () => {
 						initial={{ opacity: 0, y: 20 }}
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ delay: 0.3 }}>
-						<img
+						<Image
 							src="/images/team-member2.jpg"
 							alt="Team Member"
 							className="w-32 h-32 rounded-full mx-auto mb-4"
@@ -203,12 +201,14 @@ const AboutPage = () => {
 						initial={{ opacity: 0, y: 20 }}
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ delay: 0.4 }}>
-						<img
+						<Image
 							src="/images/team-member3.jpg"
 							alt="Team Member"
 							className="w-32 h-32 rounded-full mx-auto mb-4"
 						/>
-						<h4 className="text-xl font-semibold text-gray-800">Sarah James</h4>
+						<h4 className="text-xl font-semibold text-gray-800">
+							Michael Edwards
+						</h4>
 						<p className="text-gray-600">Care Coordinator</p>
 					</motion.div>
 				</div>

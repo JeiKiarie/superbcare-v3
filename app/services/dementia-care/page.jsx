@@ -58,31 +58,31 @@ const DementiaCarePage = () => {
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
 						transition={{ delay: 0.3 }}>
-						<div className="flex gap-4">
+						<div className="flex items-center gap-4">
 							<div>
 								<BiCheckCircle className="inline text-3xl text-[#cca6c8]" />
 							</div>
 							<li>Specialized dementia care planning and monitoring</li>
 						</div>
-						<div className="flex gap-4">
+						<div className="flex items-center gap-4">
 							<div>
 								<BiCheckCircle className="inline text-3xl text-[#cca6c8]" />
 							</div>
 							<li>Memory assistance and cognitive stimulation</li>
 						</div>
-						<div className="flex gap-4">
+						<div className="flex items-center gap-4">
 							<div>
 								<BiCheckCircle className="inline text-3xl text-[#cca6c8]" />
 							</div>
 							<li>Compassionate companionship</li>
 						</div>
-						<div className="flex gap-4">
+						<div className="flex items-center gap-4">
 							<div>
 								<BiCheckCircle className="inline text-3xl text-[#cca6c8]" />
 							</div>
 							<li>Safety monitoring and fall prevention</li>
 						</div>
-						<div className="flex gap-4">
+						<div className="flex items-center gap-4">
 							<div>
 								<BiCheckCircle className="inline text-3xl text-[#cca6c8]" />
 							</div>

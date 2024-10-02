@@ -58,25 +58,25 @@ const RespiteCarePage = () => {
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
 						transition={{ delay: 0.3 }}>
-						<div className="flex gap-4">
+						<div className="flex items-center gap-4">
 							<div>
 								<BiCheckCircle className="inline text-3xl text-[#cca6c8]" />
 							</div>
 							<li>Flexible short-term or long-term respite options</li>
 						</div>
-						<div className="flex gap-4">
+						<div className="flex items-center gap-4">
 							<div>
 								<BiCheckCircle className="inline text-3xl text-[#cca6c8]" />
 							</div>
 							<li>Compassionate caregivers with personalized care plans</li>
 						</div>
-						<div className="flex gap-4">
+						<div className="flex items-center gap-4">
 							<div>
 								<BiCheckCircle className="inline text-3xl text-[#cca6c8]" />
 							</div>
 							<li>24/7 availability for emergency or scheduled respite care</li>
 						</div>
-						<div className="flex gap-4">
+						<div className="flex items-center gap-4">
 							<div>
 								<BiCheckCircle className="inline text-3xl text-[#cca6c8]" />
 							</div>

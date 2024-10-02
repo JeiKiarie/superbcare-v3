@@ -56,37 +56,37 @@ const ElderlyCarePage = () => {
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
 						transition={{ delay: 0.3 }}>
-						<div className="flex gap-4">
+						<div className="flex items-center gap-4">
 							<div>
 								<BiCheckCircle className="text-3xl text-[#cca6c8]" />
 							</div>
 							<li>Assistance with bathing, dressing, and grooming</li>
 						</div>
-						<div className="flex gap-4">
+						<div className="flex items-center gap-4">
 							<div>
 								<BiCheckCircle className="text-3xl text-[#cca6c8]" />
 							</div>
 							<li>Medication reminders and management</li>
 						</div>
-						<div className="flex gap-4">
+						<div className="flex items-center gap-4">
 							<div>
 								<BiCheckCircle className="text-3xl text-[#cca6c8]" />
 							</div>
 							<li>Meal preparation and nutritional support</li>
 						</div>
-						<div className="flex gap-4">
+						<div className="flex items-center gap-4">
 							<div>
 								<BiCheckCircle className="text-3xl text-[#cca6c8]" />
 							</div>
 							<li>Light housekeeping and laundry</li>
 						</div>
-						<div className="flex gap-4">
+						<div className="flex items-center gap-4">
 							<div>
 								<BiCheckCircle className="text-3xl text-[#cca6c8]" />
 							</div>
 							<li>Companionship and emotional support</li>
 						</div>
-						<div className="flex gap-4">
+						<div className="flex items-center gap-4">
 							<div>
 								<BiCheckCircle className="text-3xl text-[#cca6c8]" />
 							</div>

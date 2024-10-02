@@ -20,7 +20,7 @@ const DementiaCarePage = () => {
 						// layout="fill"
 						className="w-full h-full object-cover"
 					/>
-					<div className="absolute inset-0 bg-gradient-to-t from-black to-black opacity-40"></div>
+					{/* <div className="absolute inset-0 bg-gradient-to-t from-black to-black opacity-30"></div> */}
 				</div>
 				<div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
 					<motion.h1

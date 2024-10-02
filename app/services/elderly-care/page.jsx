@@ -5,8 +5,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import elderlyCare from '/public/elderly-care.jpg';
 import { BiCheckCircle } from 'react-icons/bi';
+import { useRouter } from 'next/navigation';
 
 const ElderlyCarePage = () => {
+	const router = useRouter();
 	return (
 		<>
 			{/* Hero Section */}
@@ -249,15 +251,25 @@ const ElderlyCarePage = () => {
 					Contact us today to learn more about our personalized elderly care
 					services and how we can support your loved ones.
 				</motion.p>
-				<Link href="/appointment">
+				<div className="flex flex-col items-center justify-center md:flex-row gap-4">
+					<Link href="/appointment">
+						<motion.button
+							className="bg-white text-blue-600 py-3 px-8 rounded-lg font-semibold hover:bg-blue-700 hover:text-white transition"
+							initial={{ scale: 0.9 }}
+							animate={{ scale: 1 }}
+							transition={{ delay: 0.4 }}>
+							Book Appointment
+						</motion.button>
+					</Link>
 					<motion.button
+						onClick={() => router.back()}
 						className="bg-white text-blue-600 py-3 px-8 rounded-lg font-semibold hover:bg-blue-700 hover:text-white transition"
 						initial={{ scale: 0.9 }}
 						animate={{ scale: 1 }}
 						transition={{ delay: 0.4 }}>
-						Book an Appointment
+						Back to Services
 					</motion.button>
-				</Link>
+				</div>
 			</section>
 		</>
 	);

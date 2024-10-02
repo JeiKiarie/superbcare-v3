@@ -172,6 +172,8 @@ const AboutPage = () => {
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ delay: 0.2 }}>
 						<Image
+							width={500}
+							height={500}
 							src="/images/team-member1.jpg"
 							alt="Team Member"
 							className="w-32 h-32 rounded-full mx-auto mb-4"
@@ -186,6 +188,8 @@ const AboutPage = () => {
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ delay: 0.3 }}>
 						<Image
+							width={500}
+							height={500}
 							src="/images/team-member2.jpg"
 							alt="Team Member"
 							className="w-32 h-32 rounded-full mx-auto mb-4"
@@ -202,6 +206,8 @@ const AboutPage = () => {
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ delay: 0.4 }}>
 						<Image
+							width={500}
+							height={500}
 							src="/images/team-member3.jpg"
 							alt="Team Member"
 							className="w-32 h-32 rounded-full mx-auto mb-4"

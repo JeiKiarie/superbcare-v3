@@ -94,7 +94,7 @@ export default function Services() {
 					{services.map((service, index) => (
 						<motion.div
 							key={index}
-							className="bg-white rounded-lg shadow-md p-6 text-center hover:bg-slate-200"
+							className="bg-white rounded-lg shadow-md p-6 text-center hover:bg-slate-50"
 							initial={{ opacity: 0, y: 20 }}
 							animate={{ opacity: 1, y: 0 }}
 							transition={{ delay: 0.2 * index }}>

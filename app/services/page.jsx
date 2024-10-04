@@ -200,7 +200,7 @@ export default function Services() {
 						initial={{ scale: 0.8 }}
 						animate={{ scale: 1 }}
 						transition={{ delay: 0.4 }}>
-						Book an Appointment
+						Book Appointment
 					</motion.button>
 				</Link>
 			</section>

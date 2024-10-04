@@ -118,7 +118,7 @@ export default function Home() {
 			{/* About Us Section */}
 			<section className="bg-gray-100 p-10 rounded-lg">
 				<motion.h2
-					className="text-3xl md:text-4xl font-semibold text-center text-gray-800 mb-10"
+					className="text-3xl md:text-4xl font-semibold text-center text-blue-800 mb-10"
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ duration: 1 }}>
@@ -140,7 +140,7 @@ export default function Home() {
 			{/* Why Choose Us Section */}
 			<section className="p-10 container mx-auto">
 				<motion.h2
-					className="text-3xl md:text-4xl font-semibold text-center text-gray-800 mb-8"
+					className="text-3xl md:text-4xl font-semibold text-center text-blue-800 mb-8"
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ duration: 1 }}>
@@ -231,7 +231,7 @@ export default function Home() {
 			{/* Testimonials Section */}
 			<section className="bg-gray-100 p-10 rounded-lg">
 				<motion.h2
-					className="text-3xl md:text-4xl font-semibold text-center text-gray-800 mb-10"
+					className="text-3xl md:text-4xl font-semibold text-center text-blue-800 mb-10"
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ duration: 1 }}>
@@ -268,7 +268,7 @@ export default function Home() {
 			</section>
 
 			{/* Call to Action / Contact Section */}
-			<section className="p-10 text-center bg-blue-800 text-white rounded-lg">
+			<section className="p-10 text-center bg-[#cca6c8] text-white rounded-lg">
 				<motion.h2
 					className="text-3xl md:text-4xl font-bold mb-4"
 					initial={{ opacity: 0 }}

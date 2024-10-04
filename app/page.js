@@ -168,7 +168,7 @@ export default function Home() {
 			</section>
 
 			{/* Team Section */}
-			<section className="bg-gray-100 p-10 rounded-lg">
+			{/* <section className="bg-gray-100 p-10 rounded-lg">
 				<motion.h2
 					className="text-3xl md:text-4xl font-semibold text-center text-gray-800 mb-8"
 					initial={{ opacity: 0 }}
@@ -178,7 +178,6 @@ export default function Home() {
 				</motion.h2>
 
 				<div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-					{/* Sample Team Member */}
 					<motion.div
 						className="bg-white p-6 rounded-lg shadow-md text-center"
 						initial={{ opacity: 0 }}
@@ -195,7 +194,6 @@ export default function Home() {
 						<p className="text-gray-500">Lead Caregiver</p>
 					</motion.div>
 
-					{/* Add more team members as necessary */}
 					<motion.div
 						className="bg-white p-6 rounded-lg shadow-md text-center"
 						initial={{ opacity: 0 }}
@@ -227,9 +225,8 @@ export default function Home() {
 						<p className="text-gray-500">Registered Nurse</p>
 					</motion.div>
 
-					{/* Additional Team Members */}
 				</div>
-			</section>
+			</section> */}
 
 			{/* Testimonials Section */}
 			<section className="bg-gray-100 p-10 rounded-lg">

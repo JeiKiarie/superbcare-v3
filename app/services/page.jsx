@@ -178,7 +178,7 @@ export default function Services() {
 			</section>
 
 			{/* Call to Action Section */}
-			<section className="text-center py-12 px-4 bg-blue-600 text-white rounded-lg">
+			<section className="text-center py-12 px-4 bg-[#cca6c8] text-white rounded-lg">
 				<motion.h2
 					className="text-4xl font-bold mb-4"
 					initial={{ opacity: 0 }}

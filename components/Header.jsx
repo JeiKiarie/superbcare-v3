@@ -32,11 +32,6 @@ export default function Header() {
 							height={100}
 							alt="logo"
 							src={Logo}></Image>
-						{/* <span className="bg-white text-blue-700 px-2 py-1 rounded-full">
-							Care
-						</span>{' '}
-						
-						Services */}
 					</Link>
 					<Link href={'/'}>
 						<h2 className="font-bold text-blue-800">

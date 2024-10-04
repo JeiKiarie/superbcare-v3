@@ -24,10 +24,10 @@ export default function Header() {
 		<header className="bg-gradient-to-r from-white via-white to-[#cca6c8] text-blue-800 shadow-lg sticky top-0 z-50">
 			<div className="container flex justify-between items-center py-2 px-1">
 				{/* Logo */}
-				<div>
+				<div className="flex items-center justify-center">
 					<Link href="/">
 						<Image
-							className="hover:opacity-50"
+							className="hover:opacity-50 inline"
 							width={100}
 							height={100}
 							alt="logo"
@@ -35,7 +35,13 @@ export default function Header() {
 						{/* <span className="bg-white text-blue-700 px-2 py-1 rounded-full">
 							Care
 						</span>{' '}
+						
 						Services */}
+					</Link>
+					<Link href={'/'}>
+						<h2 className="font-bold text-blue-800">
+							Superb Care Services Ltd
+						</h2>
 					</Link>
 				</div>
 

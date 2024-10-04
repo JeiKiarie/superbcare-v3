@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import aboutImg from '/public/about-image.jpg';
 import ourStory from '/public/our-story.webp';
+import ruthWest from '/public/ruth-west.jpg';
 import Image from 'next/image';
 
 const AboutPage = () => {
@@ -172,11 +173,11 @@ const AboutPage = () => {
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ delay: 0.2 }}>
 						<Image
-							width={500}
-							height={500}
-							src="/images/team-member1.jpg"
-							alt="Team Member"
-							className="w-32 h-32 rounded-full mx-auto mb-4"
+							width={1000}
+							height={1000}
+							src={ruthWest}
+							alt="CEO"
+							className="w-72 h-72 rounded-full mx-auto mb-4"
 						/>
 						<h4 className="text-xl font-semibold text-gray-800">Ruth West</h4>
 						<p className="text-gray-600">Founder & CEO</p>
@@ -243,7 +244,7 @@ const AboutPage = () => {
 						initial={{ scale: 0.9 }}
 						animate={{ scale: 1 }}
 						transition={{ delay: 0.4 }}>
-						Book an Appointment
+						Book Appointment
 					</motion.button>
 				</Link>
 			</section>

@@ -120,7 +120,7 @@ export default function Services() {
 								{service.description}
 							</p>
 							<Link
-								className="text-blue-600 font-semibold hover:underline"
+								className="text-blue-600 font-semibold hover:underline inline-block hover:scale-105 hover:opacity-50 transition-all text-xl"
 								href={service.link}>
 								Learn More &rarr;
 							</Link>

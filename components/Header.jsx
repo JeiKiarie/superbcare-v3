@@ -22,7 +22,7 @@ export default function Header() {
 
 	return (
 		<header className="bg-gradient-to-r from-white via-white to-[#cca6c8] text-blue-800 shadow-lg sticky top-0 z-50">
-			<div className="container flex justify-between items-center py-2 px-1">
+			<div className="flex justify-between items-center py-2 px-1">
 				{/* Logo */}
 				<div className="flex items-center justify-center">
 					<Link href="/">
@@ -34,7 +34,7 @@ export default function Header() {
 							src={Logo}></Image>
 					</Link>
 					<Link href={'/'}>
-						<h2 className="font-bold text-blue-800">
+						<h2 className="font-bold text-blue-800 xl:text-3xl">
 							Superb Care Services Ltd
 						</h2>
 					</Link>

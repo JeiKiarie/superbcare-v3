@@ -58,7 +58,7 @@ const Carousel = () => {
 						<div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-justify text-white p-6">
 							<div>
 								<motion.h2
-									className="text-3xl md:text-5xl font-extrabold mb-4"
+									className="text-3xl md:text-5xl font-extrabold mb-4 text-center"
 									initial={{ opacity: 0, y: -50 }}
 									animate={{ opacity: 1, y: 0 }}
 									transition={{ duration: 0.8 }}>

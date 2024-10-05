@@ -55,7 +55,7 @@ const Carousel = () => {
 							objectFit="cover"
 							className="w-full h-full"
 						/>
-						<div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-center text-white p-6">
+						<div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-justify text-white p-6">
 							<div>
 								<motion.h2
 									className="text-3xl md:text-5xl font-extrabold mb-4"

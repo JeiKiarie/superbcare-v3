@@ -126,7 +126,7 @@ export default function Home() {
 				</motion.h2>
 
 				<motion.p
-					className="text-lg text-center text-gray-600 max-w-3xl mx-auto"
+					className="text-lg text-justify text-gray-600 max-w-3xl mx-auto"
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ delay: 0.2 }}>
@@ -240,7 +240,7 @@ export default function Home() {
 
 				<div className="container mx-auto flex flex-col md:flex-row justify-around items-center space-y-6 md:space-y-0">
 					<motion.div
-						className="bg-white p-6 rounded-lg shadow-md max-w-md"
+						className="bg-white p-6 rounded-lg shadow-md max-w-md text-justify"
 						whileHover={{ scale: 1.05 }}
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
@@ -253,7 +253,7 @@ export default function Home() {
 					</motion.div>
 
 					<motion.div
-						className="bg-white p-6 rounded-lg shadow-md max-w-md"
+						className="bg-white p-6 rounded-lg shadow-md max-w-md text-justify"
 						whileHover={{ scale: 1.05 }}
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}

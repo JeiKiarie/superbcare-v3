@@ -19,7 +19,7 @@ const Hero = () => {
 						Bringing Compassionate Care to Your Home.
 					</span>
 				</h1>
-				<p className="text-lg mb-6 max-w-3xl text-center">
+				<p className="text-lg mb-6 max-w-3xl text-justify">
 					We specialize in providing compassionate care and assistance to the
 					elderly in the comfort of their homes. Experience a higher level of
 					care for your loved ones.

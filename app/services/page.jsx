@@ -116,7 +116,9 @@ export default function Services() {
 							<h3 className="text-2xl font-bold text-blue-600 mb-4">
 								{service.title}
 							</h3>
-							<p className="text-gray-500 mb-6">{service.description}</p>
+							<p className="text-gray-500 mb-6 text-justify">
+								{service.description}
+							</p>
 							<Link
 								className="text-blue-600 font-semibold hover:underline"
 								href={service.link}>
@@ -142,7 +144,7 @@ export default function Services() {
 						initial={{ opacity: 0, scale: 0.8 }}
 						animate={{ opacity: 1, scale: 1 }}
 						transition={{ delay: 0.3, duration: 0.5 }}>
-						<p className="text-lg text-gray-500 mb-4">
+						<p className="text-lg text-gray-500 mb-4 text-justify">
 							&#34;The caregivers at Superb Care Services Ltd have been a
 							blessing to our family. Their attention to detail and compassion
 							have made all the difference in our mother&#39;s care.&#34;
@@ -155,7 +157,7 @@ export default function Services() {
 						initial={{ opacity: 0, scale: 0.8 }}
 						animate={{ opacity: 1, scale: 1 }}
 						transition={{ delay: 0.5, duration: 0.5 }}>
-						<p className="text-lg text-gray-500 mb-4">
+						<p className="text-lg text-gray-500 mb-4 text-justify">
 							&#34;The live-in care service has been exceptional. Knowing that
 							my father is being looked after 24/7 gives me peace of mind.&#34;
 						</p>
@@ -167,7 +169,7 @@ export default function Services() {
 						initial={{ opacity: 0, scale: 0.8 }}
 						animate={{ opacity: 1, scale: 1 }}
 						transition={{ delay: 0.7, duration: 0.5 }}>
-						<p className="text-lg text-gray-500 mb-4">
+						<p className="text-lg text-gray-500 mb-4 text-justify">
 							&#34;The team at Superb Care Services Ltd is always professional,
 							kind, and caring. They&#39;ve made a real difference in our
 							lives.&#34;

@@ -43,7 +43,7 @@ const ElderlyCarePage = () => {
 					Providing Compassionate Care for the Elderly
 				</motion.h2>
 				<motion.p
-					className="text-lg text-gray-600 leading-8"
+					className="text-lg text-gray-600 leading-8 text-justify"
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ delay: 0.2 }}>

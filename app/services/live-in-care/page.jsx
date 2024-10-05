@@ -43,7 +43,7 @@ const LiveInCarePage = () => {
 					Personalised Care in the Comfort of Your Home
 				</motion.h2>
 				<motion.p
-					className="text-lg text-gray-600 leading-8"
+					className="text-lg text-gray-600 leading-8 text-justify"
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ delay: 0.2 }}>
@@ -54,7 +54,7 @@ const LiveInCarePage = () => {
 				</motion.p>
 				<motion.div className="div flex flex-col items-center justify-center">
 					<motion.ul
-						className="list-none pl-5 text-gray-600 space-y-3"
+						className="list-none pl-5 text-gray-600 space-y-3 grid grid-cols-1 lg:grid-cols-2"
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
 						transition={{ delay: 0.3 }}>
@@ -230,7 +230,7 @@ const LiveInCarePage = () => {
 					Experience Personalised Care at Home
 				</motion.h2>
 				<motion.p
-					className="text-lg mb-8"
+					className="text-lg mb-8 text-justify lg:text-center"
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ delay: 0.2 }}>

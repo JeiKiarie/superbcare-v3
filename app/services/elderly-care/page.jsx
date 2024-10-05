@@ -52,13 +52,13 @@ const ElderlyCarePage = () => {
 					assisting with daily tasks to offering companionship, we ensure that
 					your loved ones receive the highest level of care.
 				</motion.p>
-				<motion.div className="div flex flex-col items-center justify-center">
+				<motion.div className="div flex flex-col justify-between">
 					<motion.ul
-						className="list-none pl-5 text-gray-600 space-y-3"
+						className="list-none pl-5 text-gray-600 space-y-3 grid grid-cols-1 lg:grid-cols-2 gap-4 mx-auto"
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
 						transition={{ delay: 0.3 }}>
-						<div className="flex md:items-center gap-4">
+						<div className="flex md:items-center gap-4 mt-3">
 							<div>
 								<BiCheckCircle className="text-3xl text-[#cca6c8]" />
 							</div>
@@ -113,7 +113,7 @@ const ElderlyCarePage = () => {
 						initial={{ opacity: 0, y: 20 }}
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ delay: 0.2 }}>
-						<h4 className="text-xl font-semibold text-blue-600 mb-4">
+						<h4 className="text-xl font-semibold text-blue-600 mb-4 text-center">
 							Personalized Care Plans
 						</h4>
 						<p className="text-gray-600">
@@ -128,7 +128,7 @@ const ElderlyCarePage = () => {
 						initial={{ opacity: 0, y: 20 }}
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ delay: 0.3 }}>
-						<h4 className="text-xl font-semibold text-blue-600 mb-4">
+						<h4 className="text-xl font-semibold text-blue-600 mb-4 text-center">
 							Experienced Caregivers
 						</h4>
 						<p className="text-gray-600">
@@ -143,7 +143,7 @@ const ElderlyCarePage = () => {
 						initial={{ opacity: 0, y: 20 }}
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ delay: 0.4 }}>
-						<h4 className="text-xl font-semibold text-blue-600 mb-4">
+						<h4 className="text-xl font-semibold text-blue-600 mb-4 text-center">
 							24/7 Availability
 						</h4>
 						<p className="text-gray-600">
@@ -158,7 +158,7 @@ const ElderlyCarePage = () => {
 						initial={{ opacity: 0, y: 20 }}
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ delay: 0.5 }}>
-						<h4 className="text-xl font-semibold text-blue-600 mb-4">
+						<h4 className="text-xl font-semibold text-blue-600 mb-4 text-center">
 							Trusted and Accredited
 						</h4>
 						<p className="text-gray-600">
@@ -244,7 +244,7 @@ const ElderlyCarePage = () => {
 					Ready to Get Started?
 				</motion.h2>
 				<motion.p
-					className="text-lg mb-8"
+					className="text-lg mb-8 text-justify lg:text-center"
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ delay: 0.2 }}>

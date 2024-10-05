@@ -43,7 +43,7 @@ const AboutPage = () => {
 					Our Mission
 				</motion.h2>
 				<motion.p
-					className="text-lg text-gray-600 leading-8"
+					className="text-lg text-gray-600 leading-8 text-justify"
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ delay: 0.2 }}>
@@ -66,7 +66,7 @@ const AboutPage = () => {
 				</motion.h3>
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
 					<motion.div
-						className="text-lg text-gray-600 leading-8 space-y-4"
+						className="text-lg text-gray-600 leading-8 space-y-4 text-justify"
 						initial={{ opacity: 0, x: -20 }}
 						animate={{ opacity: 1, x: 0 }}
 						transition={{ duration: 1 }}>
@@ -120,7 +120,7 @@ const AboutPage = () => {
 						<h4 className="text-xl font-semibold text-blue-600 mb-4 text-center">
 							Compassion
 						</h4>
-						<p className="text-gray-600">
+						<p className="text-gray-600 text-justify">
 							We prioritize the well-being of our clients, offering care with
 							empathy, understanding, and kindness.
 						</p>
@@ -134,7 +134,7 @@ const AboutPage = () => {
 						<h4 className="text-xl font-semibold text-blue-600 mb-4 text-center">
 							Integrity
 						</h4>
-						<p className="text-gray-600">
+						<p className="text-gray-600 text-justify">
 							Honesty and transparency are at the core of everything we do. We
 							are committed to maintaining the trust of our clients and their
 							families.
@@ -149,7 +149,7 @@ const AboutPage = () => {
 						<h4 className="text-xl font-semibold text-blue-600 mb-4 text-center">
 							Excellence
 						</h4>
-						<p className="text-gray-600">
+						<p className="text-gray-600 text-justify">
 							We strive for excellence in the care we provide, constantly
 							improving our services to meet the evolving needs of our clients.
 						</p>
@@ -177,7 +177,7 @@ const AboutPage = () => {
 							height={1000}
 							src={ruthWest}
 							alt="CEO"
-							className="w-72 h-72 rounded-full mx-auto mb-4"
+							className="w-60 h-60 sm:w-72 sm:h-72 rounded-full mx-auto mb-4"
 						/>
 						<h4 className="text-xl font-semibold text-gray-800">Ruth West</h4>
 						<p className="text-gray-600">Founder & CEO</p>
@@ -222,7 +222,7 @@ const AboutPage = () => {
 			</section>
 
 			{/* Call to Action Section */}
-			<section className="text-center py-12 bg-[#cca6c8] text-white rounded-lg">
+			<section className="text-center py-12 bg-[#cca6c8] text-white rounded-lg px-4">
 				<motion.h2
 					className="text-4xl font-bold mb-4"
 					initial={{ opacity: 0 }}
@@ -231,7 +231,7 @@ const AboutPage = () => {
 					Join Our Family of Clients
 				</motion.h2>
 				<motion.p
-					className="text-lg mb-8"
+					className="text-lg mb-8 text-justify xl:text-center"
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ delay: 0.2 }}>

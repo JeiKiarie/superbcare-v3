@@ -43,7 +43,7 @@ const CompanionCarePage = () => {
 					Social and Emotional Support for Your Loved One
 				</motion.h2>
 				<motion.p
-					className="text-lg text-gray-600 leading-8"
+					className="text-lg text-gray-600 leading-8 text-justify"
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ delay: 0.2 }}>
@@ -54,11 +54,11 @@ const CompanionCarePage = () => {
 				</motion.p>
 				<motion.div className="div flex flex-col items-center justify-center">
 					<motion.ul
-						className="list-none pl-5 text-gray-600 space-y-3"
+						className="list-none pl-5 text-gray-600 space-y-3 grid grid-cols-1 lg:grid-cols-2 gap-4"
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
 						transition={{ delay: 0.3 }}>
-						<div className="flex md:items-center gap-4">
+						<div className="flex md:items-center gap-4 mt-3">
 							<div>
 								<BiCheckCircle className="inline text-3xl text-[#cca6c8]" />
 							</div>
@@ -232,7 +232,7 @@ const CompanionCarePage = () => {
 					Keep Your Loved One Engaged and Happy
 				</motion.h2>
 				<motion.p
-					className="text-lg mb-8"
+					className="text-lg mb-8 text-justify lg:text-center"
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ delay: 0.2 }}>

@@ -277,7 +277,7 @@ export default function Home() {
 					Ready to Get Started?
 				</motion.h2>
 				<motion.p
-					className="text-lg mb-6"
+					className="text-lg mb-6 text-justify"
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ delay: 0.2 }}>

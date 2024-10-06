@@ -16,21 +16,21 @@ const Footer = () => {
 		<footer className="bg-gray-800 text-white py-12">
 			{/* Top Section */}
 			<motion.div
-				className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12"
+				className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-12"
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1 }}
 				transition={{ duration: 1 }}>
 				{/* Company Info */}
 				<div className="space-y-4">
 					<motion.h3
-						className="text-2xl font-semibold"
+						className="text-2xl font-semibold text-center md:text-left"
 						initial={{ x: -50, opacity: 0 }}
 						animate={{ x: 0, opacity: 1 }}
 						transition={{ duration: 1 }}>
 						Superb Care Services Ltd
 					</motion.h3>
 					<motion.p
-						className="text-gray-400"
+						className="text-gray-400 text-center md:text-left"
 						initial={{ x: -50, opacity: 0 }}
 						animate={{ x: 0, opacity: 1 }}
 						transition={{ delay: 0.2 }}>
@@ -38,7 +38,7 @@ const Footer = () => {
 						Compassionate care from experienced professionals.
 					</motion.p>
 					<motion.div
-						className="flex space-x-4"
+						className="flex justify-center md:justify-start space-x-4"
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
 						transition={{ delay: 0.4 }}>
@@ -84,14 +84,14 @@ const Footer = () => {
 				{/* Quick Links */}
 				<div className="space-y-4">
 					<motion.h3
-						className="text-xl font-semibold"
+						className="text-xl font-semibold text-center md:text-left"
 						initial={{ x: -50, opacity: 0 }}
 						animate={{ x: 0, opacity: 1 }}
 						transition={{ duration: 1 }}>
 						Quick Links
 					</motion.h3>
 					<motion.ul
-						className="space-y-2"
+						className="space-y-2 text-center md:text-left"
 						initial={{ x: -50, opacity: 0 }}
 						animate={{ x: 0, opacity: 1 }}
 						transition={{ delay: 0.2 }}>
@@ -136,14 +136,14 @@ const Footer = () => {
 				{/* Services Links */}
 				<div className="space-y-4">
 					<motion.h3
-						className="text-xl font-semibold"
+						className="text-xl font-semibold text-center md:text-left"
 						initial={{ x: -50, opacity: 0 }}
 						animate={{ x: 0, opacity: 1 }}
 						transition={{ duration: 1 }}>
 						Our Services
 					</motion.h3>
 					<motion.ul
-						className="space-y-2"
+						className="space-y-2 text-center md:text-left"
 						initial={{ x: -50, opacity: 0 }}
 						animate={{ x: 0, opacity: 1 }}
 						transition={{ delay: 0.2 }}>
@@ -188,14 +188,14 @@ const Footer = () => {
 				{/* Contact Info */}
 				<div className="space-y-4">
 					<motion.h3
-						className="text-xl font-semibold"
+						className="text-xl font-semibold text-center md:text-left"
 						initial={{ x: -50, opacity: 0 }}
 						animate={{ x: 0, opacity: 1 }}
 						transition={{ duration: 1 }}>
 						Contact Us
 					</motion.h3>
 					<motion.ul
-						className="space-y-2"
+						className="space-y-2 text-center md:text-left flex flex-col items-center md:items-start"
 						initial={{ x: -50, opacity: 0 }}
 						animate={{ x: 0, opacity: 1 }}
 						transition={{ delay: 0.2 }}>

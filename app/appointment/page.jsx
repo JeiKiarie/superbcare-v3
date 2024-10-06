@@ -3,7 +3,7 @@ import { InlineWidget } from 'react-calendly';
 
 export default function AppointmentPage() {
 	return (
-		<div className="min-h-screen bg-gray-100">
+		<div className="min-h-screen bg-gray-100 text-center">
 			<section className="container mx-auto py-16 px-6">
 				<h1 className="text-4xl font-bold text-blue-800 mb-8">
 					Book an Appointment

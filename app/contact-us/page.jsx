@@ -258,7 +258,7 @@ const ContactPage = () => {
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ duration: 1 }}>
-					Ready to Talk?
+					Talk to us
 				</motion.h2>
 				<motion.p
 					className="text-lg mb-8"

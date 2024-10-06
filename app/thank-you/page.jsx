@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation';
 
 const ThankYou = () => {
 	const router = useRouter();
+
 	return (
 		<section className="bg-[#cca6c8] h-[75vh] w-full flex items-center justify-center">
 			<article className="text-center flex flex-col items-center gap-8">
@@ -14,7 +15,7 @@ const ThankYou = () => {
 					soon as possible.
 				</p>
 				<motion.button
-					onClick={() => router.back()}
+					onClick={() => router.push('/contact-us')}
 					className="bg-white text-blue-800 py-3 px-8 rounded-lg font-semibold text-center hover:bg-blue-800 hover:text-white transition"
 					initial={{ scale: 0.9 }}
 					animate={{ scale: 1 }}

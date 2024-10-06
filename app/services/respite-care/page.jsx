@@ -253,7 +253,7 @@ const RespiteCarePage = () => {
 						initial={{ scale: 0.9 }}
 						animate={{ scale: 1 }}
 						transition={{ delay: 0.4 }}>
-						Go Back
+						⬅ Back
 					</motion.button>
 				</div>
 			</section>

@@ -253,7 +253,7 @@ const LiveInCarePage = () => {
 						initial={{ scale: 0.9 }}
 						animate={{ scale: 1 }}
 						transition={{ delay: 0.4 }}>
-						Back to Services
+						Go Back
 					</motion.button>
 				</div>
 			</section>

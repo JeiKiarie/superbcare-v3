@@ -77,7 +77,7 @@ export default function Services() {
 						services to meet the needs of your loved ones, ensuring their
 						comfort and dignity at all times.
 					</motion.p>
-					<Link href="/contact">
+					<Link href="/contact-us">
 						<motion.button
 							className="bg-white text-blue-600 py-3 px-8 rounded-lg font-semibold hover:bg-blue-700 hover:text-white transition-all duration-300"
 							initial={{ scale: 0.8 }}

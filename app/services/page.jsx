@@ -96,7 +96,7 @@ export default function Services() {
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ duration: 1 }}>
-					Our Service Categories
+					Service Categories
 				</motion.h2>
 				<div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 					{services.map((service, index) => (

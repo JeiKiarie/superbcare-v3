@@ -14,7 +14,7 @@ export default function AppointmentPage() {
 				<div className="bg-white p-6 shadow-lg rounded-lg">
 					{/* Calendly Inline Embed */}
 					<InlineWidget
-						url="https://calendly.com/kiariejkagure"
+						url="https://calendly.com/ruth-west79"
 						styles={{ height: '600px' }}
 					/>
 				</div>

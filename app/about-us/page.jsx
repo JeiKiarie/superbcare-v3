@@ -208,6 +208,23 @@ const AboutPage = () => {
 							width={1000}
 							height={1000}
 							src={blank}
+							alt="Head of Care"
+							className="w-60 h-60 sm:w-72 sm:h-72 rounded-full mx-auto mb-4 object-cover object-top"
+						/>
+						<h4 className="text-xl font-semibold text-gray-800">
+							Sarah Johnson
+						</h4>
+						<p className="text-gray-600">Head of Care</p>
+					</motion.div>
+					<motion.div
+						className="bg-white p-6 shadow-md rounded-lg text-center"
+						initial={{ opacity: 0, y: 20 }}
+						animate={{ opacity: 1, y: 0 }}
+						transition={{ delay: 0.2 }}>
+						<Image
+							width={1000}
+							height={1000}
+							src={blank}
 							alt="Care Coordinator"
 							className="w-60 h-60 sm:w-72 sm:h-72 rounded-full mx-auto mb-4 object-cover object-top"
 						/>

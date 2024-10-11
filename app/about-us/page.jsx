@@ -6,6 +6,7 @@ import aboutImg from '/public/about-image.jpg';
 import ourStory from '/public/our-story.webp';
 import ruthWest from '/public/ruth-west.jpg';
 import peter from '/public/Peter.jpg';
+import blank from '/public/blank-picture.png';
 import Image from 'next/image';
 
 const AboutPage = () => {
@@ -206,30 +207,29 @@ const AboutPage = () => {
 						<Image
 							width={1000}
 							height={1000}
+							src={blank}
+							alt="Care Coordinator"
+							className="w-60 h-60 sm:w-72 sm:h-72 rounded-full mx-auto mb-4 object-cover object-top"
+						/>
+						<h4 className="text-xl font-semibold text-gray-800">
+							Michael Edwards
+						</h4>
+						<p className="text-gray-600">Care Coordinator</p>
+					</motion.div>
+					<motion.div
+						className="bg-white p-6 shadow-md rounded-lg text-center"
+						initial={{ opacity: 0, y: 20 }}
+						animate={{ opacity: 1, y: 0 }}
+						transition={{ delay: 0.2 }}>
+						<Image
+							width={1000}
+							height={1000}
 							src={peter}
 							alt="Support Worker"
 							className="w-60 h-60 sm:w-72 sm:h-72 rounded-full mx-auto mb-4 object-cover object-top"
 						/>
 						<h4 className="text-xl font-semibold text-gray-800">Peter</h4>
 						<p className="text-gray-600">Support Worker</p>
-					</motion.div>
-
-					<motion.div
-						className="bg-white p-6 shadow-md rounded-lg text-center"
-						initial={{ opacity: 0, y: 20 }}
-						animate={{ opacity: 1, y: 0 }}
-						transition={{ delay: 0.4 }}>
-						<Image
-							width={500}
-							height={500}
-							src="/images/team-member3.jpg"
-							alt="Team Member"
-							className="w-32 h-32 rounded-full mx-auto mb-4"
-						/>
-						<h4 className="text-xl font-semibold text-gray-800">
-							Michael Edwards
-						</h4>
-						<p className="text-gray-600">Care Coordinator</p>
 					</motion.div>
 				</div>
 			</section>

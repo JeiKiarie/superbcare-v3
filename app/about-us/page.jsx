@@ -5,6 +5,7 @@ import Link from 'next/link';
 import aboutImg from '/public/about-image.jpg';
 import ourStory from '/public/our-story.webp';
 import ruthWest from '/public/ruth-west.jpg';
+import peter from '/public/Peter.jpg';
 import Image from 'next/image';
 
 const AboutPage = () => {
@@ -118,6 +119,21 @@ const AboutPage = () => {
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ delay: 0.2 }}>
 						<h4 className="text-xl font-semibold text-blue-600 mb-4 text-center">
+							Positivity & Optimism
+						</h4>
+						<p className="text-gray-600 text-justify">
+							We believe in the power of positivity and optimism. Our caregivers
+							bring warmth, compassion, and a positive attitude to every
+							interaction, creating a supportive environment that fosters
+							well-being and happiness.
+						</p>
+					</motion.div>
+					<motion.div
+						className="bg-white p-6 shadow-md rounded-lg"
+						initial={{ opacity: 0, y: 20 }}
+						animate={{ opacity: 1, y: 0 }}
+						transition={{ delay: 0.2 }}>
+						<h4 className="text-xl font-semibold text-blue-600 mb-4 text-center">
 							Compassion
 						</h4>
 						<p className="text-gray-600 text-justify">
@@ -177,28 +193,25 @@ const AboutPage = () => {
 							height={1000}
 							src={ruthWest}
 							alt="CEO"
-							className="w-60 h-60 sm:w-72 sm:h-72 rounded-full mx-auto mb-4"
+							className="w-60 h-60 sm:w-72 sm:h-72 rounded-full mx-auto mb-4 object-cover object-top"
 						/>
 						<h4 className="text-xl font-semibold text-gray-800">Ruth West</h4>
 						<p className="text-gray-600">Founder & CEO</p>
 					</motion.div>
-
 					<motion.div
 						className="bg-white p-6 shadow-md rounded-lg text-center"
 						initial={{ opacity: 0, y: 20 }}
 						animate={{ opacity: 1, y: 0 }}
-						transition={{ delay: 0.3 }}>
+						transition={{ delay: 0.2 }}>
 						<Image
-							width={500}
-							height={500}
-							src="/images/team-member2.jpg"
-							alt="Team Member"
-							className="w-32 h-32 rounded-full mx-auto mb-4"
+							width={1000}
+							height={1000}
+							src={peter}
+							alt="Support Worker"
+							className="w-60 h-60 sm:w-72 sm:h-72 rounded-full mx-auto mb-4 object-cover object-top"
 						/>
-						<h4 className="text-xl font-semibold text-gray-800">
-							John Ferguson
-						</h4>
-						<p className="text-gray-600">Head of Care</p>
+						<h4 className="text-xl font-semibold text-gray-800">Peter</h4>
+						<p className="text-gray-600">Support Worker</p>
 					</motion.div>
 
 					<motion.div
@@ -238,7 +251,7 @@ const AboutPage = () => {
 					Ready to experience personalized, compassionate care? Contact us today
 					to learn more about our services or schedule an appointment.
 				</motion.p>
-				
+
 				<Link href="/appointment">
 					<motion.button
 						className="bg-white text-blue-600 py-3 px-8 rounded-lg font-semibold hover:bg-blue-700 hover:text-white transition"

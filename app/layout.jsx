@@ -6,9 +6,10 @@ import Footer from '/components/Footer';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-	title: 'Superb Care Services Ltd',
+	title:
+		'Superb Care Services Ltd. Providing professional live-in/elderly care services across the UK.',
 	description:
-		'Providing professional live-in/elderly care services across the UK',
+		' Elderly Live-in Home Care and Supported Living, Carers and Nursing Staffing Services',
 };
 
 export default function RootLayout({ children }) {

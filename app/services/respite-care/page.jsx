@@ -40,7 +40,7 @@ const RespiteCarePage = () => {
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ duration: 1 }}>
-					Give Yourself a Break. Let Us Care Of Your Loved One.
+					Give Yourself a Break. Let Us Take Care Of Your Loved One.
 				</motion.h2>
 				<motion.p
 					className="text-lg text-gray-600 leading-8 text-justify"

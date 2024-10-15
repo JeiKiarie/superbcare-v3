@@ -75,7 +75,7 @@ const AboutPage = () => {
 						<p>
 							Founded in 2018, Supeb Care Services Ltd was born out of a desire
 							to provide an alternative to institutional care for the elderly
-							and individuals with disabilities. Our founder, Ruth West, was
+							and individuals with disabilities. Our founder, Rev Ruth West, was
 							inspired by personal experiences of seeing loved ones struggle to
 							find quality, compassionate care in a home setting.
 						</p>
@@ -196,7 +196,9 @@ const AboutPage = () => {
 							alt="CEO"
 							className="w-60 h-60 sm:w-72 sm:h-72 rounded-full mx-auto mb-4 object-cover object-top"
 						/>
-						<h4 className="text-xl font-semibold text-gray-800">Ruth West</h4>
+						<h4 className="text-xl font-semibold text-gray-800">
+							Rev Ruth West
+						</h4>
 						<p className="text-gray-600">Founder & CEO</p>
 					</motion.div>
 					<motion.div

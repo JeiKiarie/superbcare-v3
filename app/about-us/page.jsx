@@ -425,11 +425,8 @@ const AboutPage = () => {
 			<section className="py-20 bg-gradient-to-r from-[#cca6c8] via-[#b88cb8] to-[#a976a9] text-white">
 				<div className="container mx-auto px-6 text-center">
 					<AnimatedWrapper
-						as="div"
-						initial={{ opacity: 0, scale: 0.9 }}
-						animate={{ opacity: 1, scale: 1 }}
-						transition={{ delay: 0.7 }}
-						className="max-w-2xl mx-auto">
+						className="max-w-2xl mx-auto"
+						delay={0.6}>
 						<h2 className="text-4xl font-bold mb-6">
 							Join Our Family of Clients
 						</h2>
@@ -438,16 +435,9 @@ const AboutPage = () => {
 							today to learn more about our services or schedule an appointment.
 						</p>
 						<Link href="/appointment">
-							<AnimatedWrapper
-								as="button"
-								initial={{ opacity: 0, y: 20 }}
-								animate={{ opacity: 1, y: 0 }}
-								whileHover={{ scale: 1.05 }}
-								whileTap={{ scale: 0.95 }}
-								transition={{ delay: 0.9 }}
-								className="bg-white text-blue-600 px-10 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:bg-blue-50">
+							<button className="bg-white text-blue-600 px-10 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:bg-blue-50 hover:scale-105 hover:-translate-y-1">
 								Book Appointment
-							</AnimatedWrapper>
+							</button>
 						</Link>
 					</AnimatedWrapper>
 				</div>

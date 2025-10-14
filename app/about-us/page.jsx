@@ -406,7 +406,7 @@ const AboutPage = () => {
 			</section>
 
 			{/* Call to Action Section - Modern CTA */}
-			<section className="py-20 bg-gradient-to-r from-purple-600 via-blue-600 to-blue-800 text-white">
+			<section className="py-20 bg-gradient-to-r from-[#cca6c8] via-[#b88cb8] to-[#a976a9] text-white">
 				<div className="container mx-auto px-6 text-center">
 					<AnimatedWrapper
 						as="div"

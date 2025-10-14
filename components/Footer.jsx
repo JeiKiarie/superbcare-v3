@@ -222,7 +222,8 @@ const Footer = () => {
 				animate={{ opacity: 1 }}
 				transition={{ duration: 1 }}>
 				<p className="text-gray-400">
-					© 2024 Superb Care Services Ltd. All rights reserved.
+					© {new Date().getFullYear()} Superb Care Services Ltd. All rights
+					reserved.
 				</p>
 				{/* <ul className="flex space-x-4 mt-4 md:mt-0">
 					<li>

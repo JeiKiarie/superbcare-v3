@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import aboutImg from '/public/about-image.jpg';
 import ourStory from '/public/our-story.webp';
-import ruthWest from '/public/ruth-west1.jpg';
+import ruthWest from '/public/ruth-west4.jpg';
 import peter from '/public/Peter.jpg';
 import blank from '/public/blank-picture.png';
 import Image from 'next/image';

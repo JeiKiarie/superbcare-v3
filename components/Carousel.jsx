@@ -124,7 +124,7 @@ const Carousel = () => {
 					strokeWidth="2"
 					strokeLinecap="round"
 					strokeLinejoin="round"
-					className="w-6 h-6">
+					className="w-8 h-8">
 					<path d="m6 9 6 6 6-6"></path>
 				</svg>
 			</motion.div>

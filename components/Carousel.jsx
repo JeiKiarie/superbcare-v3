@@ -15,7 +15,7 @@ const Carousel = () => {
 	const [slideKey, setSlideKey] = useState(0);
 
 	const slickSettings = {
-		dots: true,
+		dots: false,
 		infinite: true,
 		speed: 500,
 		pauseOnHover: false,
@@ -57,12 +57,12 @@ const Carousel = () => {
 	];
 
 	return (
-		<div className="carousel relative w-full overflow-hidden">
+		<div className="carousel relative w-full h-[calc(100vh-5rem)] overflow-hidden">
 			<Slider {...slickSettings}>
 				{slides.map((slide, index) => (
 					<div
 						key={index}
-						className="relative w-full h-[calc(100vh-25rem)] md:h-[calc(100vh-10rem)]">
+						className="relative w-full h-screen">
 						<Image
 							src={slide.imageUrl}
 							alt={slide.alt}
@@ -108,6 +108,26 @@ const Carousel = () => {
 					</div>
 				))}
 			</Slider>
+			<motion.div
+				className="absolute bottom-5 left-1/2 transform -translate-x-1/2 text-white cursor-pointer opacity-70 hover:opacity-100"
+				animate={{ y: [0, 10, 0] }}
+				transition={{ duration: 1.5, repeat: Infinity, ease: 'easeInOut' }}
+				onClick={() =>
+					window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })
+				}>
+				<svg
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					strokeWidth="2"
+					strokeLinecap="round"
+					strokeLinejoin="round"
+					className="w-6 h-6">
+					<path d="m6 9 6 6 6-6"></path>
+				</svg>
+			</motion.div>
 		</div>
 	);
 };

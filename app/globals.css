@@ -11,10 +11,129 @@
 	}
 }
 
+/* Floating Animation Keyframes */
+@keyframes float-1 {
+	0%,
+	100% {
+		transform: translateY(0px) translateX(0px) scale(1);
+	}
+	50% {
+		transform: translateY(30px) translateX(15px) scale(1.1);
+	}
+}
 
+@keyframes float-2 {
+	0%,
+	100% {
+		transform: translateY(0px) translateX(0px) rotate(45deg);
+	}
+	50% {
+		transform: translateY(-25px) translateX(-20px) rotate(90deg);
+	}
+}
+
+@keyframes float-3 {
+	0%,
+	100% {
+		transform: translateY(0px) translateX(0px) scale(1);
+	}
+	50% {
+		transform: translateY(-20px) translateX(25px) scale(0.8);
+	}
+}
+
+@keyframes float-4 {
+	0%,
+	100% {
+		transform: translateY(0px) translateX(0px) scale(1);
+	}
+	50% {
+		transform: translateY(35px) translateX(-10px) scale(1.2);
+	}
+}
+
+@keyframes float-5 {
+	0%,
+	100% {
+		transform: translateY(0px) translateX(0px) rotate(12deg);
+	}
+	50% {
+		transform: translateY(-15px) translateX(30px) rotate(-12deg);
+	}
+}
+
+@keyframes float-6 {
+	0%,
+	100% {
+		transform: translateY(0px) translateX(0px) scale(1);
+	}
+	50% {
+		transform: translateY(40px) translateX(-15px) scale(1.3);
+	}
+}
+
+@keyframes float-7 {
+	0%,
+	100% {
+		transform: translateY(0px) translateX(0px) scale(1);
+	}
+	50% {
+		transform: translateY(-30px) translateX(20px) scale(0.9);
+	}
+}
+
+@keyframes float-8 {
+	0%,
+	100% {
+		transform: translateY(0px) translateX(0px) rotate(30deg);
+	}
+	50% {
+		transform: translateY(25px) translateX(-25px) rotate(60deg);
+	}
+}
+
+/* Animation Classes */
+.animate-float-1 {
+	animation: float-1 6s ease-in-out infinite;
+}
+
+.animate-float-2 {
+	animation: float-2 8s ease-in-out infinite;
+	animation-delay: 1s;
+}
+
+.animate-float-3 {
+	animation: float-3 7s ease-in-out infinite;
+	animation-delay: 2s;
+}
+
+.animate-float-4 {
+	animation: float-4 5s ease-in-out infinite;
+	animation-delay: 0.5s;
+}
+
+.animate-float-5 {
+	animation: float-5 9s ease-in-out infinite;
+	animation-delay: 3s;
+}
+
+.animate-float-6 {
+	animation: float-6 4s ease-in-out infinite;
+	animation-delay: 1.5s;
+}
+
+.animate-float-7 {
+	animation: float-7 6.5s ease-in-out infinite;
+	animation-delay: 4s;
+}
+
+.animate-float-8 {
+	animation: float-8 7.5s ease-in-out infinite;
+	animation-delay: 2.5s;
+}
 
 @layer base {
-  :root {
+	:root {
 		--background: 0 0% 100%;
 		--foreground: 240 10% 3.9%;
 		--card: 0 0% 100%;
@@ -41,7 +160,7 @@
 		--chart-5: 27 87% 67%;
 		--radius: 0.5rem;
 	}
-  .dark {
+	.dark {
 		--background: 240 10% 3.9%;
 		--foreground: 0 0% 98%;
 		--card: 240 10% 3.9%;
@@ -69,13 +188,11 @@
 	}
 }
 
-
-
 @layer base {
-  * {
-    @apply border-border;
+	* {
+		@apply border-border;
 	}
-  body {
-    @apply bg-background text-foreground;
+	body {
+		@apply bg-background text-foreground;
 	}
 }

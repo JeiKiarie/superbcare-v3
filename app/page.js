@@ -131,7 +131,7 @@ export default function Home() {
 						<h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
 							Welcome to{' '}
 							<span className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-white to-blue-200">
-								Superb Care
+								Superb Care Services
 							</span>
 						</h1>
 
@@ -185,7 +185,7 @@ export default function Home() {
 			</section>
 
 			{/* About Us Section */}
-			<section className="bg-gradient-to-br from-[#cca6c8]/10 via-white/50 to-[#cca6c8]/5 p-16 rounded-3xl mx-6 mt-12 shadow-xl">
+			<section className="bg-gradient-to-br from-[#cca6c8]/10 via-white/50 to-[#cca6c8]/5 p-16 rounded-3xl mx-6 shadow-xl">
 				<AnimatedWrapper
 					as="div"
 					className="max-w-6xl mx-auto text-center"
@@ -286,7 +286,7 @@ export default function Home() {
 			</section>
 
 			{/* How It Works Section */}
-			<section className="py-20 px-6 bg-white">
+			<section className="py-16 px-6 bg-white">
 				<div className="container mx-auto">
 					<AnimatedWrapper
 						as="h2"
@@ -378,7 +378,7 @@ export default function Home() {
 			</section>
 
 			{/* FAQ Section */}
-			<section className="py-20 px-6 bg-white">
+			<section className="py-16 px-6 bg-white">
 				<div className="container mx-auto max-w-4xl">
 					<AnimatedWrapper
 						as="h2"
@@ -532,7 +532,7 @@ export default function Home() {
 			</section>
 
 			{/* Testimonials Section */}
-			<section className="bg-gradient-to-r from-[#cca6c8]/5 to-blue-50 py-20 px-6">
+			<section className="bg-gradient-to-r from-[#cca6c8]/5 to-blue-50 py-16 px-6">
 				<div className="container mx-auto">
 					<AnimatedWrapper
 						as="h2"
@@ -553,9 +553,7 @@ export default function Home() {
 									<span className="text-white font-bold text-lg">M</span>
 								</div>
 								<div>
-									<h4 className="text-lg font-bold text-blue-900">
-										Mark Thompson
-									</h4>
+									<h4 className="text-lg font-bold text-blue-900">Mark</h4>
 									<p className="text-gray-500 text-sm">Family Member</p>
 								</div>
 							</div>
@@ -585,9 +583,7 @@ export default function Home() {
 									<span className="text-white font-bold text-lg">J</span>
 								</div>
 								<div>
-									<h4 className="text-lg font-bold text-blue-900">
-										John Davis
-									</h4>
+									<h4 className="text-lg font-bold text-blue-900">Joe</h4>
 									<p className="text-gray-500 text-sm">Family Member</p>
 								</div>
 							</div>
@@ -617,9 +613,7 @@ export default function Home() {
 									<span className="text-white font-bold text-lg">S</span>
 								</div>
 								<div>
-									<h4 className="text-lg font-bold text-blue-900">
-										Sarah Wilson
-									</h4>
+									<h4 className="text-lg font-bold text-blue-900">Sarah</h4>
 									<p className="text-gray-500 text-sm">Family Member</p>
 								</div>
 							</div>
@@ -644,7 +638,7 @@ export default function Home() {
 			</section>
 
 			{/* Call to Action / Contact Section */}
-			<section className="py-20 px-6 bg-gradient-to-r from-[#cca6c8] via-[#d4a7d4] to-blue-600 text-white">
+			<section className="py-16 px-6 bg-gradient-to-r from-[#cca6c8] via-[#d4a7d4] to-blue-600 text-white">
 				<div className="container mx-auto text-center">
 					<AnimatedWrapper
 						as="h2"

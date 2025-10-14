@@ -2,15 +2,20 @@
 
 import Slider from 'react-slick';
 import Image from 'next/image'; // Optional: For optimized images in Next.js
+import Link from 'next/link';
 import image1 from '../public/live-in-care1.jpg';
 import image3 from '../public/palliative-care.webp';
 import image4 from '../public/image4.jpg';
 import { motion } from 'framer-motion';
+import { useState, useRef, useEffect } from 'react';
+import { Button } from './ui/button';
 console.log(image1);
 const Carousel = () => {
+	const [currentSlide, setCurrentSlide] = useState(0);
+	const [slideKey, setSlideKey] = useState(0);
+
 	const slickSettings = {
 		dots: true,
-
 		infinite: true,
 		speed: 500,
 		pauseOnHover: false,
@@ -18,6 +23,10 @@ const Carousel = () => {
 		slidesToScroll: 1,
 		autoplay: true,
 		autoplaySpeed: 3000,
+		beforeChange: (oldIndex, newIndex) => {
+			setCurrentSlide(newIndex);
+			setSlideKey((prev) => prev + 1);
+		},
 	};
 
 	const slides = [
@@ -25,19 +34,25 @@ const Carousel = () => {
 			title: 'Live-In Care',
 			description:
 				'Around-the-clock care services to ensure your loved ones receive personalized assistance at home.',
-			imageUrl: image1, // Replace with actual image paths
+			imageUrl: image1,
+			buttonText: 'Learn More',
+			buttonLink: '/services/live-in-care',
 		},
 		{
 			title: 'Elderly Care',
 			description:
 				'Comprehensive elderly care programs focusing on physical, emotional, and social well-being.',
-			imageUrl: image3, // Replace with actual image paths
+			imageUrl: image3,
+			buttonText: 'Explore Services',
+			buttonLink: '/services/elderly-care',
 		},
 		{
 			title: 'Personalized Care Plans',
 			description:
 				'Tailor-made care plans that cater to the unique needs of your loved ones.',
-			imageUrl: image4, // Replace with actual image paths
+			imageUrl: image4,
+			buttonText: 'Get Started',
+			buttonLink: '/appointment',
 		},
 	];
 
@@ -55,22 +70,39 @@ const Carousel = () => {
 							objectFit="cover"
 							className="w-full h-full"
 						/>
-						<div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-justify text-white p-6">
+						<div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-center text-white p-6">
 							<div>
 								<motion.h2
+									key={`title-${slideKey}-${index}`}
 									className="text-3xl md:text-5xl font-extrabold mb-4 text-center"
 									initial={{ opacity: 0, y: -50 }}
 									animate={{ opacity: 1, y: 0 }}
-									transition={{ duration: 0.8 }}>
+									transition={{ duration: 0.8, delay: 0.5 }}>
 									{slide.title}
 								</motion.h2>
 								<motion.p
-									className="text-lg md:text-2xl"
+									key={`desc-${slideKey}-${index}`}
+									className="text-lg md:text-2xl max-w-2xl mx-auto mb-6"
 									initial={{ opacity: 0, y: 20 }}
 									animate={{ opacity: 1, y: 0 }}
-									transition={{ duration: 0.8 }}>
+									transition={{ duration: 0.8, delay: 0.7 }}>
 									{slide.description}
 								</motion.p>
+								<motion.div
+									key={`btn-${slideKey}-${index}`}
+									className="mt-6"
+									initial={{ opacity: 0, y: 20 }}
+									animate={{ opacity: 1, y: 0 }}
+									transition={{ duration: 0.8, delay: 0.9 }}>
+									<Link href={slide.buttonLink}>
+										<Button
+											variant="secondary"
+											size="lg"
+											className="bg-white text-black hover:bg-gray-100 px-8 py-3 text-lg font-semibold">
+											{slide.buttonText}
+										</Button>
+									</Link>
+								</motion.div>
 							</div>
 						</div>
 					</div>

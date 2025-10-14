@@ -1,10 +1,14 @@
-'use client';
-
-import { motion } from 'framer-motion';
 import Carousel from '/components/Carousel';
-import Hero from '/components/Hero';
+import AnimatedWrapper from '/components/AnimatedWrapper';
 import Link from 'next/link';
 import Image from 'next/image';
+import { FaHeart, FaHome, FaSmile } from 'react-icons/fa';
+import {
+	Accordion,
+	AccordionContent,
+	AccordionItem,
+	AccordionTrigger,
+} from '/components/ui/accordion';
 import kiarie from '/public/kiarie.jpg';
 import { FaUserNurse } from 'react-icons/fa6';
 import { MdOutlineAssistWalker } from 'react-icons/md';
@@ -94,77 +98,184 @@ const services = [
 ];
 
 export default function Home() {
-	return (
-		<div className="mx-auto py-1">
-			{/* Carousel Section */}
-			<section className="mb-16">
-				{/* <motion.div
-					className="text-center mb-12"
-					initial={{ opacity: 0 }}
-					animate={{ opacity: 1 }}
-					transition={{ duration: 1.5 }}>
-					<h2 className="text-4xl font-semibold text-gray-800">Our Services</h2>
-					<p className="text-lg text-gray-500 mt-4">
-						Providing a range of personalized care services tailored to the
-						needs of your loved ones.
-					</p>
-				</motion.div> */}
+	const features = [
+		{ icon: FaHeart, text: 'Compassionate Care' },
+		{ icon: FaHome, text: 'Home Comfort' },
+		{ icon: FaSmile, text: 'Quality Experience' },
+	];
 
+	return (
+		<main className="mx-auto py-1">
+			{/* Carousel Section */}
+			<section id="carousel">
 				<Carousel />
-				{/* Hero Section */}
-				<Hero />
+			</section>
+
+			{/* Welcome Section */}
+			<section
+				id="welcome"
+				className="relative py-16 flex !-mt-2 items-center justify-center bg-gradient-to-br from-[#cca6c8] via-[#d4a7d4] via-[#b88cb8] to-[#a976a9]">
+				<div className="container mx-auto px-6 text-center text-white">
+					{/* Main Content */}
+					<div className="max-w-5xl mx-auto">
+						<h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+							Welcome to{' '}
+							<span className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-white to-blue-200">
+								Superb Care
+							</span>
+						</h1>
+
+						<p className="text-xl md:text-2xl mb-8 leading-relaxed text-blue-100">
+							Professional Live-In Care Services
+							<span className="block text-lg md:text-xl mt-2 text-white/80">
+								Bringing compassion, dignity, and exceptional care to your loved
+								ones in the comfort of their own home.
+							</span>
+						</p>
+
+						{/* Feature icons */}
+						<div className="flex justify-center items-center gap-8 mb-10">
+							{features.map((feature, index) => (
+								<div
+									key={index}
+									className="flex flex-col items-center gap-2 group">
+									<div className="p-4 bg-white/10 backdrop-blur-sm rounded-full group-hover:bg-white/20 transition-all duration-300">
+										<feature.icon className="w-6 h-6 text-white" />
+									</div>
+									<span className="text-sm font-medium text-blue-100 group-hover:text-white transition-colors">
+										{feature.text}
+									</span>
+								</div>
+							))}
+						</div>
+
+						{/* CTA Buttons */}
+						<div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+							<Link
+								href="/appointment"
+								className="inline-flex items-center px-8 py-4 bg-white text-[#cca6c8] font-bold rounded-2xl hover:bg-blue-50 hover:shadow-xl transition-all duration-300 shadow-lg text-lg">
+								<span>Get Free Consultation</span>
+								<span className="ml-2 text-2xl">→</span>
+							</Link>
+
+							<Link
+								href="/services"
+								className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-bold rounded-2xl hover:bg-white hover:text-[#cca6c8] transition-all duration-300 text-lg">
+								<span>Explore Services</span>
+							</Link>
+						</div>
+
+						{/* Scroll indicator */}
+						<div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+							<div className="w-px h-16 bg-white/30"></div>
+							<div className="w-2 h-2 bg-white rounded-full mx-auto mt-2"></div>
+						</div>
+					</div>
+				</div>
+
+				{/* Decorative elements */}
+				{/* <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent"></div> */}
 			</section>
 
 			{/* About Us Section */}
-			<section className="bg-gray-100 p-10 rounded-lg">
-				<motion.h2
-					className="text-3xl md:text-4xl font-semibold text-center text-blue-800 mb-10"
-					initial={{ opacity: 0 }}
-					animate={{ opacity: 1 }}
+			<section className="bg-gradient-to-br from-[#cca6c8]/10 via-white/50 to-[#cca6c8]/5 p-16 rounded-3xl mx-6 mt-12 shadow-xl">
+				<AnimatedWrapper
+					as="div"
+					className="max-w-6xl mx-auto text-center"
+					initial={{ opacity: 0, y: 30 }}
 					transition={{ duration: 1 }}>
-					About Us
-				</motion.h2>
-
-				<motion.p
-					className="text-lg text-justify text-gray-600 max-w-3xl mx-auto"
-					initial={{ opacity: 0 }}
-					animate={{ opacity: 1 }}
-					transition={{ delay: 0.2 }}>
-					We are a UK-based company providing live-in care services for the
-					elderly. Our mission is to improve the quality of life for elderly
-					individuals by offering professional, compassionate, and dedicated
-					care in the comfort of their own homes.
-				</motion.p>
+					<h1 className="text-4xl md:text-6xl font-bold text-blue-900 mb-8 tracking-tight">
+						About Superb Care Services
+					</h1>
+					<p className="text-xl md:text-2xl text-gray-700 leading-relaxed max-w-4xl mx-auto">
+						We are a UK-based company providing exceptional live-in care
+						services for the elderly. Our mission is to improve the quality of
+						life for elderly individuals by offering professional,
+						compassionate, and dedicated care in the comfort of their own homes.
+					</p>
+				</AnimatedWrapper>
 			</section>
 
 			{/* Why Choose Us Section */}
-			<section className="p-10 container mx-auto">
-				<motion.h2
-					className="text-3xl md:text-4xl font-semibold text-center text-blue-800 mb-8"
-					initial={{ opacity: 0 }}
-					animate={{ opacity: 1 }}
-					transition={{ duration: 1 }}>
-					Why Choose Us?
-				</motion.h2>
+			<section className="p-16 container mx-auto">
+				<AnimatedWrapper
+					as="h2"
+					className="text-4xl md:text-5xl font-bold text-center text-blue-900 mb-16"
+					initial={{ opacity: 0, y: 20 }}
+					transition={{ duration: 0.8 }}>
+					Why Choose Superb Care
+				</AnimatedWrapper>
 
-				<div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-					{services.map((service) => (
-						<motion.article
-							key={service.index}
-							className="bg-white p-6 rounded-lg shadow-md text-justify hover:bg-slate-50"
-							initial={{ opacity: 0, scale: 0.8 }}
-							animate={{ opacity: 1, scale: 1 }}
-							transition={{ delay: 0.3, duration: 0.5 }}>
-							<div className="w-20 h-20 mx-auto mb-4">
-								{<service.icon className="w-full h-full text-[#cca6c8]" />}
+				{/* Quick Stats */}
+				<div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
+					<div className="text-center">
+						<div className="text-4xl md:text-6xl font-bold text-[#cca6c8] mb-2">
+							500+
+						</div>
+						<div className="text-gray-600 text-sm md:text-base">
+							Happy Clients
+						</div>
+					</div>
+					<div className="text-center">
+						<div className="text-4xl md:text-6xl font-bold text-[#cca6c8] mb-2">
+							10+
+						</div>
+						<div className="text-gray-600 text-sm md:text-base">
+							Years Experience
+						</div>
+					</div>
+					<div className="text-center">
+						<div className="text-4xl md:text-6xl font-bold text-[#cca6c8] mb-2">
+							24/7
+						</div>
+						<div className="text-gray-600 text-sm md:text-base">
+							Care Support
+						</div>
+					</div>
+					<div className="text-center">
+						<div className="text-4xl md:text-6xl font-bold text-[#cca6c8] mb-2">
+							5★
+						</div>
+						<div className="text-gray-600 text-sm md:text-base">
+							Average Rating
+						</div>
+					</div>
+				</div>
+
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+					{services.slice(0, 9).map((service, index) => (
+						<AnimatedWrapper
+							key={service.id}
+							as="article"
+							className="group relative bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-[#cca6c8]/10"
+							initial={{ opacity: 0, y: 30 }}
+							transition={{ delay: index * 0.1, duration: 0.6 }}>
+							<div className="absolute top-6 left-6 w-16 h-16 bg-[#cca6c8]/10 rounded-xl flex items-center justify-center group-hover:bg-[#cca6c8] transition-colors duration-300">
+								<service.icon className="w-8 h-8 text-[#cca6c8] group-hover:text-white" />
 							</div>
-							<h3 className="text-2xl text-center font-bold text-blue-800 mb-4">
-								{service.title}
-							</h3>
-							<p className="text-gray-500">{service.text}</p>
-						</motion.article>
+							<div className="ml-20">
+								<h3 className="text-xl font-bold text-blue-900 mb-4">
+									{service.title}
+								</h3>
+								<p className="text-gray-600 leading-relaxed">{service.text}</p>
+							</div>
+						</AnimatedWrapper>
 					))}
 				</div>
+
+				{/* More Services Link */}
+				<AnimatedWrapper
+					as="div"
+					className="text-center mt-12"
+					initial={{ opacity: 0, y: 20 }}
+					transition={{ delay: 1, duration: 0.6 }}>
+					<Link
+						href="/services"
+						className="inline-flex items-center px-8 py-4 bg-[#cca6c8] text-white font-semibold rounded-xl hover:bg-blue-700 hover:scale-105 transition-all duration-300 shadow-lg">
+						Explore All Services
+						<span className="ml-2">→</span>
+					</Link>
+				</AnimatedWrapper>
 			</section>
 
 			{/* Team Section */}
@@ -228,259 +339,401 @@ export default function Home() {
 				</div>
 			</section> */}
 
+			{/* How It Works Section */}
+			<section className="py-20 px-6 bg-white">
+				<div className="container mx-auto">
+					<AnimatedWrapper
+						as="h2"
+						className="text-4xl md:text-5xl font-bold text-center text-blue-900 mb-16"
+						initial={{ opacity: 0, y: 20 }}
+						transition={{ duration: 0.8 }}>
+						How Our Care Process Works
+					</AnimatedWrapper>
+
+					<div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+						<div className="text-center group">
+							<div className="w-20 h-20 bg-[#cca6c8] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold group-hover:scale-110 transition-transform duration-300">
+								1
+							</div>
+							<h3 className="text-xl font-bold text-blue-900 mb-4">
+								Initial Assessment
+							</h3>
+							<p className="text-gray-600 leading-relaxed">
+								We begin with a comprehensive assessment of your loved one's
+								needs. Our care coordinators visit your home to understand their
+								requirements and preferences.
+							</p>
+						</div>
+
+						<div className="text-center group">
+							<div className="w-20 h-20 bg-[#cca6c8] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold group-hover:scale-110 transition-transform duration-300">
+								2
+							</div>
+							<h3 className="text-xl font-bold text-blue-900 mb-4">
+								Personalized Care Plan
+							</h3>
+							<p className="text-gray-600 leading-relaxed">
+								Based on the assessment, we create a customized care plan that
+								addresses specific needs, preferences, and schedules of your
+								loved one.
+							</p>
+						</div>
+
+						<div className="text-center group">
+							<div className="w-20 h-20 bg-[#cca6c8] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold group-hover:scale-110 transition-transform duration-300">
+								3
+							</div>
+							<h3 className="text-xl font-bold text-blue-900 mb-4">
+								Ongoing Support
+							</h3>
+							<p className="text-gray-600 leading-relaxed">
+								Our experienced caregivers provide consistent, compassionate
+								care with regular check-ins and the ability to adjust the care
+								plan as needed.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			{/* Awards & Certifications Section */}
+			<section className="py-16 px-6 bg-gray-50">
+				<div className="container mx-auto text-center">
+					<h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-12">
+						Our Certifications & Partnerships
+					</h2>
+					<div className="flex flex-wrap justify-center items-center gap-8">
+						<div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+							<div className="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center mx-auto mb-4">
+								<span className="text-white font-bold text-xl">★</span>
+							</div>
+							<p className="text-gray-600 font-medium">CQC Registered</p>
+						</div>
+						<div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+							<div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+								<span className="text-white font-bold text-xl">✓</span>
+							</div>
+							<p className="text-gray-600 font-medium">Insured</p>
+						</div>
+						<div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+							<div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+								<span className="text-white font-bold text-xl">🏆</span>
+							</div>
+							<p className="text-gray-600 font-medium">Award Winning</p>
+						</div>
+						<div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+							<div className="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+								<span className="text-white font-bold text-xl">👥</span>
+							</div>
+							<p className="text-gray-600 font-medium">Member of UKHCA</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			{/* FAQ Section */}
+			<section className="py-20 px-6 bg-white">
+				<div className="container mx-auto max-w-4xl">
+					<AnimatedWrapper
+						as="h2"
+						className="text-4xl md:text-5xl font-bold text-center text-blue-900 mb-16"
+						initial={{ opacity: 0, y: 20 }}
+						transition={{ duration: 0.8 }}>
+						Frequently Asked Questions
+					</AnimatedWrapper>
+
+					<Accordion
+						type="single"
+						collapsible
+						className="w-full max-w-3xl mx-auto">
+						<AccordionItem
+							value="item-1"
+							className="border-0">
+							<AccordionTrigger className="text-lg font-bold text-blue-900 hover:text-[#cca6c8] p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors">
+								Are your caregivers fully qualified and vetted?
+							</AccordionTrigger>
+							<AccordionContent className="text-gray-700 leading-relaxed px-6 pb-4">
+								Yes, all our caregivers undergo rigorous background checks,
+								receive comprehensive training, and are fully qualified to
+								provide the level of care needed. They are also DBS checked and
+								insured.
+							</AccordionContent>
+						</AccordionItem>
+
+						<AccordionItem
+							value="item-2"
+							className="border-0">
+							<AccordionTrigger className="text-lg font-bold text-blue-900 hover:text-[#cca6c8] p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors">
+								How quickly can you provide care services?
+							</AccordionTrigger>
+							<AccordionContent className="text-gray-700 leading-relaxed px-6 pb-4">
+								We aim to arrange care within 24-48 hours of assessment and
+								approval, depending on the specific requirements. For immediate
+								urgent care needs, we prioritize placement within 24 hours.
+							</AccordionContent>
+						</AccordionItem>
+
+						<AccordionItem
+							value="item-3"
+							className="border-0">
+							<AccordionTrigger className="text-lg font-bold text-blue-900 hover:text-[#cca6c8] p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors">
+								Do you provide respite care?
+							</AccordionTrigger>
+							<AccordionContent className="text-gray-700 leading-relaxed px-6 pb-4">
+								Absolutely! Our respite care services provide temporary relief
+								for primary caregivers. This can range from a few hours to
+								several weeks, ensuring your loved one receives the same
+								high-quality care during your break.
+							</AccordionContent>
+						</AccordionItem>
+
+						<AccordionItem
+							value="item-4"
+							className="border-0">
+							<AccordionTrigger className="text-lg font-bold text-blue-900 hover:text-[#cca6c8] p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors">
+								What types of specialized care do you offer?
+							</AccordionTrigger>
+							<AccordionContent className="text-gray-700 leading-relaxed px-6 pb-4">
+								We specialize in dementia and Alzheimer's care, palliative care,
+								rehabilitation support, and post-surgery care. All our
+								specialized services are provided by trained professionals with
+								relevant experience.
+							</AccordionContent>
+						</AccordionItem>
+
+						<AccordionItem
+							value="item-5"
+							className="border-0">
+							<AccordionTrigger className="text-lg font-bold text-blue-900 hover:text-[#cca6c8] p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors">
+								Are your services available 24/7?
+							</AccordionTrigger>
+							<AccordionContent className="text-gray-700 leading-relaxed px-6 pb-4">
+								Yes! We provide round-the-clock care for clients who require
+								continuous support. Our live-in caregivers ensure 24/7
+								availability for urgent needs and emergency situations.
+							</AccordionContent>
+						</AccordionItem>
+
+						<AccordionItem
+							value="item-6"
+							className="border-0">
+							<AccordionTrigger className="text-lg font-bold text-blue-900 hover:text-[#cca6c8] p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors">
+								How do you handle medication management?
+							</AccordionTrigger>
+							<AccordionContent className="text-gray-700 leading-relaxed px-6 pb-4">
+								Our caregivers are trained in medication management and adhere
+								to strict protocols. We provide reminders, dispensing support,
+								and monitor medication compliance to ensure your loved one's
+								safety.
+							</AccordionContent>
+						</AccordionItem>
+
+						<AccordionItem
+							value="item-7"
+							className="border-0">
+							<AccordionTrigger className="text-lg font-bold text-blue-900 hover:text-[#cca6c8] p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors">
+								Do you provide transportation services?
+							</AccordionTrigger>
+							<AccordionContent className="text-gray-700 leading-relaxed px-6 pb-4">
+								We offer accompanied transportation to medical appointments,
+								social activities, and other outings as needed. Our caregivers
+								ensure safe and comfortable travel arrangements.
+							</AccordionContent>
+						</AccordionItem>
+
+						<AccordionItem
+							value="item-8"
+							className="border-0">
+							<AccordionTrigger className="text-lg font-bold text-blue-900 hover:text-[#cca6c8] p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors">
+								What is included in your care packages?
+							</AccordionTrigger>
+							<AccordionContent className="text-gray-700 leading-relaxed px-6 pb-4">
+								Our packages include personal care, medication management, meal
+								preparation, household assistance, companionship, and emergency
+								response. We customize packages based on individual needs.
+							</AccordionContent>
+						</AccordionItem>
+
+						<AccordionItem
+							value="item-9"
+							className="border-0">
+							<AccordionTrigger className="text-lg font-bold text-blue-900 hover:text-[#cca6c8] p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors">
+								How do you ensure caregiver quality?
+							</AccordionTrigger>
+							<AccordionContent className="text-gray-700 leading-relaxed px-6 pb-4">
+								We conduct thorough background checks, provide ongoing training,
+								perform regular quality assessments, and maintain open
+								communication with families to ensure the highest standards of
+								care.
+							</AccordionContent>
+						</AccordionItem>
+
+						<AccordionItem
+							value="item-10"
+							className="border-0">
+							<AccordionTrigger className="text-lg font-bold text-blue-900 hover:text-[#cca6c8] p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors">
+								Can I schedule a free consultation?
+							</AccordionTrigger>
+							<AccordionContent className="text-gray-700 leading-relaxed px-6 pb-4">
+								Yes! We offer free consultations to discuss your loved one's
+								care needs. This allows us to understand their requirements and
+								provide you with the best possible service recommendations.
+							</AccordionContent>
+						</AccordionItem>
+					</Accordion>
+				</div>
+			</section>
+
 			{/* Testimonials Section */}
-			<section className="bg-gray-100 p-10 rounded-lg">
-				<motion.h2
-					className="text-3xl md:text-4xl font-semibold text-center text-blue-800 mb-10"
-					initial={{ opacity: 0 }}
-					animate={{ opacity: 1 }}
-					transition={{ duration: 1 }}>
-					What Our Clients Say
-				</motion.h2>
+			<section className="bg-gradient-to-r from-[#cca6c8]/5 to-blue-50 py-20 px-6">
+				<div className="container mx-auto">
+					<AnimatedWrapper
+						as="h2"
+						className="text-4xl md:text-5xl font-bold text-center text-blue-900 mb-16"
+						initial={{ opacity: 0, y: 20 }}
+						transition={{ duration: 0.8 }}>
+						What Our Clients Say
+					</AnimatedWrapper>
 
-				<div className="container mx-auto flex flex-col md:flex-row justify-around items-center space-y-6 md:space-y-0">
-					<motion.div
-						className="bg-white p-6 rounded-lg shadow-md max-w-md text-justify"
-						whileHover={{ scale: 1.05 }}
-						initial={{ opacity: 0 }}
-						animate={{ opacity: 1 }}
-						transition={{ delay: 0.3 }}>
-						<p className="text-gray-600 mb-4">
-							&#34;The caregivers were professional and compassionate. They
-							helped my mother feel at ease and comfortable in her home.&#34;
-						</p>
-						<h4 className="text-lg font-bold text-blue-800">- Mark</h4>
-					</motion.div>
+					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+						<AnimatedWrapper
+							as="div"
+							className="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border-l-4 border-[#cca6c8]"
+							initial={{ opacity: 0, x: -30 }}
+							transition={{ delay: 0.2, duration: 0.6 }}>
+							<div className="flex items-center mb-6">
+								<div className="w-12 h-12 bg-[#cca6c8] rounded-full flex items-center justify-center mr-4">
+									<span className="text-white font-bold text-lg">M</span>
+								</div>
+								<div>
+									<h4 className="text-lg font-bold text-blue-900">
+										Mark Thompson
+									</h4>
+									<p className="text-gray-500 text-sm">Family Member</p>
+								</div>
+							</div>
+							<p className="text-gray-700 text-lg leading-relaxed italic">
+								The caregivers were professional and compassionate. They helped
+								my mother feel at ease and comfortable in her home. The quality
+								of care exceeded our expectations.
+							</p>
+							<div className="flex mt-4">
+								{[...Array(5)].map((_, i) => (
+									<span
+										key={i}
+										className="text-[#cca6c8] text-xl">
+										★
+									</span>
+								))}
+							</div>
+						</AnimatedWrapper>
 
-					<motion.div
-						className="bg-white p-6 rounded-lg shadow-md max-w-md text-justify"
-						whileHover={{ scale: 1.05 }}
-						initial={{ opacity: 0 }}
-						animate={{ opacity: 1 }}
-						transition={{ delay: 0.6 }}>
-						<p className="text-gray-600 mb-4">
-							&#34;We received personalized care plans that perfectly matched
-							our needs. Highly recommended!&#34;
-						</p>
-						<h4 className="text-lg font-bold text-blue-800">- John</h4>
-					</motion.div>
+						<AnimatedWrapper
+							as="div"
+							className="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border-l-4 border-[#cca6c8]"
+							initial={{ opacity: 0, y: 30 }}
+							transition={{ delay: 0.4, duration: 0.6 }}>
+							<div className="flex items-center mb-6">
+								<div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mr-4">
+									<span className="text-white font-bold text-lg">J</span>
+								</div>
+								<div>
+									<h4 className="text-lg font-bold text-blue-900">
+										John Davis
+									</h4>
+									<p className="text-gray-500 text-sm">Family Member</p>
+								</div>
+							</div>
+							<p className="text-gray-700 text-lg leading-relaxed italic">
+								We received personalized care plans that perfectly matched our
+								needs. The attention to detail and genuine care for our father
+								was remarkable. Highly recommended!
+							</p>
+							<div className="flex mt-4">
+								{[...Array(5)].map((_, i) => (
+									<span
+										key={i}
+										className="text-[#cca6c8] text-xl">
+										★
+									</span>
+								))}
+							</div>
+						</AnimatedWrapper>
+
+						<AnimatedWrapper
+							as="div"
+							className="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border-l-4 border-[#cca6c8] md:col-span-2 lg:col-span-1"
+							initial={{ opacity: 0, x: 30 }}
+							transition={{ delay: 0.6, duration: 0.6 }}>
+							<div className="flex items-center mb-6">
+								<div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mr-4">
+									<span className="text-white font-bold text-lg">S</span>
+								</div>
+								<div>
+									<h4 className="text-lg font-bold text-blue-900">
+										Sarah Wilson
+									</h4>
+									<p className="text-gray-500 text-sm">Family Member</p>
+								</div>
+							</div>
+							<p className="text-gray-700 text-lg leading-relaxed italic">
+								The quality of care provided by Superb Care Services is
+								exceptional. Their team is not just knowledgeable but also
+								incredibly kind and understanding. My grandmother always looks
+								forward to their visits.
+							</p>
+							<div className="flex mt-4">
+								{[...Array(5)].map((_, i) => (
+									<span
+										key={i}
+										className="text-[#cca6c8] text-xl">
+										★
+									</span>
+								))}
+							</div>
+						</AnimatedWrapper>
+					</div>
 				</div>
 			</section>
 
 			{/* Call to Action / Contact Section */}
-			<section className="p-10 text-center bg-[#cca6c8] text-white rounded-lg">
-				<motion.h2
-					className="text-3xl md:text-4xl font-bold mb-4"
-					initial={{ opacity: 0 }}
-					animate={{ opacity: 1 }}
-					transition={{ duration: 1 }}>
-					Ready to Get Started?
-				</motion.h2>
-				<motion.p
-					className="text-lg mb-6 text-justify md:text-center"
-					initial={{ opacity: 0 }}
-					animate={{ opacity: 1 }}
-					transition={{ delay: 0.2 }}>
-					Contact us today to learn more about our live-in care services and how
-					we can help you.
-				</motion.p>
-				<motion.a
-					href="/appointment"
-					className="bg-white text-blue-600 py-3 px-4 rounded-lg font-semibold hover:bg-blue-800 hover:text-white transition-all duration-300"
-					initial={{ scale: 0.8 }}
-					animate={{ scale: 1 }}
-					transition={{ delay: 0.4 }}>
-					Book Appointment
-				</motion.a>
+			<section className="py-20 px-6 bg-gradient-to-r from-[#cca6c8] via-[#d4a7d4] to-blue-600 text-white">
+				<div className="container mx-auto text-center">
+					<AnimatedWrapper
+						as="h2"
+						className="text-4xl md:text-6xl font-bold mb-8"
+						initial={{ opacity: 0, scale: 0.9 }}
+						transition={{ duration: 0.8 }}>
+						Ready to Get Started?
+					</AnimatedWrapper>
+					<AnimatedWrapper
+						as="p"
+						className="text-xl md:text-2xl mb-12 max-w-3xl mx-auto leading-relaxed"
+						initial={{ opacity: 0, y: 20 }}
+						transition={{ delay: 0.2, duration: 0.8 }}>
+						Contact us today to learn more about our live-in care services.
+						Experience the difference professional, compassionate care can make
+						in your loved one's life.
+					</AnimatedWrapper>
+					<AnimatedWrapper
+						as="div"
+						className="flex flex-col sm:flex-row gap-6 justify-center items-center"
+						initial={{ opacity: 0, y: 30 }}
+						transition={{ delay: 0.4, duration: 0.8 }}>
+						<Link
+							href="/appointment"
+							className="inline-flex items-center px-8 py-4 bg-white text-blue-800 font-bold rounded-xl hover:bg-blue-50 hover:scale-105 transition-all duration-300 shadow-xl text-lg">
+							Book Free Consultation
+							<span className="ml-2">→</span>
+						</Link>
+						<Link
+							href="/contact-us"
+							className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-bold rounded-xl hover:bg-white hover:text-blue-800 transition-all duration-300 text-lg">
+							Contact Us Today
+						</Link>
+					</AnimatedWrapper>
+				</div>
 			</section>
-		</div>
+		</main>
 	);
 }
-
-// import { motion } from 'framer-motion';
-// import Link from 'next/link';
-// import Slider from 'react-slick';
-
-// export default function Home() {
-// 	// Slick Carousel settings
-// 	const slickSettings = {
-// 		dots: true,
-// 		infinite: true,
-// 		speed: 500,
-// 		slidesToShow: 1,
-// 		slidesToScroll: 1,
-// 		autoplay: true,
-// 		autoplaySpeed: 3000,
-// 	};
-
-// 	return (
-// 		<div className="container mx-auto p-6">
-// 			{/* Hero Section */}
-// 			<section className="relative bg-blue-600 text-white p-10 rounded-lg mb-10">
-// 				<div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-blue-500 to-blue-400 opacity-90 rounded-lg"></div>
-// 				<motion.div
-// 					className="relative z-10 flex flex-col items-center"
-// 					initial={{ opacity: 0, y: -50 }}
-// 					animate={{ opacity: 1, y: 0 }}
-// 					transition={{ duration: 1 }}>
-// 					<h1 className="text-5xl font-bold mb-4">
-// 						Professional Live-In Care Services
-// 					</h1>
-// 					<p className="text-lg mb-6 max-w-3xl text-center">
-// 						We specialize in providing compassionate care and assistance to the
-// 						elderly in the comfort of their homes. Experience a higher level of
-// 						care for your loved ones.
-// 					</p>
-// 					<Link
-// 						className="bg-white text-blue-600 py-3 px-8 rounded-lg font-semibold hover:bg-blue-700 hover:text-white transition-all duration-300"
-// 						href="/services">
-// 						Learn More
-// 					</Link>
-// 				</motion.div>
-// 			</section>
-
-// 			{/* Carousel Section */}
-// 			<section className="mb-16">
-// 				<motion.div
-// 					className="text-center mb-12"
-// 					initial={{ opacity: 0 }}
-// 					animate={{ opacity: 1 }}
-// 					transition={{ duration: 1.5 }}>
-// 					<h2 className="text-4xl font-semibold text-gray-800">Our Services</h2>
-// 					<p className="text-lg text-gray-500 mt-4">
-// 						Providing a range of personalized care services tailored to the
-// 						needs of your loved ones.
-// 					</p>
-// 				</motion.div>
-
-// 				<div className="slick-carousel-container">
-// 					<Slider {...slickSettings}>
-// 						<div>
-// 							<div className="bg-white p-6 rounded-lg shadow-lg text-center">
-// 								<h3 className="text-2xl font-bold text-blue-600 mb-4">
-// 									Live-In Care
-// 								</h3>
-// 								<p className="text-gray-500">
-// 									Around-the-clock care services to ensure that your loved ones
-// 									receive personalized assistance at home.
-// 								</p>
-// 							</div>
-// 						</div>
-// 						<div>
-// 							<div className="bg-white p-6 rounded-lg shadow-lg text-center">
-// 								<h3 className="text-2xl font-bold text-blue-600 mb-4">
-// 									Elderly Care
-// 								</h3>
-// 								<p className="text-gray-500">
-// 									Comprehensive elderly care programs that focus on physical,
-// 									emotional, and social well-being.
-// 								</p>
-// 							</div>
-// 						</div>
-// 						<div>
-// 							<div className="bg-white p-6 rounded-lg shadow-lg text-center">
-// 								<h3 className="text-2xl font-bold text-blue-600 mb-4">
-// 									Personalized Care Plans
-// 								</h3>
-// 								<p className="text-gray-500">
-// 									Tailor-made care plans that cater to the unique needs of your
-// 									loved ones, ensuring a high quality of life.
-// 								</p>
-// 							</div>
-// 						</div>
-// 					</Slider>
-// 				</div>
-// 			</section>
-
-// 			{/* Testimonials Section */}
-// 			<section className="bg-gray-100 p-10 rounded-lg">
-// 				<motion.h2
-// 					className="text-4xl font-semibold text-center text-gray-800 mb-10"
-// 					initial={{ opacity: 0 }}
-// 					animate={{ opacity: 1 }}
-// 					transition={{ duration: 1 }}>
-// 					What Our Clients Say
-// 				</motion.h2>
-
-// 				<div className="flex flex-col md:flex-row justify-around items-center space-y-6 md:space-y-0">
-// 					{/* Testimonial 1 */}
-// 					<motion.div
-// 						className="bg-white p-6 rounded-lg shadow-md max-w-md"
-// 						whileHover={{ scale: 1.05 }}
-// 						initial={{ opacity: 0 }}
-// 						animate={{ opacity: 1 }}
-// 						transition={{ delay: 0.3 }}>
-// 						<p className="text-gray-600 mb-4">
-// 							"The caregivers were professional and compassionate. They helped
-// 							my mother feel at ease and comfortable in her home."
-// 						</p>
-// 						<h4 className="text-lg font-bold text-blue-600">- Jane Doe</h4>
-// 					</motion.div>
-
-// 					{/* Testimonial 2 */}
-// 					<motion.div
-// 						className="bg-white p-6 rounded-lg shadow-md max-w-md"
-// 						whileHover={{ scale: 1.05 }}
-// 						initial={{ opacity: 0 }}
-// 						animate={{ opacity: 1 }}
-// 						transition={{ delay: 0.6 }}>
-// 						<p className="text-gray-600 mb-4">
-// 							"We received personalized care plans that perfectly matched our
-// 							needs. Highly recommended!"
-// 						</p>
-// 						<h4 className="text-lg font-bold text-blue-600">- John Smith</h4>
-// 					</motion.div>
-// 				</div>
-// 			</section>
-
-// 			{/* Call to Action */}
-// 			<section className="bg-blue-700 text-white p-10 rounded-lg mt-16 flex justify-between items-center">
-// 				<motion.div
-// 					initial={{ opacity: 0, x: -50 }}
-// 					animate={{ opacity: 1, x: 0 }}
-// 					transition={{ duration: 1 }}>
-// 					<h2 className="text-3xl font-bold">Book an Appointment Today</h2>
-// 					<p className="mt-4">
-// 						Get in touch with us to schedule a consultation and discuss your
-// 						care needs.
-// 					</p>
-// 				</motion.div>
-// 				<motion.div
-// 					initial={{ opacity: 0, scale: 0.8 }}
-// 					animate={{ opacity: 1, scale: 1 }}
-// 					transition={{ duration: 1.2 }}>
-// 					<Link
-// 						className="bg-white text-blue-700 py-3 px-8 rounded-lg font-semibold hover:bg-blue-500 hover:text-white transition-all duration-300"
-// 						href="/appointment">
-// 						Book Now
-// 					</Link>
-// 				</motion.div>
-// 			</section>
-// 		</div>
-// 	);
-// }
-
-// import Carousel from '/components/Carousel';
-
-// export default function HomePage() {
-// 	return (
-// 		<div className="min-h-screen">
-// 			<section className="bg-blue-700 text-white py-16 text-center">
-// 				<h1 className="text-5xl font-bold mb-4">
-// 					Professional Live-in Care Services
-// 				</h1>
-// 				<p className="text-lg">
-// 					Supporting elderly people in the comfort of their own homes across the
-// 					UK.
-// 				</p>
-// 			</section>
-
-// 			<section className="container mx-auto py-16 px-6">
-// 				<h2 className="text-3xl font-bold text-gray-800 text-center mb-8">
-// 					Our Services
-// 				</h2>
-// 				<Carousel />
-// 			</section>
-// 		</div>
-// 	);
-// }

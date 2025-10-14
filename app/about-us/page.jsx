@@ -134,7 +134,8 @@ const AboutPage = () => {
 									key={index}
 									initial={{ opacity: 0, scale: 0.9 }}
 									animate={{ opacity: 1, scale: 1 }}
-									transition={{ duration: 0.6, delay: 0.4 + index * 0.1 }}
+									transition={{ duration: 0.6 }}
+									delay={0.4 + index * 0.1}
 									className="group">
 									<div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 text-center transform hover:-translate-y-1">
 										<div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
@@ -246,7 +247,8 @@ const AboutPage = () => {
 								key={index}
 								initial={{ opacity: 0, y: 30 }}
 								animate={{ opacity: 1, y: 0 }}
-								transition={{ duration: 0.6, delay: index * 0.1 }}
+								transition={{ duration: 0.6 }}
+								delay={index * 0.1}
 								className="group">
 								<div className="bg-gradient-to-br from-white to-gray-50 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 h-full transform hover:-translate-y-2">
 									<div className="flex justify-center mb-6">{value.icon}</div>

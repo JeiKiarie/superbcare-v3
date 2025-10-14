@@ -107,12 +107,12 @@ export default function Header() {
 								transition={{ type: 'spring', stiffness: 300 }}>
 								<Image
 									className="transition-opacity duration-300 group-hover:opacity-80"
-									width={60}
-									height={60}
+									width={70}
+									height={70}
 									alt="Superb Care Services Logo"
 									src={Logo}
 									style={{
-										filter: 'drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1))',
+										filter: 'drop-shadow(0 1px 2px rgba(0, 0, 0, 0.05))',
 									}}
 								/>
 							</motion.div>

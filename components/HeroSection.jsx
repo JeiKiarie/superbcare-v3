@@ -7,7 +7,7 @@ const HeroSection = ({
 	title,
 	subtitle,
 	backgroundImage,
-	height = 'h-[50vh] md:h-[76vh]',
+	height = 'h-[calc(100vh-5rem)]',
 	titleSize = 'text-5xl',
 	className = '',
 }) => {
@@ -98,6 +98,56 @@ const HeroSection = ({
 						className={`${titleSize} font-bold text-white drop-shadow-2xl`}>
 						{title}
 					</motion.h1>
+				</motion.div>
+
+				{/* Scroll Indicator */}
+				<motion.div
+					className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20"
+					initial={{ opacity: 0, y: 20 }}
+					animate={{ opacity: 1, y: 0 }}
+					transition={{ duration: 0.6, delay: 1.5 }}>
+					<motion.div
+						animate={{ y: [0, 8, 0] }}
+						transition={{
+							duration: 2,
+							repeat: Infinity,
+							ease: 'easeInOut',
+						}}
+						className="flex flex-col items-center space-y-2 cursor-pointer"
+						onClick={() => {
+							window.scrollTo({
+								top: window.innerHeight * 0.85,
+								behavior: 'smooth',
+							});
+						}}>
+						{/* Scroll Text */}
+						<span className="text-xs md:text-sm text-gray-300 font-medium tracking-wider uppercase">
+							Scroll Down
+						</span>
+						{/* Scroll Icon */}
+						<motion.div
+							animate={{ y: [0, 8, 0] }}
+							transition={{
+								duration: 2,
+								repeat: Infinity,
+								ease: 'easeInOut',
+							}}>
+							<svg
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								className="text-gray-300">
+								<path
+									d="M12 5V19M19 12L12 19L5 12"
+									stroke="currentColor"
+									strokeWidth="2"
+									strokeLinecap="round"
+									strokeLinejoin="round"
+								/>
+							</svg>
+						</motion.div>
+					</motion.div>
 				</motion.div>
 			</div>
 

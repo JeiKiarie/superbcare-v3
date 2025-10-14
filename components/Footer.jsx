@@ -143,7 +143,7 @@ const Footer = () => {
 							</ul>
 						</AnimatedWrapper>
 
-						{/* Contact & Newsletter */}
+						{/* Contact */}
 						<AnimatedWrapper
 							className="space-y-6"
 							initial={{ opacity: 0, x: -50 }}
@@ -154,7 +154,7 @@ const Footer = () => {
 							</h4>
 
 							{/* Contact Info */}
-							<div className="space-y-3">
+							<div className="space-y-6">
 								<div className="flex items-center space-x-3 text-slate-300">
 									<FaPhone className="text-blue-400 min-w-[16px]" />
 									<span>+44 7984 885069</span>
@@ -165,29 +165,9 @@ const Footer = () => {
 								</div>
 								<div className="flex items-start space-x-3 text-slate-300">
 									<FaMapMarkerAlt className="text-blue-400 min-w-[16px] mt-0.5" />
-									<span className="text-sm">Serving the UK</span>
-								</div>
-							</div>
-
-							{/* Newsletter Signup */}
-							<div className="bg-slate-700/30 p-4 rounded-lg backdrop-blur-sm">
-								<h5 className="text-sm font-semibold text-white mb-3">
-									Stay Updated
-								</h5>
-								<p className="text-slate-400 text-sm mb-4">
-									Get the latest news and care tips delivered to your inbox.
-								</p>
-								<div className="flex gap-2">
-									<input
-										type="email"
-										placeholder="Your email"
-										className="flex-1 px-3 py-2 bg-slate-800 border border-slate-600 rounded-md text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
-									/>
-									<Button
-										size="sm"
-										className="bg-blue-600 hover:bg-blue-700 text-white">
-										Subscribe
-									</Button>
+									<span className="text-sm">
+										Castle Hill House, 12 Castle Hill, Windsor, SL4 1PD
+									</span>
 								</div>
 							</div>
 						</AnimatedWrapper>
@@ -200,8 +180,8 @@ const Footer = () => {
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ duration: 0.8, delay: 0.7 }}>
-					<div className="container mx-auto px-6 py-6">
-						<div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+					<div className="container mx-auto px-6 py-6 text-center">
+						<div className="flex flex-col items-center space-y-2">
 							<div className="flex items-center space-x-2 text-slate-400">
 								<FaHeart className="text-red-500" />
 								<span className="text-sm">
@@ -209,20 +189,12 @@ const Footer = () => {
 									rights reserved.
 								</span>
 							</div>
-
-							{/* Additional Links */}
-							<div className="flex space-x-6 text-sm">
-								<Link
-									href="/terms"
-									className="text-slate-400 hover:text-blue-400 transition-colors duration-200">
-									Terms & Conditions
-								</Link>
-								<Link
-									href="/privacy"
-									className="text-slate-400 hover:text-blue-400 transition-colors duration-200">
-									Privacy Policy
-								</Link>
-							</div>
+							<Link
+								href="https://microstation.co.ke"
+								target="_blank"
+								className="text-xs text-slate-500 hover:text-blue-400 transition-colors duration-200 underline decoration-dotted underline-offset-4">
+								Website by JeiKiarie
+							</Link>
 						</div>
 					</div>
 				</AnimatedWrapper>

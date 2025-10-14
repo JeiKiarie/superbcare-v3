@@ -58,9 +58,9 @@ const AboutPage = () => {
 							animate={{ opacity: 1, y: 0 }}
 							transition={{ delay: 0.6 }}>
 							<p className="text-xl leading-relaxed opacity-90 max-w-3xl mx-auto">
-								Since 2018, we've been transforming lives through compassionate,
-								personalized care services delivered in the comfort and dignity
-								of home.
+								Since 2018, we have been transforming lives through
+								compassionate, personalized care services delivered in the
+								comfort and dignity of home.
 							</p>
 						</AnimatedWrapper>
 					</div>
@@ -282,7 +282,8 @@ const AboutPage = () => {
 						</h3>
 						<p className="text-xl text-gray-600 max-w-3xl mx-auto">
 							Our passionate team of professionals dedicated to delivering
-							exceptional care and making a difference in our clients' lives.
+							exceptional care and making a difference in our clients&apos;
+							lives.
 						</p>
 					</AnimatedWrapper>
 

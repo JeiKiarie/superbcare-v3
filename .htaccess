@@ -1,0 +1,19 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+    
+    # If the request is for an existing file or directory, serve it directly
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
+
+    # Allow direct access to files in _next directory
+    RewriteRule ^_next/(.*)$ _next/$1 [L]
+
+    # For all other requests, try to find the corresponding .html file
+    RewriteCond %{REQUEST_FILENAME}.html -f
+    RewriteRule ^ %{REQUEST_FILENAME}.html [L]
+
+    # If no .html file exists, serve index.html
+    RewriteRule ^ index.html [L]
+</IfModule> 

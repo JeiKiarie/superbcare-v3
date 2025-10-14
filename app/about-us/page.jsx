@@ -8,32 +8,18 @@ import ruthWest from '/public/ruth-west4.jpg';
 import peter from '/public/Peter.jpg';
 import blank from '/public/blank-picture.png';
 import Image from 'next/image';
+import HeroSection from '@/components/HeroSection';
 
 const AboutPage = () => {
 	return (
 		// <div className="container mx-auto p-6 space-y-12">
 		<>
 			{/* Hero Section */}
-			<section className="relative h-[50vh] md:h-[76vh] w-full bg-cover bg-center text-white mb-4">
-				<div className="absolute inset-0 z-0 overflow-hidden">
-					<Image
-						src={aboutImg}
-						alt="Hero Background"
-						// layout="fill"
-						className="w-full h-full object-cover"
-					/>
-					{/* <div className="absolute inset-0 bg-gradient-to-t from-black to-black opacity-30"></div> */}
-				</div>
-				<div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
-					<motion.h1
-						className="text-5xl font-bold"
-						initial={{ opacity: 0 }}
-						animate={{ opacity: 1 }}
-						transition={{ duration: 1 }}>
-						About Us
-					</motion.h1>
-				</div>
-			</section>
+			<HeroSection
+				title="About Us"
+				subtitle="Compassionate Care, Exceptional Service"
+				backgroundImage={aboutImg}
+			/>
 
 			{/* Mission Statement Section */}
 			<section className="container mx-auto mb-4 space-y-6 px-4">

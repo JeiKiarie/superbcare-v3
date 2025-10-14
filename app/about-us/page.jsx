@@ -215,50 +215,141 @@ const AboutPage = () => {
 				</div>
 			</section>
 
-			{/* Our Team Section - Dynamic Cards */}
-			<section className="py-20 bg-gradient-to-r from-gray-100 to-blue-50">
-				<div className="container mx-auto px-6">
+			{/* Our Team Section - Revamped with Founder Spotlight */}
+			<section className="py-24 bg-gradient-to-br from-slate-50 via-white to-blue-50 relative overflow-hidden">
+				<div className="absolute inset-0">
+					<div className="absolute top-10 left-10 w-72 h-72 bg-gradient-to-r from-purple-300/10 to-transparent rounded-full blur-xl"></div>
+					<div className="absolute bottom-20 right-20 w-96 h-96 bg-gradient-to-l from-blue-300/10 to-transparent rounded-full blur-2xl"></div>
+				</div>
+				<div className="relative container mx-auto px-6">
 					<AnimatedWrapper
-						className="text-center mb-16"
-						delay={0.5}>
-						<h3 className="text-4xl font-bold text-blue-800 mb-4">
+						className="text-center mb-20"
+						initial={{ opacity: 0, y: 30 }}
+						animate={{ opacity: 1, y: 0 }}
+						transition={{ delay: 0.1 }}>
+						<h3 className="text-5xl font-bold bg-gradient-to-r from-blue-700 to-purple-700 bg-clip-text text-transparent mb-6">
 							Meet Our Team
 						</h3>
-						<p className="text-xl text-gray-600 max-w-2xl mx-auto">
-							Our dedicated professionals committed to exceptional care
+						<p className="text-xl text-gray-600 max-w-3xl mx-auto">
+							Our passionate team of professionals dedicated to delivering
+							exceptional care and making a difference in our clients' lives.
 						</p>
 					</AnimatedWrapper>
+
+					{/* Founder Spotlight */}
 					<AnimatedWrapper
 						as="div"
-						className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
-						delay={0.6}>
+						initial={{ opacity: 0, scale: 0.95 }}
+						animate={{ opacity: 1, scale: 1 }}
+						transition={{ delay: 0.3 }}
+						className="mb-20">
+						<div className="backdrop-blur-lg bg-white/90 border border-white/20 rounded-3xl shadow-2xl p-8 md:p-12 max-w-5xl mx-auto hover:shadow-3xl transition-all duration-500 transform hover:scale-[1.02]">
+							<div className="flex flex-col md:flex-row items-center gap-10">
+								<div className="flex-shrink-0">
+									<div className="relative group">
+										<div className="absolute inset-0 bg-gradient-to-r from-purple-400 to-blue-400 rounded-xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
+										<Image
+											src={ruthWest}
+											alt="Rev Ruth West - Founder & CEO"
+											width={208}
+											height={352}
+											className="relative w-52 h-88 rounded-xl object-cover shadow-xl border-4 border-white group-hover:scale-105 transition-transform duration-500"
+										/>
+									</div>
+								</div>
+								<div className="flex-1 text-center md:text-left">
+									<div className="mb-4">
+										<span className="inline-block px-4 py-1 bg-gradient-to-r from-purple-100 to-blue-100 text-purple-700 text-sm font-semibold rounded-full mb-4">
+											FOUNDER & CEO
+										</span>
+									</div>
+									<h4 className="text-3xl font-bold text-blue-800 mb-3 group-hover:text-purple-600 transition-colors">
+										Rev Ruth West
+									</h4>
+									<p className="text-gray-600 text-lg leading-relaxed mb-6">
+										With over 15 years of experience in elder care and community
+										service, Rev Ruth West founded Superb Care Services out of a
+										deep passion for improving lives through compassionate home
+										care. Her visionary leadership continues to drive our
+										commitment to excellence and innovation in caregiving.
+									</p>
+									<div className="flex flex-wrap gap-3 justify-center md:justify-start">
+										<span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">
+											Community Leader
+										</span>
+										<span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm">
+											15+ Years Experience
+										</span>
+										<span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">
+											Award-Winning Service
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</AnimatedWrapper>
+
+					{/* Other Team Members */}
+					<AnimatedWrapper
+						as="div"
+						className="grid grid-cols-1 md:grid-cols-3 gap-8"
+						initial={{ opacity: 0 }}
+						animate={{ opacity: 1 }}
+						transition={{ delay: 0.5 }}>
 						{[
-							{ img: ruthWest, name: 'Rev Ruth West', role: 'Founder & CEO' },
-							{ img: blank, name: 'Sarah Johnson', role: 'Head of Care' },
-							{ img: blank, name: 'Michael Edwards', role: 'Care Coordinator' },
-							{ img: peter, name: 'Peter', role: 'Support Worker' },
+							{
+								img: blank,
+								name: 'Sarah Johnson',
+								role: 'Head of Care',
+								desc: 'Oversees care quality and staff training',
+								specialty: 'Quality Assurance',
+							},
+							{
+								img: blank,
+								name: 'Michael Edwards',
+								role: 'Care Coordinator',
+								desc: 'Manages client relationships and care planning',
+								specialty: 'Client Relations',
+							},
+							{
+								img: peter,
+								name: 'Peter',
+								role: 'Support Worker',
+								desc: 'Dedicated frontline caregiver delivering daily support',
+								specialty: 'Direct Care',
+							},
 						].map((member, index) => (
 							<AnimatedWrapper
 								as="div"
 								key={index}
-								initial={{ opacity: 0, scale: 0.9 }}
-								animate={{ opacity: 1, scale: 1 }}
-								transition={{ duration: 0.6, delay: index * 0.1 }}
+								initial={{ opacity: 0, y: 30 }}
+								animate={{ opacity: 1, y: 0 }}
+								transition={{ duration: 0.6, delay: 0.6 + index * 0.15 }}
 								className="group">
-								<div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 text-center transform hover:-translate-y-2">
-									<div className="relative overflow-hidden rounded-full mb-6 mx-auto w-32 h-32">
-										<Image
-											src={member.img}
-											alt={member.role}
-											width={128}
-											height={128}
-											className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-										/>
+								<div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 text-center transform hover:-translate-y-3 hover:rotate-2 relative overflow-hidden">
+									<div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-purple-200/20 to-transparent rounded-full -translate-y-12 translate-x-12"></div>
+									<div className="relative z-10">
+										<div className="relative overflow-hidden rounded-full mb-6 mx-auto w-28 h-28">
+											<Image
+												src={member.img}
+												alt={member.name}
+												width={112}
+												height={112}
+												className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+											/>
+											<div className="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+										</div>
+										<h4 className="text-xl font-semibold text-blue-800 mb-2 group-hover:text-purple-600 transition-colors">
+											{member.name}
+										</h4>
+										<p className="text-purple-600 font-medium mb-3">
+											{member.role}
+										</p>
+										<p className="text-gray-600 text-sm mb-4">{member.desc}</p>
+										<span className="inline-block px-3 py-1 bg-gradient-to-r from-blue-50 to-purple-50 text-purple-700 text-xs font-medium rounded-full border border-purple-200">
+											{member.specialty}
+										</span>
 									</div>
-									<h4 className="text-xl font-semibold text-blue-800 mb-2 group-hover:text-purple-600 transition-colors">
-										{member.name}
-									</h4>
-									<p className="text-gray-600">{member.role}</p>
 								</div>
 							</AnimatedWrapper>
 						))}

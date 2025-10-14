@@ -114,7 +114,7 @@ export default function Home() {
 			{/* Welcome Section */}
 			<section
 				id="welcome"
-				className="relative py-16 flex !-mt-2 items-center justify-center bg-gradient-to-br from-[#cca6c8] via-[#d4a7d4] via-[#b88cb8] to-[#a976a9]">
+				className="relative py-16 flex !-mt-2 items-center justify-center bg-gradient-to-br from-[#cca6c8] via-[#b88cb8] to-[#a976a9]">
 				<div className="container mx-auto px-6 text-center text-white">
 					{/* Main Content */}
 					<div className="max-w-5xl mx-auto">
@@ -278,67 +278,6 @@ export default function Home() {
 				</AnimatedWrapper>
 			</section>
 
-			{/* Team Section */}
-			{/* <section className="bg-gray-100 p-10 rounded-lg">
-				<motion.h2
-					className="text-3xl md:text-4xl font-semibold text-center text-gray-800 mb-8"
-					initial={{ opacity: 0 }}
-					animate={{ opacity: 1 }}
-					transition={{ duration: 1 }}>
-					Meet Our Team
-				</motion.h2>
-
-				<div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-					<motion.div
-						className="bg-white p-6 rounded-lg shadow-md text-center"
-						initial={{ opacity: 0 }}
-						animate={{ opacity: 1 }}
-						transition={{ delay: 0.3 }}>
-						<Image
-							width={200}
-							height={200}
-							src={kiarie}
-							alt="Team Member"
-							className="w-40 h-40 md:w-64 md:h-64 mx-auto rounded-full mb-4"
-						/>
-						<h3 className="text-xl font-semibold text-blue-800">James</h3>
-						<p className="text-gray-500">Lead Caregiver</p>
-					</motion.div>
-
-					<motion.div
-						className="bg-white p-6 rounded-lg shadow-md text-center"
-						initial={{ opacity: 0 }}
-						animate={{ opacity: 1 }}
-						transition={{ delay: 0.5 }}>
-						<Image
-							width={200}
-							height={200}
-							src={kiarie}
-							alt="Team Member"
-							className="w-40 h-40 md:w-64 md:h-64 mx-auto rounded-full mb-4"
-						/>
-						<h3 className="text-xl font-semibold text-blue-800">Ken</h3>
-						<p className="text-gray-500">Registered Nurse</p>
-					</motion.div>
-					<motion.div
-						className="bg-white p-6 rounded-lg shadow-md text-center"
-						initial={{ opacity: 0 }}
-						animate={{ opacity: 1 }}
-						transition={{ delay: 0.5 }}>
-						<Image
-							width={200}
-							height={200}
-							src={kiarie}
-							alt="Team Member"
-							className="w-40 h-40 md:w-64 md:h-64 mx-auto rounded-full mb-4"
-						/>
-						<h3 className="text-xl font-semibold text-blue-800">Mark</h3>
-						<p className="text-gray-500">Registered Nurse</p>
-					</motion.div>
-
-				</div>
-			</section> */}
-
 			{/* How It Works Section */}
 			<section className="py-20 px-6 bg-white">
 				<div className="container mx-auto">
@@ -359,9 +298,9 @@ export default function Home() {
 								Initial Assessment
 							</h3>
 							<p className="text-gray-600 leading-relaxed">
-								We begin with a comprehensive assessment of your loved one's
-								needs. Our care coordinators visit your home to understand their
-								requirements and preferences.
+								We begin with a comprehensive assessment of your loved
+								one&apos;s needs. Our care coordinators visit your home to
+								understand their requirements and preferences.
 							</p>
 						</div>
 
@@ -494,8 +433,8 @@ export default function Home() {
 								What types of specialized care do you offer?
 							</AccordionTrigger>
 							<AccordionContent className="text-gray-700 leading-relaxed px-6 pb-4">
-								We specialize in dementia and Alzheimer's care, palliative care,
-								rehabilitation support, and post-surgery care. All our
+								We specialize in dementia and Alzheimer&apos;s care, palliative
+								care, rehabilitation support, and post-surgery care. All our
 								specialized services are provided by trained professionals with
 								relevant experience.
 							</AccordionContent>
@@ -523,8 +462,8 @@ export default function Home() {
 							<AccordionContent className="text-gray-700 leading-relaxed px-6 pb-4">
 								Our caregivers are trained in medication management and adhere
 								to strict protocols. We provide reminders, dispensing support,
-								and monitor medication compliance to ensure your loved one's
-								safety.
+								and monitor medication compliance to ensure your loved
+								one&apos;s safety.
 							</AccordionContent>
 						</AccordionItem>
 
@@ -575,9 +514,10 @@ export default function Home() {
 								Can I schedule a free consultation?
 							</AccordionTrigger>
 							<AccordionContent className="text-gray-700 leading-relaxed px-6 pb-4">
-								Yes! We offer free consultations to discuss your loved one's
-								care needs. This allows us to understand their requirements and
-								provide you with the best possible service recommendations.
+								Yes! We offer free consultations to discuss your loved
+								one&apos;s care needs. This allows us to understand their
+								requirements and provide you with the best possible service
+								recommendations.
 							</AccordionContent>
 						</AccordionItem>
 					</Accordion>
@@ -713,7 +653,7 @@ export default function Home() {
 						transition={{ delay: 0.2, duration: 0.8 }}>
 						Contact us today to learn more about our live-in care services.
 						Experience the difference professional, compassionate care can make
-						in your loved one's life.
+						in your loved one&apos;s life.
 					</AnimatedWrapper>
 					<AnimatedWrapper
 						as="div"

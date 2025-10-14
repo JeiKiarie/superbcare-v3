@@ -23,12 +23,28 @@ const HeroSection = ({
 	};
 
 	const itemVariants = {
-		hidden: { opacity: 0, y: 20 },
+		hidden: { opacity: 0, y: 50, scale: 0.8 },
 		visible: {
 			opacity: 1,
 			y: 0,
+			scale: 1,
+			transition: {
+				duration: 0.8,
+				ease: 'easeOut',
+			},
+		},
+	};
+
+	const subtitleVariants = {
+		hidden: { opacity: 0, y: 30, scale: 0.9 },
+		visible: {
+			opacity: 1,
+			y: 0,
+			scale: 1,
 			transition: {
 				duration: 0.6,
+				ease: 'easeOut',
+				delay: 0.2,
 			},
 		},
 	};
@@ -88,7 +104,7 @@ const HeroSection = ({
 					className="text-center space-y-4">
 					{subtitle && (
 						<motion.p
-							variants={itemVariants}
+							variants={subtitleVariants}
 							className="text-lg md:text-xl text-gray-200 tracking-wide">
 							{subtitle}
 						</motion.p>

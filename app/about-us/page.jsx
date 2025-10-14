@@ -251,9 +251,9 @@ const AboutPage = () => {
 										<Image
 											src={ruthWest}
 											alt="Rev Ruth West - Founder & CEO"
-											width={208}
+											width={240}
 											height={352}
-											className="relative w-52 h-88 rounded-xl object-cover shadow-xl border-4 border-white group-hover:scale-105 transition-transform duration-500"
+											className="relative w-60 h-88 rounded-xl object-cover shadow-xl border-4 border-white group-hover:scale-105 transition-transform duration-500"
 										/>
 									</div>
 								</div>

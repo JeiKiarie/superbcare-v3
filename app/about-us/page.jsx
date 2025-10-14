@@ -292,6 +292,20 @@ const AboutPage = () => {
 					{/* Other Team Members */}
 					<AnimatedWrapper
 						as="div"
+						initial={{ opacity: 0, y: 30 }}
+						animate={{ opacity: 1, y: 0 }}
+						transition={{ delay: 0.4 }}
+						className="mb-12">
+						<h4 className="text-3xl font-bold text-blue-800 text-center mb-4">
+							Our Team of Experts
+						</h4>
+						<p className="text-lg text-gray-600 text-center max-w-2xl mx-auto">
+							Dedicated professionals working together to deliver exceptional
+							care and support.
+						</p>
+					</AnimatedWrapper>
+					<AnimatedWrapper
+						as="div"
 						className="grid grid-cols-1 md:grid-cols-3 gap-8"
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
@@ -329,13 +343,13 @@ const AboutPage = () => {
 								<div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 text-center transform hover:-translate-y-3 hover:rotate-2 relative overflow-hidden">
 									<div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-purple-200/20 to-transparent rounded-full -translate-y-12 translate-x-12"></div>
 									<div className="relative z-10">
-										<div className="relative overflow-hidden rounded-full mb-6 mx-auto w-28 h-28">
+										<div className="relative overflow-hidden rounded-full mb-6 mx-auto w-40 h-40">
 											<Image
 												src={member.img}
 												alt={member.name}
-												width={112}
-												height={112}
-												className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+												width={160}
+												height={160}
+												className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-500"
 											/>
 											<div className="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 										</div>

@@ -36,19 +36,33 @@ const AboutPage = () => {
 				<div className="container mx-auto px-6 text-center text-white">
 					{/* Main Content */}
 					<div className="max-w-5xl mx-auto">
-						<div className="mb-8">
-							<span className="inline-block px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-sm font-medium mb-6">
+						<AnimatedWrapper
+							initial={{ opacity: 0, y: 30 }}
+							animate={{ opacity: 1, y: 0 }}
+							transition={{ delay: 0.2 }}
+							className="mb-8">
+							<span className="inline-block px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-sm font-medium">
 								✨ Why Choose Superb Care Services?
 							</span>
-						</div>
-						<h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">
-							Excellence in Home Care
-						</h2>
-						<p className="text-xl leading-relaxed opacity-90 max-w-3xl mx-auto">
-							Since 2018, we've been transforming lives through compassionate,
-							personalized care services delivered in the comfort and dignity of
-							home.
-						</p>
+						</AnimatedWrapper>
+						<AnimatedWrapper
+							initial={{ opacity: 0, scale: 0.9 }}
+							animate={{ opacity: 1, scale: 1 }}
+							transition={{ delay: 0.4 }}>
+							<h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">
+								Excellence in Home Care
+							</h2>
+						</AnimatedWrapper>
+						<AnimatedWrapper
+							initial={{ opacity: 0, y: 20 }}
+							animate={{ opacity: 1, y: 0 }}
+							transition={{ delay: 0.6 }}>
+							<p className="text-xl leading-relaxed opacity-90 max-w-3xl mx-auto">
+								Since 2018, we've been transforming lives through compassionate,
+								personalized care services delivered in the comfort and dignity
+								of home.
+							</p>
+						</AnimatedWrapper>
 					</div>
 				</div>
 			</section>

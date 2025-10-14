@@ -114,7 +114,7 @@ export default function Home() {
 			{/* Welcome Section */}
 			<section
 				id="welcome"
-				className="relative py-16 flex !-mt-2 items-center justify-center bg-gradient-to-br from-[#cca6c8] via-[#b88cb8] to-[#a976a9] overflow-hidden">
+				className="relative py-16 flex items-center justify-center bg-gradient-to-br from-[#cca6c8] via-[#b88cb8] to-[#a976a9] overflow-hidden">
 				{/* Floating Background Elements */}
 				<div className="absolute top-10 left-10 w-20 h-20 bg-white/10 rounded-full blur-sm animate-float-1"></div>
 				<div className="absolute top-20 right-20 w-16 h-16 bg-blue-200/20 rounded-lg rotate-45 animate-float-2"></div>

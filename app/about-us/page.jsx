@@ -19,6 +19,40 @@ const AboutPage = () => {
 				backgroundImage={aboutImg}
 			/>
 
+			{/* Stylish Introductory Section */}
+			<section
+				id="welcome"
+				className="relative py-16 flex items-center justify-center bg-gradient-to-br from-[#cca6c8] via-[#b88cb8] to-[#a976a9] overflow-hidden">
+				{/* Floating Background Elements */}
+				<div className="absolute top-10 left-10 w-20 h-20 bg-white/10 rounded-full blur-sm animate-float-1"></div>
+				<div className="absolute top-20 right-20 w-16 h-16 bg-blue-200/20 rounded-lg rotate-45 animate-float-2"></div>
+				<div className="absolute bottom-32 left-1/4 w-12 h-12 bg-white/15 rounded-full animate-float-3"></div>
+				<div className="absolute top-1/2 right-10 w-8 h-8 bg-purple-200/25 rounded-full animate-float-4"></div>
+				<div className="absolute bottom-20 right-1/3 w-10 h-10 bg-white/10 rounded-lg rotate-12 animate-float-5"></div>
+				<div className="absolute top-1/3 left-20 w-6 h-6 bg-blue-100/30 rounded-full animate-float-6"></div>
+				<div className="absolute bottom-16 right-1/4 w-14 h-14 bg-white/8 rounded-full blur-xs animate-float-7"></div>
+				<div className="absolute top-3/4 left-1/3 w-18 h-18 bg-purple-300/15 rounded-lg rotate-30 animate-float-8"></div>
+
+				<div className="container mx-auto px-6 text-center text-white">
+					{/* Main Content */}
+					<div className="max-w-5xl mx-auto">
+						<div className="mb-8">
+							<span className="inline-block px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-sm font-medium mb-6">
+								✨ Why Choose Superb Care Services?
+							</span>
+						</div>
+						<h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">
+							Excellence in Home Care
+						</h2>
+						<p className="text-xl leading-relaxed opacity-90 max-w-3xl mx-auto">
+							Since 2018, we've been transforming lives through compassionate,
+							personalized care services delivered in the comfort and dignity of
+							home.
+						</p>
+					</div>
+				</div>
+			</section>
+
 			{/* Modern Mission Statement Section */}
 			<section className="relative bg-gradient-to-r from-blue-50 via-white to-purple-50 py-20">
 				<AnimatedWrapper

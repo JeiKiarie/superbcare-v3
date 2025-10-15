@@ -199,94 +199,95 @@ const Services = () => {
 					{/* Services Grid */}
 					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
 						{services.map((service, index) => (
-							<AnimatedWrapper
-								as="div"
-								key={index}
-								delay={service.delay}
-								className="group">
-								<div className="relative bg-white rounded-2xl shadow-lg hover:shadow-3xl transition-all duration-500 transform hover:scale-[1.02] hover:-translate-y-3 border border-gray-100 overflow-hidden">
-									{/* Popular Badge */}
-									{service.popular && (
-										<div className="absolute top-4 right-4 z-20">
-											<span className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">
-												Popular
-											</span>
-										</div>
-									)}
+							<Link
+								href={service.link}
+								key={index}>
+								<AnimatedWrapper
+									as="div"
+									delay={service.delay}
+									className="group">
+									<div className="relative bg-white rounded-2xl shadow-lg hover:shadow-3xl transition-all duration-500 transform hover:scale-[1.02] hover:-translate-y-3 border border-gray-100 overflow-hidden cursor-pointer">
+										{/* Popular Badge */}
+										{service.popular && (
+											<div className="absolute top-4 right-4 z-20">
+												<span className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">
+													Popular
+												</span>
+											</div>
+										)}
 
-									{/* Header with Icon and Gradient */}
-									<div
-										className={`h-2 bg-gradient-to-r ${service.gradient}`}></div>
+										{/* Header with Icon and Gradient */}
+										<div
+											className={`h-2 bg-gradient-to-r ${service.gradient}`}></div>
 
-									{/* Card Content */}
-									<div className="p-8">
-										{/* Icon and Title */}
-										<div className="flex items-center justify-between mb-4">
-											<div className="flex items-center space-x-4">
-												<div
-													className={`p-3 rounded-xl bg-gradient-to-r ${service.gradient} text-white shadow-lg transform transition-transform group-hover:scale-110`}>
-													{service.icon}
-												</div>
-												<div>
-													<h4 className="text-xl font-bold text-blue-800 group-hover:text-purple-600 transition-colors">
-														{service.title}
-													</h4>
-													<p className="text-sm text-gray-600 group-hover:text-gray-800 transition-colors">
-														{service.shortDesc}
-													</p>
+										{/* Card Content */}
+										<div className="p-8">
+											{/* Icon and Title */}
+											<div className="flex items-center justify-between mb-4">
+												<div className="flex items-center space-x-4">
+													<div
+														className={`p-3 rounded-xl bg-gradient-to-r ${service.gradient} text-white shadow-lg transform transition-transform group-hover:scale-110`}>
+														{service.icon}
+													</div>
+													<div>
+														<h4 className="text-xl font-bold text-blue-800 group-hover:text-purple-600 transition-colors">
+															{service.title}
+														</h4>
+														<p className="text-sm text-gray-600 group-hover:text-gray-800 transition-colors">
+															{service.shortDesc}
+														</p>
+													</div>
 												</div>
 											</div>
-										</div>
 
-										{/* Description */}
-										<p className="text-gray-700 leading-relaxed mb-6 group-hover:text-gray-800 transition-colors">
-											{service.description}
-										</p>
+											{/* Description */}
+											<p className="text-gray-700 leading-relaxed mb-6 group-hover:text-gray-800 transition-colors">
+												{service.description}
+											</p>
 
-										{/* Features List */}
-										<div className="space-y-2 mb-8">
-											{service.features.map((feature, featIndex) => (
-												<div
-													key={featIndex}
-													className="flex items-center space-x-3">
-													<CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
-													<span className="text-sm text-gray-600">
-														{feature}
-													</span>
-												</div>
-											))}
-										</div>
+											{/* Features List */}
+											<div className="space-y-2 mb-8">
+												{service.features.map((feature, featIndex) => (
+													<div
+														key={featIndex}
+														className="flex items-center space-x-3">
+														<CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
+														<span className="text-sm text-gray-600">
+															{feature}
+														</span>
+													</div>
+												))}
+											</div>
 
-										{/* CTA Button */}
-										<Link href={service.link}>
-											<button className="w-full bg-gradient-to-r from-blue-50 to-purple-50 hover:from-blue-100 hover:to-purple-100 text-blue-600 font-semibold py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 border border-blue-200 flex items-center justify-center space-x-2 group-hover:border-purple-300">
+											{/* CTA Button */}
+											<div className="w-full bg-gradient-to-r from-blue-50 to-purple-50 hover:from-blue-100 hover:to-purple-100 text-blue-600 font-semibold py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 border border-blue-200 flex items-center justify-center space-x-2 group-hover:border-purple-300 cursor-pointer">
 												<span>Learn More</span>
-												<ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
-											</button>
-										</Link>
-									</div>
+												<ArrowRight className="w-4 h-4 transform transition-transform" />
+											</div>
+										</div>
 
-									{/* Hover Image Overlay */}
-									<div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
-										<div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-										<Image
-											src={service.imageUrl}
-											alt={service.title}
-											fill
-											className="object-cover"
-										/>
-										<div className="absolute bottom-4 left-4 right-4 text-white">
-											<h4 className="font-bold text-lg mb-2">
-												{service.title}
-											</h4>
-											<div className="flex items-center space-x-2 text-sm">
-												<Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-												<span>Highly Rated Service</span>
+										{/* Hover Image Overlay */}
+										<div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
+											<div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+											<Image
+												src={service.imageUrl}
+												alt={service.title}
+												fill
+												className="object-cover"
+											/>
+											<div className="absolute bottom-4 left-4 right-4 text-white">
+												<h4 className="font-bold text-lg mb-2">
+													{service.title}
+												</h4>
+												<div className="flex items-center space-x-2 text-sm">
+													<Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+													<span>Highly Rated Service</span>
+												</div>
 											</div>
 										</div>
 									</div>
-								</div>
-							</AnimatedWrapper>
+								</AnimatedWrapper>
+							</Link>
 						))}
 					</div>
 				</div>

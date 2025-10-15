@@ -137,9 +137,9 @@ const HeroSection = ({
 							});
 						}}>
 						{/* Scroll Text */}
-						<span className="text-xs md:text-sm text-gray-300 font-medium tracking-wider uppercase">
+						{/* <span className="text-xs md:text-sm text-gray-300 font-medium tracking-wider uppercase">
 							Scroll Down
-						</span>
+						</span> */}
 						{/* Scroll Icon */}
 						<motion.div
 							animate={{ y: [0, 8, 0] }}

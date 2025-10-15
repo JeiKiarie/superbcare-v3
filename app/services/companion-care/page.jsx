@@ -1,5 +1,3 @@
-'use client';
-
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import companionCare from '/public/companion-care.jpg';
@@ -54,7 +52,6 @@ import {
 	GiCalendar,
 	GiThreeFriends,
 } from 'react-icons/gi';
-import { useRouter } from 'next/navigation';
 import HeroSection from '@/components/HeroSection';
 import AnimatedWrapper from '@/components/AnimatedWrapper';
 import {
@@ -65,8 +62,6 @@ import {
 } from '@/components/ui/accordion';
 
 const CompanionCarePage = () => {
-	const router = useRouter();
-
 	return (
 		<>
 			{/* Hero Section with Modern HeroSection Component */}
@@ -187,11 +182,8 @@ const CompanionCarePage = () => {
 								'Personalized activity planning and goal setting',
 								'24/7 on-call support for peace of mind',
 							].map((service, index) => (
-								<motion.div
+								<div
 									key={index}
-									initial={{ opacity: 0, x: -20 }}
-									animate={{ opacity: 1, x: 0 }}
-									transition={{ delay: 1 + index * 0.05 }}
 									className="flex items-center gap-4 p-4 bg-gradient-to-r from-[#cca6c8]/5 to-transparent rounded-xl hover:from-[#cca6c8]/10 transition-all duration-300 group">
 									<div className="w-8 h-8 bg-[#cca6c8] rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
 										<BiCheckCircle className="w-5 h-5 text-white" />
@@ -199,7 +191,7 @@ const CompanionCarePage = () => {
 									<span className="text-gray-700 font-medium group-hover:text-[#cca6c8] transition-colors">
 										{service}
 									</span>
-								</motion.div>
+								</div>
 							))}
 						</div>
 					</AnimatedWrapper>
@@ -403,39 +395,44 @@ const CompanionCarePage = () => {
 
 			{/* Call to Action Section */}
 			<section className="text-center py-12 px-4 bg-[#cca6c8] text-white rounded-lg">
-				<motion.h2
-					className="text-4xl font-bold mb-4"
+				<AnimatedWrapper
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ duration: 1 }}>
-					Keep Your Loved One Engaged and Happy
-				</motion.h2>
-				<motion.p
-					className="text-lg mb-8 text-justify lg:text-center"
+					<h2 className="text-4xl font-bold mb-4">
+						Keep Your Loved One Engaged and Happy
+					</h2>
+				</AnimatedWrapper>
+				<AnimatedWrapper
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ delay: 0.2 }}>
-					Contact us today to arrange companion care services and ensure your
-					loved one receives the emotional and social support they need.
-				</motion.p>
+					<p className="text-lg mb-8 text-justify lg:text-center">
+						Contact us today to arrange companion care services and ensure your
+						loved one receives the emotional and social support they need.
+					</p>
+				</AnimatedWrapper>
 				<div className="flex flex-col items-center justify-center md:flex-row gap-4">
-					<Link href="/appointment">
-						<motion.button
-							className="bg-white text-blue-600 py-3 px-8 rounded-lg font-semibold hover:bg-blue-700 hover:text-white transition"
-							initial={{ scale: 0.9 }}
-							animate={{ scale: 1 }}
-							transition={{ delay: 0.4 }}>
-							Book Appointment
-						</motion.button>
-					</Link>
-					<motion.button
-						onClick={() => router.back()}
-						className="bg-white text-blue-600 py-3 px-8 rounded-lg font-semibold hover:bg-blue-700 hover:text-white transition"
+					<AnimatedWrapper
 						initial={{ scale: 0.9 }}
 						animate={{ scale: 1 }}
 						transition={{ delay: 0.4 }}>
-						⬅ Back
-					</motion.button>
+						<Link href="/appointment">
+							<button className="bg-white text-blue-600 py-3 px-8 rounded-lg font-semibold hover:bg-blue-700 hover:text-white transition">
+								Book Appointment
+							</button>
+						</Link>
+					</AnimatedWrapper>
+					<AnimatedWrapper
+						initial={{ scale: 0.9 }}
+						animate={{ scale: 1 }}
+						transition={{ delay: 0.4 }}>
+						<Link href="/services">
+							<button className="bg-white text-blue-600 py-3 px-8 rounded-lg font-semibold hover:bg-blue-700 hover:text-white transition">
+								⬅ Back to Services
+							</button>
+						</Link>
+					</AnimatedWrapper>
 				</div>
 			</section>
 		</>

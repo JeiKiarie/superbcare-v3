@@ -1,5 +1,3 @@
-'use client';
-
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import elderlyCare from '/public/elderly-care.jpg';
@@ -44,7 +42,6 @@ import {
 	GiPerson,
 } from 'react-icons/gi';
 import { FaRegStar as FaSparkles } from 'react-icons/fa';
-import { useRouter } from 'next/navigation';
 import HeroSection from '@/components/HeroSection';
 import AnimatedWrapper from '@/components/AnimatedWrapper';
 import {
@@ -55,8 +52,6 @@ import {
 } from '@/components/ui/accordion';
 
 const ElderlyCarePage = () => {
-	const router = useRouter();
-
 	return (
 		<>
 			{/* Hero Section with Modern HeroSection Component */}
@@ -181,11 +176,8 @@ const ElderlyCarePage = () => {
 								'Shopping and errands management',
 								'Pet care when applicable',
 							].map((service, index) => (
-								<motion.div
+								<div
 									key={index}
-									initial={{ opacity: 0, x: -20 }}
-									animate={{ opacity: 1, x: 0 }}
-									transition={{ delay: 1 + index * 0.05 }}
 									className="flex items-center gap-4 p-4 bg-gradient-to-r from-[#cca6c8]/5 to-transparent rounded-xl hover:from-[#cca6c8]/10 transition-all duration-300 group">
 									<div className="w-8 h-8 bg-[#cca6c8] rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
 										<BiCheckCircle className="w-5 h-5 text-white" />
@@ -193,7 +185,7 @@ const ElderlyCarePage = () => {
 									<span className="text-gray-700 font-medium group-hover:text-[#cca6c8] transition-colors">
 										{service}
 									</span>
-								</motion.div>
+								</div>
 							))}
 						</div>
 					</AnimatedWrapper>
@@ -445,45 +437,32 @@ const ElderlyCarePage = () => {
 								{ number: '15+', label: 'Years Experience' },
 								{ number: 'CQC', label: 'Approved & Accredited' },
 							].map((stat, index) => (
-								<motion.div
+								<div
 									key={index}
-									initial={{ opacity: 0, y: 20 }}
-									animate={{ opacity: 1, y: 0 }}
-									transition={{ delay: 0.8 + index * 0.1 }}
 									className="text-center">
 									<div className="text-4xl font-bold text-white mb-2">
 										{stat.number}
 									</div>
 									<div className="text-sm opacity-80">{stat.label}</div>
-								</motion.div>
+								</div>
 							))}
 						</div>
 
 						{/* Action Buttons */}
 						<div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-							<motion.div
-								initial={{ opacity: 0, y: 20 }}
-								animate={{ opacity: 1, y: 0 }}
-								transition={{ delay: 1.2 }}>
-								<Link href="/appointment">
-									<button className="bg-white text-[#cca6c8] px-10 py-4 rounded-2xl font-bold text-lg shadow-2xl hover:shadow-3xl transition-all duration-300 hover:bg-blue-50 hover:scale-105 transform hover:-translate-y-1 flex items-center gap-3">
-										<FaUserNurse className="w-5 h-5" />
-										Free Care Assessment
-										<span className="text-2xl">→</span>
-									</button>
-								</Link>
-							</motion.div>
-							<motion.div
-								initial={{ opacity: 0, y: 20 }}
-								animate={{ opacity: 1, y: 0 }}
-								transition={{ delay: 1.4 }}>
-								<Link href="/contact-us">
-									<button className="border-2 border-white text-white px-10 py-4 rounded-2xl font-bold text-lg hover:bg-white hover:text-[#cca6c8] transition-all duration-300 hover:scale-105 flex items-center gap-3">
-										<BiSupport className="w-5 h-5" />
-										Speak with Our Team
-									</button>
-								</Link>
-							</motion.div>
+							<Link href="/appointment">
+								<button className="bg-white text-[#cca6c8] px-10 py-4 rounded-2xl font-bold text-lg shadow-2xl hover:shadow-3xl transition-all duration-300 hover:bg-blue-50 hover:scale-105 transform hover:-translate-y-1 flex items-center gap-3">
+									<FaUserNurse className="w-5 h-5" />
+									Free Care Assessment
+									<span className="text-2xl">→</span>
+								</button>
+							</Link>
+							<Link href="/contact-us">
+								<button className="border-2 border-white text-white px-10 py-4 rounded-2xl font-bold text-lg hover:bg-white hover:text-[#cca6c8] transition-all duration-300 hover:scale-105 flex items-center gap-3">
+									<BiSupport className="w-5 h-5" />
+									Speak with Our Team
+								</button>
+							</Link>
 						</div>
 
 						{/* Guarantee Text */}
@@ -501,15 +480,17 @@ const ElderlyCarePage = () => {
 
 			{/* Navigation Back Button - Styled */}
 			<div className="flex justify-center py-8 bg-gray-50">
-				<motion.button
-					onClick={() => router.back()}
-					className="bg-white text-blue-600 px-6 py-3 rounded-xl font-semibold border border-blue-200 hover:bg-blue-600 hover:text-white transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1 flex items-center gap-2"
+				<AnimatedWrapper
 					initial={{ scale: 0.9 }}
 					animate={{ scale: 1 }}
 					transition={{ delay: 1.8 }}>
-					<span>←</span>
-					Back to Services
-				</motion.button>
+					<Link href="/services">
+						<button className="bg-white text-blue-600 px-6 py-3 rounded-xl font-semibold border border-blue-200 hover:bg-blue-600 hover:text-white transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1 flex items-center gap-2">
+							<span>←</span>
+							Back to Services
+						</button>
+					</Link>
+				</AnimatedWrapper>
 			</div>
 		</>
 	);

@@ -1,9 +1,9 @@
 'use client';
 
 import { motion, useInView } from 'framer-motion';
-import { useRef, useEffect } from 'react';
+import { useRef } from 'react';
 
-export default function AnimatedWrapper({
+function AnimatedWrapper({
 	children,
 	as = motion.div,
 	initial = { opacity: 0, y: 20 },
@@ -14,24 +14,18 @@ export default function AnimatedWrapper({
 	once = false,
 	...props
 }) {
-	const Component = as;
 	const ref = useRef(null);
 	const isInView = useInView(ref, {
-		once: once,
+		once,
 		amount: threshold,
-		margin: '0px 0px -100px 0px', // Trigger 100px before element enters viewport
+		margin: '0px 0px -100px 0px',
 	});
 
-	useEffect(() => {
-		// Force re-animation when element comes into view
-		if (isInView) {
-			// Component will re-animate due to isInView state change
-		}
-	}, [isInView]);
+	const Component = typeof as === 'string' ? motion[as] || motion.div : as;
 
 	const finalTransition = {
 		...transition,
-		delay: delay,
+		delay,
 	};
 
 	return (
@@ -45,3 +39,5 @@ export default function AnimatedWrapper({
 		</Component>
 	);
 }
+
+export default AnimatedWrapper;

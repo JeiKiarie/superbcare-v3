@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import Link from 'next/link';
 import dementiaCare from '/public/dementia-care1.jpg';
 import Image from 'next/image';

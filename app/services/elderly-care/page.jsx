@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import Link from 'next/link';
 import elderlyCare from '/public/elderly-care.jpg';
 import Image from 'next/image';

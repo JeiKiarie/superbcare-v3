@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import Link from 'next/link';
 import palliativeCare from '/public/palliative-care.jpg';
 import Image from 'next/image';

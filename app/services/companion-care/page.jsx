@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import Link from 'next/link';
 import companionCare from '/public/companion-care.jpg';
 import Image from 'next/image';

@@ -1,9 +1,5 @@
-'use client';
-
 import Link from 'next/link';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
-import AnimatedWrapper from '@/components/AnimatedWrapper';
 import {
 	Home,
 	User,
@@ -28,6 +24,7 @@ import dementiaCare from '/public/dementia-care1.jpg';
 import respiteCare from '/public/respite-care.jpg';
 import palliativeCare from '/public/palliative-care.jpg';
 import companionCare from '/public/companion-care.jpg';
+import AnimatedWrapper from '@/components/AnimatedWrapper';
 
 const services = [
 	{
@@ -187,44 +184,24 @@ const Services = () => {
 
 				{/* Content */}
 				<div className="relative z-10 flex items-center justify-center h-full px-6">
-					<motion.div
-						className="text-center max-w-5xl space-y-8"
-						initial={{ opacity: 0, y: 50 }}
-						animate={{ opacity: 1, y: 0 }}
-						transition={{ duration: 1 }}>
-						<motion.span
-							className="inline-block px-6 py-3 bg-white/20 backdrop-blur-sm rounded-full text-sm font-medium border border-white/20"
-							initial={{ opacity: 0, scale: 0.8 }}
-							animate={{ opacity: 1, scale: 1 }}
-							transition={{ delay: 0.2, duration: 0.6 }}>
+					<div className="text-center max-w-5xl space-y-8">
+						<span className="inline-block px-6 py-3 bg-white/20 backdrop-blur-sm rounded-full text-sm font-medium border border-white/20">
 							✨ Comprehensive Care Solutions
-						</motion.span>
+						</span>
 
-						<motion.h1
-							className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-white via-purple-100 to-blue-100 bg-clip-text text-transparent leading-tight"
-							initial={{ opacity: 0, y: 30 }}
-							animate={{ opacity: 1, y: 0 }}
-							transition={{ delay: 0.4, duration: 0.8 }}>
+						<h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-white via-purple-100 to-blue-100 bg-clip-text text-transparent leading-tight">
 							Our Comprehensive Care Services
-						</motion.h1>
+						</h1>
 
-						<motion.p
-							className="text-lg md:text-xl leading-relaxed opacity-90 max-w-3xl mx-auto"
-							initial={{ opacity: 0, y: 20 }}
-							animate={{ opacity: 1, y: 0 }}
-							transition={{ delay: 0.6, duration: 0.8 }}>
+						<p className="text-lg md:text-xl leading-relaxed opacity-90 max-w-3xl mx-auto">
 							Discover our comprehensive range of personalized care services
 							designed to enhance quality of life while preserving dignity,
 							independence, and cherished memories within the comforting embrace
 							of home.
-						</motion.p>
+						</p>
 
 						{/* CTA Buttons */}
-						<motion.div
-							className="flex flex-col sm:flex-row gap-4 justify-center pt-8"
-							initial={{ opacity: 0, y: 20 }}
-							animate={{ opacity: 1, y: 0 }}
-							transition={{ delay: 0.8, duration: 0.6 }}>
+						<div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
 							<Link href="/appointment">
 								<button className="bg-white text-blue-600 px-8 py-4 rounded-full font-semibold text-lg shadow-xl hover:shadow-2xl hover:bg-blue-50 transition-all duration-300 hover:scale-105 hover:-translate-y-1 flex items-center space-x-2">
 									<Calendar className="w-5 h-5" />
@@ -238,41 +215,21 @@ const Services = () => {
 									<span>Get in Touch</span>
 								</button>
 							</Link>
-						</motion.div>
-					</motion.div>
+						</div>
+					</div>
 				</div>
 
 				{/* Scroll Indicator */}
-				<motion.div
-					className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20"
-					initial={{ opacity: 0 }}
-					animate={{ opacity: 1 }}
-					transition={{ delay: 1.5 }}>
-					<motion.div
-						animate={{ y: [0, 8, 0] }}
-						transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
-						className="flex flex-col items-center space-y-2 text-white/80 cursor-pointer"
-						onClick={() =>
-							window.scrollTo({
-								top: window.innerHeight * 0.85,
-								behavior: 'smooth',
-							})
-						}>
+				<div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+					<div className="flex flex-col items-center space-y-2 text-white/80 cursor-pointer">
 						<span className="text-xs md:text-sm font-medium tracking-wide">
 							Explore Services
 						</span>
 						<div className="w-6 h-10 border-2 border-white/40 rounded-full flex justify-center">
-							<motion.div
-								animate={{ y: [0, 12, 0] }}
-								transition={{
-									duration: 2,
-									repeat: Infinity,
-									ease: 'easeInOut',
-								}}
-								className="w-1 h-2 bg-white/60 rounded-full mt-2"></motion.div>
+							<div className="w-1 h-2 bg-white/60 rounded-full mt-2 animate-bounce"></div>
 						</div>
-					</motion.div>
-				</motion.div>
+					</div>
+				</div>
 			</section>
 
 			{/* Our Services Grid */}

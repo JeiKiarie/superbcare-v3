@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import HeroSection from '@/components/HeroSection';
 import {
 	Home,
 	User,
@@ -159,78 +160,12 @@ const whyChooseUs = [
 const Services = () => {
 	return (
 		<>
-			{/* Stylish Hero Section */}
-			<section className="relative h-[calc(100vh-5rem)] w-full text-white overflow-hidden bg-gradient-to-br from-[#cca6c8] via-[#b88cb8] to-[#a976a9]">
-				{/* Background Image with Overlay */}
-				<div className="absolute inset-0 opacity-70">
-					<Image
-						src={LiveInCare}
-						alt="Comprehensive Care Services"
-						className="w-full h-full object-cover"
-						fill
-						priority
-					/>
-					{/* Gradient Overlays */}
-					<div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
-					<div className="absolute inset-0 bg-gradient-to-r from-purple-900/30 to-blue-900/30"></div>
-				</div>
-
-				{/* Animated Background Elements */}
-				<div className="absolute top-10 left-10 w-32 h-32 bg-white/10 rounded-full blur-xl animate-pulse"></div>
-				<div className="absolute top-20 right-20 w-24 h-24 bg-blue-200/20 rounded-lg rotate-45"></div>
-				<div className="absolute bottom-32 left-1/4 w-20 h-20 bg-white/15 rounded-full"></div>
-				<div className="absolute top-1/3 right-10 w-16 h-16 bg-purple-200/25 rounded-full"></div>
-				<div className="absolute bottom-20 right-1/3 w-28 h-28 bg-gradient-to-r from-purple-400/20 to-blue-400/20 rounded-full blur-lg"></div>
-
-				{/* Content */}
-				<div className="relative z-10 flex items-center justify-center h-full px-6">
-					<div className="text-center max-w-5xl space-y-8">
-						<span className="inline-block px-6 py-3 bg-white/20 backdrop-blur-sm rounded-full text-sm font-medium border border-white/20">
-							✨ Comprehensive Care Solutions
-						</span>
-
-						<h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-white via-purple-100 to-blue-100 bg-clip-text text-transparent leading-tight">
-							Our Comprehensive Care Services
-						</h1>
-
-						<p className="text-lg md:text-xl leading-relaxed opacity-90 max-w-3xl mx-auto">
-							Discover our comprehensive range of personalized care services
-							designed to enhance quality of life while preserving dignity,
-							independence, and cherished memories within the comforting embrace
-							of home.
-						</p>
-
-						{/* CTA Buttons */}
-						<div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
-							<Link href="/appointment">
-								<button className="bg-white text-blue-600 px-8 py-4 rounded-full font-semibold text-lg shadow-xl hover:shadow-2xl hover:bg-blue-50 transition-all duration-300 hover:scale-105 hover:-translate-y-1 flex items-center space-x-2">
-									<Calendar className="w-5 h-5" />
-									<span>Schedule Free Consultation</span>
-								</button>
-							</Link>
-
-							<Link href="/contact-us">
-								<button className="border-2 border-white/40 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white/10 hover:border-white/60 transition-all duration-300 flex items-center space-x-2">
-									<Phone className="w-5 h-5" />
-									<span>Get in Touch</span>
-								</button>
-							</Link>
-						</div>
-					</div>
-				</div>
-
-				{/* Scroll Indicator */}
-				<div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
-					<div className="flex flex-col items-center space-y-2 text-white/80 cursor-pointer">
-						<span className="text-xs md:text-sm font-medium tracking-wide">
-							Explore Services
-						</span>
-						<div className="w-6 h-10 border-2 border-white/40 rounded-full flex justify-center">
-							<div className="w-1 h-2 bg-white/60 rounded-full mt-2 animate-bounce"></div>
-						</div>
-					</div>
-				</div>
-			</section>
+			{/* Hero Section */}
+			<HeroSection
+				title="Our Comprehensive Care Services"
+				subtitle="Compassionate Care, Exceptional Service"
+				backgroundImage={LiveInCare}
+			/>
 
 			{/* Our Services Grid */}
 			<section className="py-24 bg-white relative overflow-hidden">

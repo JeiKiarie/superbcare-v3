@@ -62,11 +62,6 @@ const DementiaCarePage = () => {
 	return (
 		<>
 			{/* Hero Section */}
-			<section className="relative h-[50vh] md:h-[76vh] w-full bg-cover bg-center text-white mb-8">
-				<div className="absolute inset-0 z-0 overflow-hidden"></div>
-			</section>
-
-			{/* Hero Section with Modern HeroSection Component */}
 			<HeroSection
 				title="Dementia Care Services"
 				subtitle="Specialized Care for Memory Loss & Cognitive Support"

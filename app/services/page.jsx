@@ -168,7 +168,7 @@ const Services = () => {
 			/>
 
 			{/* Our Services Grid */}
-			<section className="py-24 bg-white relative overflow-hidden">
+			<section className="py-16 bg-white relative overflow-hidden">
 				{/* Background Pattern */}
 				<div className="absolute inset-0 opacity-[0.02]">
 					<div
@@ -294,7 +294,7 @@ const Services = () => {
 			</section>
 
 			{/* Why Choose Us Section */}
-			<section className="py-24 bg-gradient-to-br from-purple-50 via-white to-blue-50 relative overflow-hidden">
+			<section className="py-16 bg-gradient-to-br from-purple-50 via-white to-blue-50 relative overflow-hidden">
 				<div className="absolute top-10 right-10 w-64 h-64 bg-gradient-to-br from-purple-300/10 to-blue-300/10 rounded-full blur-3xl"></div>
 				<div className="absolute bottom-10 left-10 w-64 h-64 bg-gradient-to-br from-blue-300/10 to-purple-300/10 rounded-full blur-3xl"></div>
 
@@ -368,7 +368,7 @@ const Services = () => {
 			</section>
 
 			{/* Testimonials Section */}
-			<section className="py-24 bg-white relative">
+			<section className="py-16 bg-white relative">
 				{/* Background */}
 				<div className="absolute inset-0 bg-gradient-to-br from-gray-50 to-white"></div>
 
@@ -447,7 +447,7 @@ const Services = () => {
 			</section>
 
 			{/* Call to Action Section */}
-			<section className="relative py-24 bg-gradient-to-r from-[#cca6c8] via-[#b88cb8] to-[#a976a9] text-white overflow-hidden">
+			<section className="relative py-16 bg-gradient-to-r from-[#cca6c8] via-[#b88cb8] to-[#a976a9] text-white overflow-hidden">
 				{/* Background Elements */}
 				<div className="absolute inset-0">
 					<div className="absolute top-10 left-10 w-64 h-64 bg-white/5 rounded-full blur-2xl"></div>

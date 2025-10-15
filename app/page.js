@@ -210,7 +210,7 @@ export default function Home() {
 					className="text-4xl md:text-5xl font-bold text-center text-blue-900 mb-16"
 					initial={{ opacity: 0, y: 20 }}
 					transition={{ duration: 0.8 }}>
-					Why Choose Superb Care
+					Why Choose Superb Care Services?
 				</AnimatedWrapper>
 
 				{/* Quick Stats */}

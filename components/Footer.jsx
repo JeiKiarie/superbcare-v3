@@ -175,14 +175,10 @@ const Footer = () => {
 				</AnimatedWrapper>
 
 				{/* Bottom Section */}
-				<AnimatedWrapper
-					className="border-t border-slate-700/50"
-					initial={{ opacity: 0 }}
-					animate={{ opacity: 1 }}
-					transition={{ duration: 0.8, delay: 0.7 }}>
+				<div className="border-t border-slate-700/50">
 					<div className="container mx-auto px-6 py-6 text-center">
 						<div className="flex flex-col items-center space-y-2">
-							<div className="flex items-center space-x-2 text-slate-400">
+							<div className="flex items-center space-x-2 text-slate-300">
 								<FaHeart className="text-red-500" />
 								<span className="text-sm">
 									© {new Date().getFullYear()} Superb Care Services Ltd. All
@@ -192,12 +188,12 @@ const Footer = () => {
 							<Link
 								href="https://microstation.co.ke"
 								target="_blank"
-								className="text-xs text-slate-500 hover:text-blue-400 transition-colors duration-200 underline decoration-dotted underline-offset-4">
+								className="text-xs text-slate-300 hover:text-blue-400 transition-colors duration-200 underline decoration-dotted underline-offset-4">
 								Website by JeiKiarie
 							</Link>
 						</div>
 					</div>
-				</AnimatedWrapper>
+				</div>
 			</div>
 		</footer>
 	);

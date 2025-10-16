@@ -20,12 +20,12 @@ const DementiaCarePage = () => {
 			{/* Hero Section */}
 			<HeroSection
 				title="Dementia Care Services"
-				subtitle="Specialized Care for Memory Loss & Cognitive Support"
+				subtitle="Specialised Care for Memory Loss & Cognitive Support"
 				backgroundImage="/dementia-care1.jpg"
 			/>
 
 			{/* Modern Service Overview Section */}
-			<section className="relative py-20 bg-gradient-to-br from-[#f8fafc] via-white to-[#f1f5f9] overflow-hidden">
+			<section className="relative py-16 bg-gradient-to-br from-[#f8fafc] via-white to-[#f1f5f9] overflow-hidden">
 				{/* Floating Background Elements */}
 				<div className="absolute top-10 left-10 w-20 h-20 bg-[#cca6c8]/10 rounded-full blur-lg animate-float-1"></div>
 				<div className="absolute top-20 right-20 w-16 h-16 bg-blue-200/20 rounded-xl rotate-45 animate-float-2"></div>
@@ -41,13 +41,13 @@ const DementiaCarePage = () => {
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ delay: 0.2 }}>
 						<span className="inline-block px-4 py-2 bg-[#cca6c8]/10 backdrop-blur-sm rounded-full text-sm font-medium text-[#cca6c8] mb-4">
-							🧠 Specialized Dementia Support
+							🧠 Specialised Dementia Support
 						</span>
 						<h2 className="text-5xl font-bold bg-gradient-to-r from-blue-800 to-[#cca6c8] bg-clip-text text-transparent mb-6">
 							Compassionate Dementia Care
 						</h2>
 						<p className="text-xl text-gray-600 leading-relaxed max-w-4xl mx-auto">
-							Understanding dementia requires specialized knowledge and
+							Understanding dementia requires specialised knowledge and
 							boundless compassion. Our dedicated approach ensures dignity,
 							safety, and quality of life for individuals with memory loss and
 							cognitive challenges.
@@ -61,7 +61,7 @@ const DementiaCarePage = () => {
 								icon: <GiBrain className="w-10 h-10 text-[#cca6c8]" />,
 								title: 'Memory Support',
 								description:
-									'Specialized assistance with memory loss and cognitive function',
+									'Specialised assistance with memory loss and cognitive function',
 								color: 'from-[#cca6c8] to-[#b89ab9]',
 							},
 							{
@@ -121,7 +121,7 @@ const DementiaCarePage = () => {
 						</h3>
 						<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 							{[
-								'Specialized dementia care planning and monitoring',
+								'Specialised dementia care planning and monitoring',
 								'Memory assistance and cognitive stimulation activities',
 								'Emotional support and compassionate companionship',
 								'24/7 safety monitoring and fall prevention',
@@ -151,7 +151,7 @@ const DementiaCarePage = () => {
 			</section>
 
 			{/* Interactive Benefits Section - Modern Cards */}
-			<section className="py-20 bg-gradient-to-br from-[#cca6c8]/5 via-white to-blue-50 relative overflow-hidden">
+			<section className="py-16 bg-gradient-to-br from-[#cca6c8]/5 via-white to-blue-50 relative overflow-hidden">
 				<div className="absolute inset-0">
 					<div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-[#cca6c8]/10 to-transparent rounded-full blur-xl"></div>
 					<div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-blue-100/20 to-transparent rounded-full blur-xl"></div>
@@ -179,7 +179,7 @@ const DementiaCarePage = () => {
 								icon: <FaGraduationCap className="w-12 h-12 text-white" />,
 								title: 'Advanced Dementia Training',
 								description:
-									'Our caregivers receive specialized, ongoing training in dementia care, understanding the unique challenges of each stage and providing appropriate support and communication.',
+									'Our caregivers receive specialised, ongoing training in dementia care, understanding the unique challenges of each stage and providing appropriate support and communication.',
 								color: 'from-[#cca6c8] to-[#b89ab9]',
 								hoverColor:
 									'group-hover:from-[#cca6c8] group-hover:to-[#d1b4d2]',
@@ -205,14 +205,14 @@ const DementiaCarePage = () => {
 								icon: <RiHeartLine className="w-12 h-12 text-white" />,
 								title: 'Emotional & Behavioral Support',
 								description:
-									'Specialized approaches to manage challenging behaviors, provide emotional validation, and maintain dignity while addressing the unique emotional needs of dementia patients.',
+									'Specialised approaches to manage challenging behaviors, provide emotional validation, and maintain dignity while addressing the unique emotional needs of dementia patients.',
 								color: 'from-blue-700 to-[#cca6c8]',
 								hoverColor:
 									'group-hover:from-blue-700 group-hover:to-[#b89ab9]',
 							},
 							{
 								icon: <FaClock className="w-12 h-12 text-white" />,
-								title: '24/7 Specialized Monitoring',
+								title: '24/7 Specialised Monitoring',
 								description:
 									'Round-the-clock care by dementia-trained professionals who understand sleep patterns, sundowning, and other unique dementia-related needs and behaviors.',
 								color: 'from-[#cca6c8] to-purple-600',
@@ -252,7 +252,7 @@ const DementiaCarePage = () => {
 											className={`w-4 h-4 ${'text-blue-500'} opacity-0 group-hover:opacity-100 transition-opacity duration-300`}
 										/>
 										<span className="text-sm text-[#cca6c8] font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-											Specialized Care
+											Specialised Care
 										</span>
 									</div>
 								</div>
@@ -263,7 +263,7 @@ const DementiaCarePage = () => {
 			</section>
 
 			{/* Modern FAQ Section */}
-			<section className="py-20 bg-gradient-to-r from-white via-blue-50/30 to-[#cca6c8]/10">
+			<section className="py-16 bg-gradient-to-r from-white via-blue-50/30 to-[#cca6c8]/10">
 				<div className="container mx-auto px-6">
 					<AnimatedWrapper
 						className="text-center mb-16"
@@ -292,8 +292,7 @@ const DementiaCarePage = () => {
 							{[
 								{
 									question: 'What types of dementia do you provide care for?',
-									answer:
-										'We provide specialized care for all types of dementia including Alzheimer&#39;s disease, vascular dementia, Lewy body dementia, frontotemporal dementia, and mixed dementias. Our trained caregivers tailor care approaches based on the specific type of dementia and individual needs.',
+									answer: `We provide specialised care for all types of dementia including Alzheimer's disease, vascular dementia, Lewy body dementia, frontotemporal dementia, and mixed dementias. Our trained caregivers tailor care approaches based on the specific type of dementia and individual needs.`,
 								},
 								{
 									question:
@@ -303,35 +302,32 @@ const DementiaCarePage = () => {
 								},
 								{
 									question:
-										'What specialized training do your dementia caregivers receive?',
+										'What specialised training do your dementia caregivers receive?',
 									answer:
-										'Our caregivers participate in extensive training programs including dementia awareness, communication techniques, safety procedures, medication management, emotional support strategies, family education, and ongoing professional development. We also provide specialized training for different dementia stages and types.',
+										'Our caregivers participate in extensive training programs including dementia awareness, communication techniques, safety procedures, medication management, emotional support strategies, family education, and ongoing professional development. We also provide specialised training for different dementia stages and types.',
 								},
 								{
 									question: 'How do you prevent wandering and ensure safety?',
 									answer:
-										'We implement comprehensive safety protocols including environmental modifications, door alarms, GPS tracking systems, safety assessments, regular check-ins, and caregiver training. We also work with families to create personalized safety plans that respect the individual&#39;s dignity while ensuring security.',
+										'We implement comprehensive safety protocols including environmental modifications, door alarms, GPS tracking systems, safety assessments, regular check-ins, and caregiver training. We also work with families to create personalised safety plans that respect the individual&#39;s dignity while ensuring security.',
 								},
 								{
 									question: 'How often is the dementia care plan reviewed?',
-									answer:
-										'Dementia care plans are reviewed every 1-3 months or whenever significant changes occur in the individual&#39;s condition, with immediate adjustments as needed. Regular assessments ensure the care plan remains appropriate for the person&#39;s current needs and abilities.',
+									answer: `Dementia care plans are reviewed every 1-3 months or whenever significant changes occur in the individual&#39;s condition, with immediate adjustments as needed. Regular assessments ensure the care plan remains appropriate for the person's current needs and abilities.`,
 								},
 								{
 									question: 'Do you provide family support and education?',
-									answer:
-										'Absolutely. We provide comprehensive family support including caregiver training, educational resources, emotional support, respite care options, and ongoing communication about your loved one&#39;s care and progress. Family involvement is crucial for successful dementia care.',
+									answer: `Absolutely. We provide comprehensive family support including caregiver training, educational resources, emotional support, respite care options, and ongoing communication about your loved one's care and progress. Family involvement is crucial for successful dementia care.`,
 								},
 								{
 									question:
 										'What should I look for when choosing dementia care?',
 									answer:
-										'Specialized dementia training, experience with various dementia types and stages, proven safety protocols, comprehensive care planning, family support services, flexibility and responsiveness to individual needs, and a compassion-centered approach are all essential factors to consider.',
+										'Specialised dementia training, experience with various dementia types and stages, proven safety protocols, comprehensive care planning, family support services, flexibility and responsiveness to individual needs, and a compassion-centered approach are all essential factors to consider.',
 								},
 								{
 									question: 'How can I prepare my home for dementia care?',
-									answer:
-										'We recommend creating a safe environment by removing hazards, installing grab bars, improving lighting, simplifying navigation, reducing clutter, establishing routines, creating memory aids, and ensuring easy access to necessary items. Our team can provide specific recommendations based on your loved one&#39;s needs.',
+									answer: `We recommend creating a safe environment by removing hazards, installing grab bars, improving lighting, simplifying navigation, reducing clutter, establishing routines, creating memory aids, and ensuring easy access to necessary items. Our team can provide specific recommendations based on your loved one's needs.`,
 								},
 							].map((faq, index) => (
 								<AccordionItem
@@ -359,7 +355,7 @@ const DementiaCarePage = () => {
 			</section>
 
 			{/* Premium Call to Action Section */}
-			<section className="relative py-20 bg-gradient-to-r from-[#cca6c8] via-[#b88cb8] to-blue-600 text-white overflow-hidden">
+			<section className="relative py-16 bg-gradient-to-r from-[#cca6c8] via-[#b88cb8] to-blue-600 text-white overflow-hidden">
 				{/* Animated Background Elements */}
 				<div className="absolute top-10 left-10 w-32 h-32 bg-white/10 rounded-full blur-xl animate-float-1"></div>
 				<div className="absolute top-20 right-20 w-24 h-24 bg-blue-200/20 rounded-lg rotate-45 animate-float-2"></div>
@@ -373,14 +369,14 @@ const DementiaCarePage = () => {
 						transition={{ delay: 0.2 }}
 						className="max-w-4xl mx-auto">
 						<span className="inline-block px-6 py-3 bg-white/20 backdrop-blur-sm rounded-full text-lg font-medium mb-6">
-							🧠 Specialized Dementia Care Support
+							🧠 Specialised Dementia Care Support
 						</span>
 						<h2 className="text-5xl font-bold mb-8 bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">
 							Expert Dementia Care for Your Loved One
 						</h2>
 						<p className="text-xl mb-12 opacity-90 leading-relaxed max-w-3xl mx-auto">
 							Experience the difference that comes from understanding dementia
-							at its core. Our specialized care combines clinical expertise with
+							at its core. Our specialised care combines clinical expertise with
 							genuine compassion, creating an environment where dignity,
 							comfort, and quality of life are preserved through every stage.
 						</p>
@@ -389,9 +385,9 @@ const DementiaCarePage = () => {
 						<div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
 							{[
 								{ number: '95%', label: 'Dementia Care Satisfaction' },
-								{ number: '200+', label: 'Dementia Patients Served' },
-								{ number: '8+', label: 'Years Dementia Expertise' },
-								{ number: '24/7', label: 'Specialized Support' },
+								{ number: '140+', label: 'Dementia Patients Served' },
+								{ number: '7+', label: 'Years Dementia Expertise' },
+								{ number: '24/7', label: 'Specialised Support' },
 							].map((stat, index) => (
 								<div
 									key={index}
@@ -427,7 +423,7 @@ const DementiaCarePage = () => {
 							animate={{ opacity: 1 }}
 							transition={{ delay: 1.6 }}
 							className="mt-8 text-sm opacity-80">
-							💫 Dementia-specialized caregivers • Advanced safety protocols •
+							💫 Dementia-specialised caregivers • Advanced safety protocols •
 							Family education included
 						</AnimatedWrapper>
 					</AnimatedWrapper>

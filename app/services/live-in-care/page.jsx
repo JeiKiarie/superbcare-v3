@@ -179,7 +179,7 @@ const LiveInCarePage = () => {
 								},
 								{
 									q: 'What training do your caregivers receive?',
-									a: 'All caregivers undergo comprehensive training including first aid, CPR, and specialized care techniques.',
+									a: 'All caregivers undergo comprehensive training including first aid, CPR, and specialised care techniques.',
 								},
 								{
 									q: 'How flexible are your care packages?',

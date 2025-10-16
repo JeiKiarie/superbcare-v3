@@ -29,7 +29,7 @@ const RespiteCarePage = () => {
 			/>
 
 			{/* Modern Service Overview Section */}
-			<section className="relative py-20 bg-gradient-to-br from-[#f8fafc] via-white to-[#f1f5f9] overflow-hidden">
+			<section className="relative py-16 bg-gradient-to-br from-[#f8fafc] via-white to-[#f1f5f9] overflow-hidden">
 				{/* Floating Background Elements */}
 				<div className="absolute top-10 left-10 w-20 h-20 bg-[#cca6c8]/10 rounded-full blur-lg animate-float-1"></div>
 				<div className="absolute top-20 right-20 w-16 h-16 bg-blue-200/20 rounded-xl rotate-45 animate-float-2"></div>
@@ -158,7 +158,7 @@ const RespiteCarePage = () => {
 			</section>
 
 			{/* Interactive Benefits Section - Modern Cards */}
-			<section className="py-20 bg-gradient-to-br from-[#cca6c8]/5 via-white to-blue-50 relative overflow-hidden">
+			<section className="py-16 bg-gradient-to-br from-[#cca6c8]/5 via-white to-blue-50 relative overflow-hidden">
 				<div className="absolute inset-0">
 					<div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-[#cca6c8]/10 to-transparent rounded-full blur-xl"></div>
 					<div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-blue-100/20 to-transparent rounded-full blur-xl"></div>
@@ -272,7 +272,7 @@ const RespiteCarePage = () => {
 			</section>
 
 			{/* Modern FAQ Section */}
-			<section className="py-20 bg-gradient-to-r from-white via-blue-50/30 to-[#cca6c8]/10">
+			<section className="py-16 bg-gradient-to-r from-white via-blue-50/30 to-[#cca6c8]/10">
 				<div className="container mx-auto px-6">
 					<AnimatedWrapper
 						className="text-center mb-16"
@@ -316,7 +316,7 @@ const RespiteCarePage = () => {
 								{
 									question: 'How much does respite care cost?',
 									answer:
-										'Costs vary based on the duration, frequency, and level of care required. We offer transparent pricing with no hidden fees and can work with your budget to find suitable solutions. Many families use flexible spending accounts or find that the benefits of preventing caregiver burnout justify the investment. Contact us for a personalized quote.',
+										'Costs vary based on the duration, frequency, and level of care required. We offer transparent pricing with no hidden fees and can work with your budget to find suitable solutions. Many families use flexible spending accounts or find that the benefits of preventing caregiver burnout justify the investment. Contact us for a personalised quote.',
 								},
 								{
 									question:
@@ -355,7 +355,7 @@ const RespiteCarePage = () => {
 			</section>
 
 			{/* Premium Call to Action Section */}
-			<section className="relative py-20 bg-gradient-to-r from-[#cca6c8] via-[#b88cb8] to-blue-600 text-white overflow-hidden">
+			<section className="relative py-16 bg-gradient-to-r from-[#cca6c8] via-[#b88cb8] to-blue-600 text-white overflow-hidden">
 				{/* Animated Background Elements */}
 				<div className="absolute top-10 left-10 w-32 h-32 bg-white/10 rounded-full blur-xl animate-float-1"></div>
 				<div className="absolute top-20 right-20 w-24 h-24 bg-blue-200/20 rounded-lg rotate-45 animate-float-2"></div>

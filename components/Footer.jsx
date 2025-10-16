@@ -11,6 +11,7 @@ import {
 } from 'react-icons/fa';
 import AnimatedWrapper from './AnimatedWrapper';
 import { Button } from './ui/button';
+import { FaXTwitter } from 'react-icons/fa6';
 
 const Footer = () => {
 	return (
@@ -64,7 +65,7 @@ const Footer = () => {
 									href="https://twitter.com"
 									className="group p-3 rounded-full bg-slate-700/50 hover:bg-blue-400 transition-all duration-300 hover:scale-110">
 									<div className="text-blue-400 group-hover:text-white">
-										<FaTwitter size={20} />
+										<FaXTwitter size={20} />
 									</div>
 								</Link>
 								<Link

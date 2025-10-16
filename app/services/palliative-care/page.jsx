@@ -25,7 +25,7 @@ const PalliativeCarePage = () => {
 			/>
 
 			{/* Modern Service Overview Section */}
-			<section className="relative py-20 bg-gradient-to-br from-[#f8fafc] via-white to-[#f1f5f9] overflow-hidden">
+			<section className="relative py-16 bg-gradient-to-br from-[#f8fafc] via-white to-[#f1f5f9] overflow-hidden">
 				{/* Floating Background Elements */}
 				<div className="absolute top-10 left-10 w-20 h-20 bg-[#cca6c8]/10 rounded-full blur-lg animate-float-1"></div>
 				<div className="absolute top-20 right-20 w-16 h-16 bg-blue-200/20 rounded-xl rotate-45 animate-float-2"></div>
@@ -43,7 +43,7 @@ const PalliativeCarePage = () => {
 						<span className="inline-block px-4 py-2 bg-[#cca6c8]/10 backdrop-blur-sm rounded-full text-sm font-medium text-[#cca6c8] mb-4">
 							🕊️ Holistic Comfort Care
 						</span>
-						<h2 className="text-5xl font-bold bg-gradient-to-r from-blue-800 to-[#cca6c8] bg-clip-text text-transparent mb-6">
+						<h2 className="text-5xl font-bold bg-gradient-to-r from-blue-800 to-[#cca6c8] bg-clip-text text-transparent mb-6 py-3">
 							Dignity in Every Moment
 						</h2>
 						<p className="text-xl text-gray-600 leading-relaxed max-w-4xl mx-auto">
@@ -153,7 +153,7 @@ const PalliativeCarePage = () => {
 			</section>
 
 			{/* Interactive Benefits Section - Modern Cards */}
-			<section className="py-20 bg-gradient-to-br from-[#cca6c8]/5 via-white to-blue-50 relative overflow-hidden">
+			<section className="py-16 bg-gradient-to-br from-[#cca6c8]/5 via-white to-blue-50 relative overflow-hidden">
 				<div className="absolute inset-0">
 					<div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-[#cca6c8]/10 to-transparent rounded-full blur-xl"></div>
 					<div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-blue-100/20 to-transparent rounded-full blur-xl"></div>
@@ -265,7 +265,7 @@ const PalliativeCarePage = () => {
 			</section>
 
 			{/* Modern FAQ Section */}
-			<section className="py-20 bg-gradient-to-r from-white via-blue-50/30 to-[#cca6c8]/10">
+			<section className="py-16 bg-gradient-to-r from-white via-blue-50/30 to-[#cca6c8]/10">
 				<div className="container mx-auto px-6">
 					<AnimatedWrapper
 						className="text-center mb-16"
@@ -295,7 +295,7 @@ const PalliativeCarePage = () => {
 								{
 									question: 'What is palliative care?',
 									answer:
-										'Palliative care is specialized medical care focused on improving quality of life for patients with serious illnesses and their families. It focuses on providing relief from symptoms, pain, and stress of serious illness through comprehensive support that addresses physical, emotional, social, and spiritual needs.',
+										'Palliative care is specialised medical care focused on improving quality of life for patients with serious illnesses and their families. It focuses on providing relief from symptoms, pain, and stress of serious illness through comprehensive support that addresses physical, emotional, social, and spiritual needs.',
 								},
 								{
 									question: 'Who can benefit from palliative care?',
@@ -313,7 +313,7 @@ const PalliativeCarePage = () => {
 								},
 								{
 									question: 'Does palliative care mean giving up hope?',
-									answer: `Absolutely not! Palliative care works alongside curative treatments to maximize comfort and quality of life. Many patients choose palliative care to help them continue with their treatments while managing difficult symptoms. It doesn't replace curative care - it complements it.`,
+									answer: `Absolutely not! Palliative care works alongside curative treatments to maximise comfort and quality of life. Many patients choose palliative care to help them continue with their treatments while managing difficult symptoms. It doesn't replace curative care - it complements it.`,
 								},
 								{
 									question: 'What services does palliative care include?',

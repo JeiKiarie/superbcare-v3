@@ -81,7 +81,7 @@ export default function Header() {
 			initial={{ y: -100 }}
 			animate={{ y: 0 }}
 			transition={{ duration: 0.6, ease: 'easeOut' }}
-			className={`sticky top-0 z-50 transition-all duration-300 ${
+			className={`md:sticky fixed md:top-0 top-0 w-full z-50 transition-all duration-300 ${
 				isScrolled
 					? 'bg-white/80 backdrop-blur-md shadow-lg border-b border-gray-200/50'
 					: 'bg-white/60 backdrop-blur-sm'

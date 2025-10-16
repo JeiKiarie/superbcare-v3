@@ -149,17 +149,17 @@ const AboutPage = () => {
 			</section>
 
 			{/* Our Story Section - Asymmetrical Layout */}
-			<section className="py-16 bg-gray-50">
+			<section className="py-8 bg-gray-50">
 				<div className="container mx-auto px-6">
 					<AnimatedWrapper
-						className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center"
+						className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
 						delay={0.2}>
-						<div className="space-y-6">
-							<h3 className="text-4xl font-bold text-blue-800 mb-6">
+						<div className="space-y-4">
+							<h3 className="text-3xl md:text-4xl font-bold text-blue-800 mb-4">
 								Our Story
 							</h3>
-							<div className="space-y-6 text-gray-700 leading-relaxed">
-								<p className="text-lg">
+							<div className="space-y-4 text-gray-700 leading-relaxed">
+								<p className="text-base md:text-lg">
 									Founded in 2018, Superb Care Services Ltd was born out of a
 									desire to provide an alternative to institutional care for the
 									elderly and individuals with disabilities. Our founder, Rev
@@ -167,7 +167,7 @@ const AboutPage = () => {
 									loved ones struggle to find quality, compassionate care in a
 									home setting.
 								</p>
-								<p className="text-lg">
+								<p className="text-base md:text-lg">
 									We believe that everyone deserves to age or recover with
 									dignity and independence in the comfort of their own home. Our
 									live-in care services were designed with this in mind,
@@ -183,15 +183,15 @@ const AboutPage = () => {
 							animate={{ opacity: 1, x: 0 }}
 							transition={{ delay: 0.4 }}
 							className="relative">
-							<div className="relative overflow-hidden rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-500">
+							<div className="relative overflow-hidden rounded-xl md:rounded-2xl shadow-xl md:shadow-2xl transform hover:scale-105 transition-transform duration-500">
 								<Image
-									className="w-full h-[500px] object-cover"
+									className="w-full h-[300px] md:h-[500px] object-cover rounded-xl md:rounded-2xl"
 									width={600}
-									height={500}
+									height={250}
 									alt="Elderly care recipient enjoying home environment"
 									src="/our-story.webp"
 								/>
-								<div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent"></div>
+								<div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent rounded-xl md:rounded-2xl"></div>
 							</div>
 						</AnimatedWrapper>
 					</AnimatedWrapper>

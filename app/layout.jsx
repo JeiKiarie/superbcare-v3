@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
 		<html lang="en">
 			<body className={inter.className}>
 				<Header />
-				{children}
+				<main className="overflow-auto pt-20 md:pt-0">{children}</main>
 				<Footer />
 			</body>
 		</html>

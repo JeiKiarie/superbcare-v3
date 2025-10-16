@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import Link from 'next/link';
 import respiteCare from '/public/respite-care.jpg';
 import Image from 'next/image';

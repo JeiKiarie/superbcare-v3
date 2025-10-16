@@ -9,12 +9,8 @@ import {
 	AccordionItem,
 	AccordionTrigger,
 } from '/components/ui/accordion';
-import kiarie from '/public/kiarie.jpg';
-import { FaUserNurse } from 'react-icons/fa6';
 import { MdOutlineAssistWalker } from 'react-icons/md';
-import { MdAssistWalker } from 'react-icons/md';
 import { LiaUserNurseSolid } from 'react-icons/lia';
-import { BiBrain } from 'react-icons/bi';
 import { LuCalendarClock } from 'react-icons/lu';
 import { TbMoodPuzzled } from 'react-icons/tb';
 import { GiPeaceDove } from 'react-icons/gi';

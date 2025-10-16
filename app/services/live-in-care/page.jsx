@@ -7,6 +7,7 @@ import {
 	AccordionItem,
 	AccordionTrigger,
 } from '@/components/ui/accordion';
+import BackButton from '@/components/BackButton';
 
 const LiveInCarePage = () => {
 	return (
@@ -251,11 +252,12 @@ const LiveInCarePage = () => {
 			</section>
 
 			<div className="flex justify-center py-8 bg-gray-50">
-				<Link href="/services">
+				{/* <Link href="/services">
 					<button className="bg-white text-blue-600 px-6 py-3 rounded-xl font-semibold border border-blue-200 hover:bg-blue-600 hover:text-white transition-all">
 						← Back to Services
 					</button>
-				</Link>
+				</Link> */}
+				<BackButton />
 			</div>
 		</>
 	);

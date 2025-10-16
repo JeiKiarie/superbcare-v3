@@ -13,6 +13,7 @@ import {
 	AccordionItem,
 	AccordionTrigger,
 } from '@/components/ui/accordion';
+import BackButton from '@/components/BackButton';
 
 const DementiaCarePage = () => {
 	return (
@@ -436,10 +437,11 @@ const DementiaCarePage = () => {
 					animate={{ scale: 1 }}
 					transition={{ delay: 1.8 }}>
 					<Link href="/services">
-						<button className="bg-white text-blue-600 px-6 py-3 rounded-xl font-semibold border border-blue-200 hover:bg-blue-600 hover:text-white transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1 flex items-center gap-2">
+						{/* <button className="bg-white text-blue-600 px-6 py-3 rounded-xl font-semibold border border-blue-200 hover:bg-blue-600 hover:text-white transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1 flex items-center gap-2">
 							<span>←</span>
 							Back to Services
-						</button>
+						</button> */}
+						<BackButton />
 					</Link>
 				</AnimatedWrapper>
 			</div>

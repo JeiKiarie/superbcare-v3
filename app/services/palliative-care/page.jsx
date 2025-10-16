@@ -13,6 +13,7 @@ import {
 	AccordionItem,
 	AccordionTrigger,
 } from '@/components/ui/accordion';
+import BackButton from '@/components/BackButton';
 
 const PalliativeCarePage = () => {
 	return (
@@ -379,11 +380,12 @@ const PalliativeCarePage = () => {
 						initial={{ scale: 0.9 }}
 						animate={{ scale: 1 }}
 						transition={{ delay: 0.4 }}>
-						<Link href="/services">
+						{/* <Link href="/services">
 							<button className="bg-white text-blue-600 py-3 px-8 rounded-lg font-semibold hover:bg-blue-700 hover:text-white transition">
 								⬅ Back to Services
 							</button>
-						</Link>
+						</Link> */}
+						<BackButton />
 					</AnimatedWrapper>
 				</div>
 			</section>

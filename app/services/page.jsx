@@ -16,7 +16,6 @@ import {
 	CheckCircle,
 	Quote,
 	Shield,
-	Smile,
 } from 'lucide-react';
 import AnimatedWrapper from '@/components/AnimatedWrapper';
 
@@ -338,7 +337,7 @@ const Services = () => {
 						className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20 max-w-4xl mx-auto"
 						delay={0.8}>
 						{[
-							{ number: '500+', label: 'Families Served' },
+							{ number: '200+', label: 'Families Served' },
 							{ number: '98%', label: 'Satisfaction Rate' },
 							{ number: '50+', label: 'Trained Staff' },
 							{ number: '6+', label: 'Service Types' },

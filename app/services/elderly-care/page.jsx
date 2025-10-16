@@ -36,7 +36,7 @@ const ElderlyCarePage = () => {
 			/>
 
 			{/* Modern Service Overview Section */}
-			<section className="relative py-20 bg-gradient-to-br from-[#f8fafc] via-white to-[#f1f5f9] overflow-hidden">
+			<section className="relative py-16 bg-gradient-to-br from-[#f8fafc] via-white to-[#f1f5f9] overflow-hidden">
 				{/* Floating Background Elements */}
 				<div className="absolute top-10 left-10 w-20 h-20 bg-[#cca6c8]/10 rounded-full blur-lg animate-float-1"></div>
 				<div className="absolute top-20 right-20 w-16 h-16 bg-blue-200/20 rounded-xl rotate-45 animate-float-2"></div>
@@ -52,7 +52,7 @@ const ElderlyCarePage = () => {
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ delay: 0.2 }}>
 						<span className="inline-block px-4 py-2 bg-[#cca6c8]/10 backdrop-blur-sm rounded-full text-sm font-medium text-[#cca6c8] mb-4">
-							✨ Specialized Senior Care Solutions
+							✨ Specialised Senior Care Solutions
 						</span>
 						<h2 className="text-5xl font-bold bg-gradient-to-r from-blue-800 to-[#cca6c8] bg-clip-text text-transparent mb-6">
 							Compassionate Care for Seniors
@@ -167,7 +167,7 @@ const ElderlyCarePage = () => {
 			</section>
 
 			{/* Interactive Benefits Section - Modern Cards */}
-			<section className="py-20 bg-gradient-to-br from-[#cca6c8]/5 via-white to-blue-50 relative overflow-hidden">
+			<section className="py-16 bg-gradient-to-br from-[#cca6c8]/5 via-white to-blue-50 relative overflow-hidden">
 				<div className="absolute inset-0">
 					<div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-[#cca6c8]/10 to-transparent rounded-full blur-xl"></div>
 					<div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-blue-100/20 to-transparent rounded-full blur-xl"></div>
@@ -219,9 +219,9 @@ const ElderlyCarePage = () => {
 							},
 							{
 								icon: <MdOutlineCleanHands className="w-12 h-12 text-white" />,
-								title: 'Personalized Care Plans',
+								title: 'Personalised Care Plans',
 								description:
-									'Every senior receives a customized care plan developed through comprehensive assessments, ensuring all unique needs and preferences are perfectly addressed.',
+									'Every senior receives a customised care plan developed through comprehensive assessments, ensuring all unique needs and preferences are perfectly addressed.',
 								color: 'from-blue-700 to-[#cca6c8]',
 								hoverColor:
 									'group-hover:from-blue-700 group-hover:to-[#b89ab9]',
@@ -279,7 +279,7 @@ const ElderlyCarePage = () => {
 			</section>
 
 			{/* Modern FAQ Section */}
-			<section className="py-20 bg-gradient-to-r from-white via-blue-50/30 to-[#cca6c8]/10">
+			<section className="py-16 bg-gradient-to-r from-white via-blue-50/30 to-[#cca6c8]/10">
 				<div className="container mx-auto px-6">
 					<AnimatedWrapper
 						className="text-center mb-16"
@@ -309,7 +309,7 @@ const ElderlyCarePage = () => {
 									question:
 										'What specific services are included in elderly care?',
 									answer:
-										'Our elderly care services encompass personal hygiene assistance (bathing, dressing, grooming), medication management, nutritious meal preparation, light housekeeping, transportation to appointments, social activities, 24/7 emergency response, and companionship. Each plan is customized based on individual needs and preferences.',
+										'Our elderly care services encompass personal hygiene assistance (bathing, dressing, grooming), medication management, nutritious meal preparation, light housekeeping, transportation to appointments, social activities, 24/7 emergency response, and companionship. Each plan is customised based on individual needs and preferences.',
 								},
 								{
 									question:
@@ -320,7 +320,7 @@ const ElderlyCarePage = () => {
 								{
 									question: 'Are your caregivers qualified and certified?',
 									answer:
-										'Absolutely. All our elderly care specialists undergo comprehensive training including first aid/CPR certification, specialized geriatric care training, medication management, infection control, dementia care awareness, and continuous professional development programs.',
+										'Absolutely. All our elderly care specialists undergo comprehensive training including first aid/CPR certification, specialised geriatric care training, medication management, infection control, dementia care awareness, and continuous professional development programs.',
 								},
 								{
 									question: 'How flexible are your care schedules?',
@@ -330,8 +330,7 @@ const ElderlyCarePage = () => {
 								{
 									question:
 										'What happens if my loved one has special medical conditions?',
-									answer:
-										'Our caregivers are trained to handle various medical conditions including diabetes management, dementia/Alzheimer&#39;s care, mobility assistance, post-surgery care, and rehabilitation support. We coordinate with healthcare professionals and can create specialized care plans for complex medical needs.',
+									answer: `Our caregivers are trained to handle various medical conditions including diabetes management, dementia/Alzheimer's care, mobility assistance, post-surgery care, and rehabilitation support. We coordinate with healthcare professionals and can create specialised care plans for complex medical needs.`,
 								},
 								{
 									question:
@@ -342,8 +341,7 @@ const ElderlyCarePage = () => {
 								{
 									question:
 										'What is the process for starting elderly care services?',
-									answer:
-										'We begin with a complimentary in-home assessment to understand the senior&#39;s needs and preferences. Then we develop a personalized care plan, match with a compatible caregiver, conduct background checks, and ensure a smooth transition with ongoing family communication.',
+									answer: `We begin with a complimentary in-home assessment to understand the senior's needs and preferences. Then we develop a personalised care plan, match with a compatible caregiver, conduct background checks, and ensure a smooth transition with ongoing family communication.`,
 								},
 								{
 									question: 'How do you handle emergency situations?',
@@ -376,7 +374,7 @@ const ElderlyCarePage = () => {
 			</section>
 
 			{/* Premium Call to Action Section */}
-			<section className="relative py-20 bg-gradient-to-r from-[#cca6c8] via-[#b88cb8] to-blue-600 text-white overflow-hidden">
+			<section className="relative py-16 bg-gradient-to-r from-[#cca6c8] via-[#b88cb8] to-blue-600 text-white overflow-hidden">
 				{/* Animated Background Elements */}
 				<div className="absolute top-10 left-10 w-32 h-32 bg-white/10 rounded-full blur-xl animate-float-1"></div>
 				<div className="absolute top-20 right-20 w-24 h-24 bg-blue-200/20 rounded-lg rotate-45 animate-float-2"></div>
@@ -399,7 +397,7 @@ const ElderlyCarePage = () => {
 							Experience the peace of mind that comes with knowing your senior
 							loved one is receiving professional, compassionate care tailored
 							to their unique needs. Our expert team is ready to create a
-							personalized care solution that honors their dignity while
+							personalised care solution that honors their dignity while
 							ensuring their safety and happiness.
 						</p>
 
@@ -407,8 +405,8 @@ const ElderlyCarePage = () => {
 						<div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
 							{[
 								{ number: '98%', label: 'Client Satisfaction' },
-								{ number: '350+', label: 'Seniors Cared For' },
-								{ number: '15+', label: 'Years Experience' },
+								{ number: '180+', label: 'Seniors Cared For' },
+								{ number: '7+', label: 'Years Experience' },
 								{ number: 'CQC', label: 'Approved & Accredited' },
 							].map((stat, index) => (
 								<div
@@ -445,7 +443,7 @@ const ElderlyCarePage = () => {
 							animate={{ opacity: 1 }}
 							transition={{ delay: 1.6 }}
 							className="mt-8 text-sm opacity-80">
-							💫 Personalized care plans • Experienced caregivers • 30-day
+							💫 Personalised care plans • Experienced caregivers • 30-day
 							satisfaction guarantee
 						</AnimatedWrapper>
 					</AnimatedWrapper>

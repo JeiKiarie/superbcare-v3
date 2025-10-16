@@ -42,7 +42,7 @@ const services = [
 	},
 	{
 		id: 4,
-		title: 'Specialized Care',
+		title: 'Specialised Care',
 		icon: BiFirstAid,
 		text: `We offer specialised care for those with specific health conditions or recovery needs including Dementia and Alzheimer’s care, post-surgery and rehabilitation support, as well as palliative and end-of-life care.`,
 	},
@@ -71,13 +71,13 @@ const services = [
 		id: 8,
 		title: 'Assisted Living',
 		icon: MdOutlineAssistWalker,
-		text: `Our assisted living communities are carefully designed to promote independence and well-being while offering personalized assistance with daily tasks.`,
+		text: `Our assisted living communities are carefully designed to promote independence and well-being while offering personalised assistance with daily tasks.`,
 	},
 	{
 		id: 9,
 		title: 'Memory Care',
 		icon: TbMoodPuzzled,
-		text: `Our memory care program provides a safe and secure environment where residents receive specialized care tailored to their cognitive needs.`,
+		text: `Our memory care program provides a safe and secure environment where residents receive specialised care tailored to their cognitive needs.`,
 	},
 	{
 		id: 10,
@@ -213,7 +213,7 @@ export default function Home() {
 				<div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
 					<div className="text-center">
 						<div className="text-4xl md:text-6xl font-bold text-[#cca6c8] mb-2">
-							500+
+							200+
 						</div>
 						<div className="text-gray-600 text-sm md:text-base">
 							Happy Clients
@@ -221,7 +221,7 @@ export default function Home() {
 					</div>
 					<div className="text-center">
 						<div className="text-4xl md:text-6xl font-bold text-[#cca6c8] mb-2">
-							10+
+							7+
 						</div>
 						<div className="text-gray-600 text-sm md:text-base">
 							Years Experience
@@ -312,7 +312,7 @@ export default function Home() {
 								2
 							</div>
 							<h3 className="text-xl font-bold text-blue-900 mb-4">
-								Personalized Care Plan
+								Personalised Care Plan
 							</h3>
 							<p className="text-gray-600 leading-relaxed">
 								Based on the assessment, we create a customized care plan that
@@ -433,12 +433,12 @@ export default function Home() {
 							value="item-4"
 							className="border-0">
 							<AccordionTrigger className="text-lg font-bold text-blue-900 hover:text-[#cca6c8] p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors">
-								What types of specialized care do you offer?
+								What types of specialised care do you offer?
 							</AccordionTrigger>
 							<AccordionContent className="text-gray-700 leading-relaxed px-6 pb-4">
 								We specialize in dementia and Alzheimer&apos;s care, palliative
 								care, rehabilitation support, and post-surgery care. All our
-								specialized services are provided by trained professionals with
+								specialised services are provided by trained professionals with
 								relevant experience.
 							</AccordionContent>
 						</AccordionItem>
@@ -584,7 +584,7 @@ export default function Home() {
 								</div>
 							</div>
 							<p className="text-gray-700 text-lg leading-relaxed italic">
-								We received personalized care plans that perfectly matched our
+								We received personalised care plans that perfectly matched our
 								needs. The attention to detail and genuine care for our father
 								was remarkable. Highly recommended!
 							</p>

@@ -17,14 +17,14 @@ const LiveInCarePage = () => {
 				backgroundImage="/live-in-care.jpg"
 			/>
 
-			<section className="py-20 bg-gradient-to-br from-[#f8fafc] via-white to-[#f1f5f9]">
+			<section className="py-16 bg-gradient-to-br from-[#f8fafc] via-white to-[#f1f5f9]">
 				<div className="container mx-auto px-6">
 					<AnimatedWrapper className="text-center mb-16">
 						<span className="inline-block px-4 py-2 bg-[#cca6c8]/10 rounded-full text-sm font-medium text-[#cca6c8] mb-4">
 							Premium Home Care Solutions
 						</span>
 						<h2 className="text-5xl font-bold bg-gradient-to-r from-blue-800 to-[#cca6c8] bg-clip-text text-transparent mb-6">
-							Personalized Care in Your Own Home
+							Personalised Care in Your Own Home
 						</h2>
 						<p className="text-xl text-gray-600 max-w-4xl mx-auto">
 							Experience the transformative difference of our live-in care
@@ -47,7 +47,7 @@ const LiveInCarePage = () => {
 								color: 'from-blue-500 to-blue-600',
 							},
 							{
-								title: 'Personalized Care',
+								title: 'Personalised Care',
 								desc: 'Individually tailored care plans meeting specific needs and preferences',
 								color: 'from-[#cca6c8] to-[#a97ca7]',
 							},
@@ -83,7 +83,7 @@ const LiveInCarePage = () => {
 								'Transportation to appointments',
 								'Emergency response and crisis management',
 								'Leisure activities and social engagement',
-								'Customized care plan development',
+								'Customised care plan development',
 							].map((service, i) => (
 								<div
 									key={i}
@@ -97,7 +97,7 @@ const LiveInCarePage = () => {
 				</div>
 			</section>
 
-			<section className="py-20 bg-gradient-to-br from-[#cca6c8]/5 via-white to-blue-50">
+			<section className="py-16 bg-gradient-to-br from-[#cca6c8]/5 via-white to-blue-50">
 				<div className="container mx-auto px-6">
 					<AnimatedWrapper className="text-center mb-16">
 						<h3 className="text-4xl font-bold bg-gradient-to-r from-[#cca6c8] to-blue-700 bg-clip-text text-transparent mb-4">
@@ -149,7 +149,7 @@ const LiveInCarePage = () => {
 				</div>
 			</section>
 
-			<section className="py-20 bg-gradient-to-r from-white via-blue-50/30 to-[#cca6c8]/10">
+			<section className="py-16 bg-gradient-to-r from-white via-blue-50/30 to-[#cca6c8]/10">
 				<div className="container mx-auto px-6">
 					<AnimatedWrapper className="text-center mb-16">
 						<h3 className="text-4xl font-bold bg-gradient-to-r from-blue-800 to-[#cca6c8] bg-clip-text text-transparent mb-6">
@@ -207,11 +207,11 @@ const LiveInCarePage = () => {
 				</div>
 			</section>
 
-			<section className="py-20 bg-gradient-to-r from-[#cca6c8] via-[#b88cb8] to-blue-600 text-white">
+			<section className="py-16 bg-gradient-to-r from-[#cca6c8] via-[#b88cb8] to-blue-600 text-white">
 				<div className="container mx-auto px-6 text-center">
 					<AnimatedWrapper className="max-w-4xl mx-auto">
 						<h2 className="text-5xl font-bold mb-8">
-							Start Your Personalized Care Journey Today
+							Start Your Personalised Care Journey Today
 						</h2>
 						<p className="text-xl mb-12 opacity-90">
 							Join the many families who have discovered peace of mind through
@@ -220,10 +220,10 @@ const LiveInCarePage = () => {
 
 						<div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
 							{[
-								{ num: '500+', label: 'Happy Families Served' },
-								{ num: '99%', label: 'Satisfaction Rate' },
+								{ num: '200+', label: 'Happy Families Served' },
+								{ num: '98%', label: 'Satisfaction Rate' },
 								{ num: '24/7', label: 'Support Available' },
-								{ num: '10+', label: 'Years Experience' },
+								{ num: '7+', label: 'Years Experience' },
 							].map((stat, i) => (
 								<div
 									key={i}

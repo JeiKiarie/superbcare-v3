@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import HeroSection from '@/components/HeroSection';
 import AnimatedWrapper from '@/components/AnimatedWrapper';
-import { Heart, Users, ShieldCheck, Star, Phone, Mail } from 'lucide-react';
+import { Heart, Users, ShieldCheck, Star } from 'lucide-react';
 
 const AboutPage = () => {
 	return (
@@ -63,7 +63,7 @@ const AboutPage = () => {
 			</section>
 
 			{/* Modern Mission Statement Section */}
-			<section className="relative bg-gradient-to-r from-blue-50 via-white to-purple-50 py-20">
+			<section className="relative bg-gradient-to-r from-blue-50 via-white to-purple-50 py-16">
 				<AnimatedWrapper
 					className="container mx-auto px-6 text-center"
 					delay={0.1}>
@@ -82,7 +82,7 @@ const AboutPage = () => {
 			</section>
 
 			{/* Our Vision Section */}
-			<section className="relative py-20 bg-gradient-to-r from-purple-50 via-white to-blue-50 overflow-hidden">
+			<section className="relative py-16 bg-gradient-to-r from-purple-50 via-white to-blue-50 overflow-hidden">
 				<div className="absolute inset-0">
 					<div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-purple-200/20 to-transparent rounded-full -translate-y-24 translate-x-24"></div>
 					<div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-blue-200/20 to-transparent rounded-full translate-y-24 -translate-x-24"></div>
@@ -149,7 +149,7 @@ const AboutPage = () => {
 			</section>
 
 			{/* Our Story Section - Asymmetrical Layout */}
-			<section className="py-20 bg-gray-50">
+			<section className="py-16 bg-gray-50">
 				<div className="container mx-auto px-6">
 					<AnimatedWrapper
 						className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center"
@@ -199,7 +199,7 @@ const AboutPage = () => {
 			</section>
 
 			{/* Core Values Section - Modern Cards with Icons */}
-			<section className="py-20 bg-white">
+			<section className="py-16 bg-white">
 				<div className="container mx-auto px-6">
 					<AnimatedWrapper
 						className="text-center mb-16"
@@ -261,7 +261,7 @@ const AboutPage = () => {
 			</section>
 
 			{/* Our Team Section - Revamped with Founder Spotlight */}
-			<section className="py-24 bg-gradient-to-br from-slate-50 via-white to-blue-50 relative overflow-hidden">
+			<section className="py-16 bg-gradient-to-br from-slate-50 via-white to-blue-50 relative overflow-hidden">
 				<div className="absolute inset-0">
 					<div className="absolute top-10 left-10 w-72 h-72 bg-gradient-to-r from-purple-300/10 to-transparent rounded-full blur-xl"></div>
 					<div className="absolute bottom-20 right-20 w-96 h-96 bg-gradient-to-l from-blue-300/10 to-transparent rounded-full blur-2xl"></div>
@@ -418,7 +418,7 @@ const AboutPage = () => {
 			</section>
 
 			{/* Call to Action Section - Modern CTA */}
-			<section className="py-20 bg-gradient-to-r from-[#cca6c8] via-[#b88cb8] to-[#a976a9] text-white">
+			<section className="py-16 bg-gradient-to-r from-[#cca6c8] via-[#b88cb8] to-[#a976a9] text-white">
 				<div className="container mx-auto px-6 text-center">
 					<AnimatedWrapper
 						className="max-w-2xl mx-auto"

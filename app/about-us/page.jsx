@@ -1,9 +1,4 @@
 import Link from 'next/link';
-import aboutImg from '/public/about-image.jpg';
-import ourStory from '/public/our-story.webp';
-import ruthWest from '/public/ruth-west4.jpg';
-import peter from '/public/Peter.jpg';
-import blank from '/public/blank-picture.png';
 import Image from 'next/image';
 import HeroSection from '@/components/HeroSection';
 import AnimatedWrapper from '@/components/AnimatedWrapper';
@@ -16,7 +11,7 @@ const AboutPage = () => {
 			<HeroSection
 				title="About Us"
 				subtitle="Compassionate Care, Exceptional Service"
-				backgroundImage={aboutImg}
+				backgroundImage="/about-image.jpg"
 			/>
 
 			{/* Stylish Introductory Section */}
@@ -194,7 +189,7 @@ const AboutPage = () => {
 									width={600}
 									height={500}
 									alt="Elderly care recipient enjoying home environment"
-									src={ourStory}
+									src="/our-story.webp"
 								/>
 								<div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent"></div>
 							</div>
@@ -300,7 +295,7 @@ const AboutPage = () => {
 									<div className="relative group">
 										<div className="absolute inset-0 bg-gradient-to-r from-purple-400 to-blue-400 rounded-xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
 										<Image
-											src={ruthWest}
+											src="/ruth-west4.jpg"
 											alt="Rev Ruth West - Founder & CEO"
 											width={240}
 											height={352}
@@ -363,21 +358,21 @@ const AboutPage = () => {
 						transition={{ delay: 0.5 }}>
 						{[
 							{
-								img: blank,
+								img: '/blank-picture.png',
 								name: 'Sarah Johnson',
 								role: 'Head of Care',
 								desc: 'Oversees care quality and staff training',
 								specialty: 'Quality Assurance',
 							},
 							{
-								img: blank,
+								img: '/blank-picture.png',
 								name: 'Michael Edwards',
 								role: 'Care Coordinator',
 								desc: 'Manages client relationships and care planning',
 								specialty: 'Client Relations',
 							},
 							{
-								img: peter,
+								img: '/Peter.jpg',
 								name: 'Peter',
 								role: 'Support Worker',
 								desc: 'Dedicated frontline caregiver delivering daily support',

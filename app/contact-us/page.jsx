@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import HeroSection from '../../components/HeroSection';
 import ContactForm from '../../components/ContactForm';
-import Image from 'next/image';
 import {
 	FiPhone,
 	FiMail,
@@ -50,8 +49,8 @@ const ContactPage = () => {
 						</h2>
 						<p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
 							Whether you have questions about our services, need assistance, or
-							want to schedule a consultation, we're here to provide the support
-							you need with compassion and expertise.
+							want to schedule a consultation, we are here to provide the
+							support you need with compassion and expertise.
 						</p>
 					</motion.div>
 

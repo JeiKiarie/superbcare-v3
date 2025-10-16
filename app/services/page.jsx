@@ -10,7 +10,6 @@ import {
 	UserPlus,
 	Star,
 	Users,
-	Target,
 	Calendar,
 	Phone,
 	ArrowRight,
@@ -19,12 +18,6 @@ import {
 	Shield,
 	Smile,
 } from 'lucide-react';
-import LiveInCare from '/public/live-in-care.jpg';
-import elderlyCare from '/public/elderly-care.jpg';
-import dementiaCare from '/public/dementia-care1.jpg';
-import respiteCare from '/public/respite-care.jpg';
-import palliativeCare from '/public/palliative-care.jpg';
-import companionCare from '/public/companion-care.jpg';
 import AnimatedWrapper from '@/components/AnimatedWrapper';
 
 const services = [
@@ -34,7 +27,7 @@ const services = [
 		description:
 			'Our live-in care services provide around-the-clock care for your loved ones, allowing them to remain in the comfort of their home. We offer personalized care plans tailored to their needs, ensuring they receive the highest level of care at all times.',
 		icon: <Home className="w-8 h-8" />,
-		imageUrl: LiveInCare,
+		imageUrl: '/live-in-care.jpg',
 		link: '/services/live-in-care',
 		features: ['24/7 Care', 'Personalized Plans', 'Trained Professionals'],
 		gradient: 'from-blue-500 to-purple-600',
@@ -47,7 +40,7 @@ const services = [
 		description:
 			'Our elderly care services provide personalized support, ensuring the comfort and dignity of your loved ones at home. We offer assistance with daily tasks such as bathing, dressing, medication management, and companionship.',
 		icon: <User className="w-8 h-8" />,
-		imageUrl: elderlyCare,
+		imageUrl: '/elderly-care.jpg',
 		link: '/services/elderly-care',
 		features: ['Daily Assistance', 'Wellness Check', 'Social Engagement'],
 		gradient: 'from-purple-500 to-blue-600',
@@ -59,7 +52,7 @@ const services = [
 		description:
 			'We provide specialized care for individuals with dementia, offering a structured environment and emotional support. Our caregivers are trained to handle dementia complexities and ensure safety.',
 		icon: <Brain className="w-8 h-8" />,
-		imageUrl: dementiaCare,
+		imageUrl: '/dementia-care1.jpg',
 		link: '/services/dementia-care',
 		features: ['Specialized Training', 'Safe Environment', 'Memory Support'],
 		gradient: 'from-green-500 to-blue-600',
@@ -71,7 +64,7 @@ const services = [
 		description:
 			'We offer respite care services to provide temporary relief for primary caregivers. Whether you need support for a few hours, a day, or longer, we ensure your loved one remains in good hands.',
 		icon: <Clock className="w-8 h-8" />,
-		imageUrl: respiteCare,
+		imageUrl: '/respite-care.jpg',
 		link: '/services/respite-care',
 		features: ['Flexible Duration', 'Temporary Relief', 'Seamless Continuity'],
 		gradient: 'from-orange-500 to-purple-600',
@@ -83,7 +76,7 @@ const services = [
 		description:
 			'Our palliative care services focus on improving quality of life for individuals facing serious illnesses. We provide comfort, emotional support, and pain management with medical collaboration.',
 		icon: <Heart className="w-8 h-8" />,
-		imageUrl: palliativeCare,
+		imageUrl: '/palliative-care.jpg',
 		link: '/services/palliative-care',
 		features: ['Pain Management', 'Emotional Support', 'Medical Collaboration'],
 		gradient: 'from-red-500 to-purple-600',
@@ -95,7 +88,7 @@ const services = [
 		description:
 			'We provide companionship to ensure your loved ones never feel lonely, keeping them engaged and happy. Our companions offer conversation, activities, and emotional support.',
 		icon: <UserPlus className="w-8 h-8" />,
-		imageUrl: companionCare,
+		imageUrl: '/companion-care.jpg',
 		link: '/services/companion-care',
 		features: ['Social Engagement', 'Conversation', 'Mental Stimulation'],
 		gradient: 'from-pink-500 to-blue-600',
@@ -105,31 +98,31 @@ const services = [
 
 const testimonials = [
 	{
-		name: 'John Smith',
+		name: 'John',
 		role: 'Family Member',
 		content:
 			"The caregivers have been a blessing to our family. Their attention to detail and compassion have made all the difference in our mother's care.",
 		service: 'Live-In Care',
 		rating: 5,
-		initials: 'JS',
+		initials: 'J',
 	},
 	{
-		name: 'Sarah Thompson',
+		name: 'Sarah',
 		role: 'Daughter',
 		content:
 			'Knowing that my father is being looked after 24/7 gives me peace of mind. Exceptional professional service from start to finish.',
 		service: 'Elderly Care',
 		rating: 5,
-		initials: 'ST',
+		initials: 'S',
 	},
 	{
-		name: 'Emily Davis',
+		name: 'Emily',
 		role: 'Wife',
 		content:
 			"The team is always professional, kind, and caring. They've made a real difference in our lives with their dedication.",
 		service: 'Companion Care',
 		rating: 5,
-		initials: 'ED',
+		initials: 'E',
 	},
 ];
 
@@ -164,7 +157,7 @@ const Services = () => {
 			<HeroSection
 				title="Our Comprehensive Care Services"
 				subtitle="Compassionate Care, Exceptional Service"
-				backgroundImage={LiveInCare}
+				backgroundImage="/live-in-care.jpg"
 			/>
 
 			{/* Our Services Grid */}
@@ -385,7 +378,7 @@ const Services = () => {
 							What Families Say About Us
 						</h3>
 						<p className="text-xl text-gray-600 max-w-3xl mx-auto">
-							Read the heartfelt stories from families who've experienced the
+							Read the heartfelt stories from families who have experienced the
 							compassionate care and exceptional service that makes our approach
 							truly special.
 						</p>
@@ -422,7 +415,7 @@ const Services = () => {
 
 									{/* Content */}
 									<p className="text-gray-700 leading-relaxed mb-6 italic text-justify">
-										"{testimonial.content}"
+										&quot;{testimonial.content}&quot;
 									</p>
 
 									{/* Author */}
@@ -466,7 +459,7 @@ const Services = () => {
 						<p className="text-xl leading-relaxed opacity-90 mb-12 max-w-2xl mx-auto">
 							Take the first step towards peace of mind. Contact us today for a
 							free consultation and personalized care assessment tailored to
-							your loved one's unique needs.
+							your loved one&apos;s unique needs.
 						</p>
 
 						<div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">

@@ -2,15 +2,9 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import {
-	FaFacebook,
-	FaTwitter,
-	FaInstagram,
-	FaBars,
-	FaPhone,
-} from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaBars, FaPhone } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Logo from '/public/SuperbLogo.webp';
 import { Button } from '@/components/ui/button';

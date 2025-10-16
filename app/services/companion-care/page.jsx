@@ -1,56 +1,17 @@
 import Link from 'next/link';
-import companionCare from '/public/companion-care.jpg';
-import Image from 'next/image';
-import {
-	BiCheckCircle,
-	BiBrain,
-	BiHomeHeart,
-	BiTimeFive,
-	BiStar,
-	BiSupport,
-	BiAccessibility,
-	BiAlarm,
-} from 'react-icons/bi';
+import { BiCheckCircle } from 'react-icons/bi';
 import {
 	FaUserFriends,
-	FaHome,
-	FaShieldAlt,
-	FaClock,
-	FaGraduationCap,
 	FaHeart,
-	FaCalendarAlt,
-	FaHands,
 	FaSmile,
 	FaCoffee,
 	FaWalking,
 } from 'react-icons/fa';
 import { FaRegStar as FaSparkles } from 'react-icons/fa';
-import { BsCalendar3, BsPeople } from 'react-icons/bs';
-import {
-	MdOutlinePsychology,
-	MdOutlineLocalHospital,
-	MdOutlineWc,
-	MdOutlineRestaurant,
-	MdOutlineDirectionsCar,
-	MdOutlineSnooze,
-	MdOutlineSelfImprovement,
-} from 'react-icons/md';
-import {
-	RiMentalHealthLine,
-	RiShieldCheckLine,
-	RiPulseLine,
-	RiHeartLine,
-	RiCalendar2Line,
-	RiCommunityLine,
-} from 'react-icons/ri';
-import {
-	GiFamilyHouse,
-	GiHearts,
-	GiPeaceDove,
-	GiShield,
-	GiCalendar,
-	GiThreeFriends,
-} from 'react-icons/gi';
+import { BsPeople } from 'react-icons/bs';
+import { MdOutlinePsychology } from 'react-icons/md';
+import { RiCommunityLine } from 'react-icons/ri';
+import { GiThreeFriends } from 'react-icons/gi';
 import HeroSection from '@/components/HeroSection';
 import AnimatedWrapper from '@/components/AnimatedWrapper';
 import {
@@ -67,7 +28,7 @@ const CompanionCarePage = () => {
 			<HeroSection
 				title="Companion Care Services"
 				subtitle="Meaningful Companionship & Joy"
-				backgroundImage={companionCare}
+				backgroundImage="/companion-care.jpg"
 			/>
 
 			{/* Modern Service Overview Section */}
@@ -371,7 +332,7 @@ const CompanionCarePage = () => {
 								<AccordionItem
 									key={index}
 									value={`item-${index}`}
-									className="border-0 bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-white/50">
+									className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-white/50">
 									<AccordionTrigger className="text-left px-8 py-6 text-lg font-semibold text-blue-800 hover:text-[#cca6c8] rounded-2xl hover:bg-[#cca6c8]/5 transition-all duration-300">
 										<div className="flex items-center gap-4">
 											<div className="w-8 h-8 bg-gradient-to-br from-[#cca6c8] to-[#b89ab9] rounded-full flex items-center justify-center flex-shrink-0">

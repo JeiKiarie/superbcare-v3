@@ -1,53 +1,14 @@
 import Link from 'next/link';
-import respiteCare from '/public/respite-care.jpg';
-import Image from 'next/image';
-import {
-	BiCheckCircle,
-	BiBrain,
-	BiHomeHeart,
-	BiShieldCheck,
-	BiTimeFive,
-	BiStar,
-	BiSupport,
-	BiAccessibility,
-	BiAlarm,
-	BsCalendar2Check,
-} from 'react-icons/bi';
-import {
-	FaUserNurse,
-	FaHome,
-	FaShieldAlt,
-	FaClock,
-	FaGraduationCap,
-	FaHeart,
-	FaCalendarAlt,
-	FaHands,
-} from 'react-icons/fa';
+import { BiCheckCircle, BiSupport } from 'react-icons/bi';
+import { FaUserNurse, FaClock, FaCalendarAlt, FaHands } from 'react-icons/fa';
 import { FaRegStar as FaSparkles } from 'react-icons/fa';
-import { BsCalendar3 } from 'react-icons/bs';
+import { MdOutlineSnooze, MdOutlineSelfImprovement } from 'react-icons/md';
 import {
-	MdOutlinePsychology,
-	MdOutlineLocalHospital,
-	MdOutlineWc,
-	MdOutlineRestaurant,
-	MdOutlineDirectionsCar,
-	MdOutlineSnooze,
-	MdOutlineSelfImprovement,
-} from 'react-icons/md';
-import {
-	RiMentalHealthLine,
 	RiShieldCheckLine,
-	RiPulseLine,
 	RiHeartLine,
 	RiCalendar2Line,
 } from 'react-icons/ri';
-import {
-	GiFamilyHouse,
-	GiHearts,
-	GiPeaceDove,
-	GiShield,
-	GiCalendar,
-} from 'react-icons/gi';
+import { GiFamilyHouse } from 'react-icons/gi';
 import HeroSection from '@/components/HeroSection';
 import AnimatedWrapper from '@/components/AnimatedWrapper';
 import {
@@ -64,7 +25,7 @@ const RespiteCarePage = () => {
 			<HeroSection
 				title="Respite Care Services"
 				subtitle="Your Well-Deserved Time to Recharge"
-				backgroundImage={respiteCare}
+				backgroundImage="/respite-care.jpg"
 			/>
 
 			{/* Modern Service Overview Section */}
@@ -372,7 +333,7 @@ const RespiteCarePage = () => {
 								<AccordionItem
 									key={index}
 									value={`item-${index}`}
-									className="border-0 bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-white/50">
+									className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-white/50">
 									<AccordionTrigger className="text-left px-8 py-6 text-lg font-semibold text-blue-800 hover:text-[#cca6c8] rounded-2xl hover:bg-[#cca6c8]/5 transition-all duration-300">
 										<div className="flex items-center gap-4">
 											<div className="w-8 h-8 bg-gradient-to-br from-[#cca6c8] to-[#b89ab9] rounded-full flex items-center justify-center flex-shrink-0">
@@ -414,8 +375,8 @@ const RespiteCarePage = () => {
 							Take Control of Your Well-Being
 						</h2>
 						<p className="text-xl mb-12 opacity-90 leading-relaxed max-w-3xl mx-auto">
-							You've given so much of yourself caring for your loved ones. Now
-							it's your turn to receive the gift of time. Our respite care
+							You have given so much of yourself caring for your loved ones. Now
+							it is your turn to receive the gift of time. Our respite care
 							professionals are ready to provide exceptional care while you
 							focus on what matters most to you.
 						</p>

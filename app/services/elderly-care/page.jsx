@@ -1,45 +1,20 @@
 import Link from 'next/link';
 import elderlyCare from '/public/elderly-care.jpg';
-import Image from 'next/image';
 import {
 	BiCheckCircle,
-	BiBrain,
-	BiHomeHeart,
-	BiShieldCheck,
-	BiTimeFive,
-	BiStar,
 	BiSupport,
 	BiAccessibility,
 	BiHeart,
 } from 'react-icons/bi';
+import { FaUserNurse, FaClock, FaUsers } from 'react-icons/fa';
 import {
-	FaUserNurse,
-	FaHome,
-	FaShieldAlt,
-	FaClock,
-	FaHeart,
-	FaUsers,
-} from 'react-icons/fa';
-import {
-	MdOutlineAccessibility,
 	MdOutlineLocalHospital,
 	MdOutlineWc,
 	MdOutlineRestaurant,
 	MdOutlineCleanHands,
-	MdOutlineDirectionsCar,
 } from 'react-icons/md';
-import {
-	RiMentalHealthLine,
-	RiShieldCheckLine,
-	RiPulseLine,
-} from 'react-icons/ri';
-import {
-	GiFamilyHouse,
-	GiHearts,
-	GiPeaceDove,
-	GiShield,
-	GiPerson,
-} from 'react-icons/gi';
+import { RiPulseLine } from 'react-icons/ri';
+import { GiPerson } from 'react-icons/gi';
 import { FaRegStar as FaSparkles } from 'react-icons/fa';
 import HeroSection from '@/components/HeroSection';
 import AnimatedWrapper from '@/components/AnimatedWrapper';
@@ -379,7 +354,7 @@ const ElderlyCarePage = () => {
 								<AccordionItem
 									key={index}
 									value={`item-${index}`}
-									className="border-0 bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-white/50">
+									className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-white/50">
 									<AccordionTrigger className="text-left px-8 py-6 text-lg font-semibold text-blue-800 hover:text-[#cca6c8] rounded-2xl hover:bg-[#cca6c8]/5 transition-all duration-300">
 										<div className="flex items-center gap-4">
 											<div className="w-8 h-8 bg-gradient-to-br from-[#cca6c8] to-[#b89ab9] rounded-full flex items-center justify-center flex-shrink-0">

@@ -1,52 +1,10 @@
 import Link from 'next/link';
-import palliativeCare from '/public/palliative-care.jpg';
-import Image from 'next/image';
-import {
-	BiCheckCircle,
-	BiBrain,
-	BiHomeHeart,
-	BiTimeFive,
-	BiStar,
-	BiSupport,
-	BiAccessibility,
-	BiAlarm,
-	BsCalendar2Check,
-} from 'react-icons/bi';
-import {
-	FaUserNurse,
-	FaHome,
-	FaShieldAlt,
-	FaClock,
-	FaGraduationCap,
-	FaHeart,
-	FaCalendarAlt,
-	FaHands,
-} from 'react-icons/fa';
+import { BiCheckCircle } from 'react-icons/bi';
+import { FaUserNurse, FaHeart } from 'react-icons/fa';
 import { FaRegStar as FaSparkles } from 'react-icons/fa';
-import { BsCalendar3 } from 'react-icons/bs';
-import {
-	MdOutlinePsychology,
-	MdOutlineLocalHospital,
-	MdOutlineWc,
-	MdOutlineRestaurant,
-	MdOutlineDirectionsCar,
-	MdOutlineSnooze,
-	MdOutlineSelfImprovement,
-} from 'react-icons/md';
-import {
-	RiMentalHealthLine,
-	RiShieldCheckLine,
-	RiPulseLine,
-	RiHeartLine,
-	RiCalendar2Line,
-} from 'react-icons/ri';
-import {
-	GiFamilyHouse,
-	GiHearts,
-	GiPeaceDove,
-	GiShield,
-	GiCalendar,
-} from 'react-icons/gi';
+import { MdOutlinePsychology } from 'react-icons/md';
+import { RiShieldCheckLine, RiPulseLine } from 'react-icons/ri';
+import { GiFamilyHouse } from 'react-icons/gi';
 import HeroSection from '@/components/HeroSection';
 import AnimatedWrapper from '@/components/AnimatedWrapper';
 import {
@@ -63,7 +21,7 @@ const PalliativeCarePage = () => {
 			<HeroSection
 				title="Palliative Care Services"
 				subtitle="Compassionate Comfort & Dignity"
-				backgroundImage={palliativeCare}
+				backgroundImage="/palliative-care.jpg"
 			/>
 
 			{/* Modern Service Overview Section */}
@@ -366,7 +324,7 @@ const PalliativeCarePage = () => {
 								<AccordionItem
 									key={index}
 									value={`item-${index}`}
-									className="border-0 bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-white/50">
+									className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-white/50">
 									<AccordionTrigger className="text-left px-8 py-6 text-lg font-semibold text-blue-800 hover:text-[#cca6c8] rounded-2xl hover:bg-[#cca6c8]/5 transition-all duration-300">
 										<div className="flex items-center gap-4">
 											<div className="w-8 h-8 bg-gradient-to-br from-[#cca6c8] to-[#b89ab9] rounded-full flex items-center justify-center flex-shrink-0">

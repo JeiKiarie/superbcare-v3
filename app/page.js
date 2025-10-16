@@ -190,7 +190,7 @@ export default function Home() {
 					<h1 className="text-4xl md:text-6xl font-bold text-blue-900 mb-8 tracking-tight">
 						About Superb Care Services
 					</h1>
-					<p className="text-xl md:text-2xl text-gray-700 leading-relaxed max-w-4xl mx-auto">
+					<p className="text-xl md:text-2xl text-gray-700 leading-relaxed max-w-4xl text-justify mx-auto">
 						We are a UK-based company providing exceptional live-in care
 						services for the elderly. Our mission is to improve the quality of
 						life for elderly individuals by offering professional,
@@ -300,7 +300,7 @@ export default function Home() {
 							<h3 className="text-xl font-bold text-blue-900 mb-4">
 								Initial Assessment
 							</h3>
-							<p className="text-gray-600 leading-relaxed">
+							<p className="text-gray-600 leading-relaxed text-justify">
 								We begin with a comprehensive assessment of your loved
 								one&apos;s needs. Our care coordinators visit your home to
 								understand their requirements and preferences.
@@ -314,7 +314,7 @@ export default function Home() {
 							<h3 className="text-xl font-bold text-blue-900 mb-4">
 								Personalised Care Plan
 							</h3>
-							<p className="text-gray-600 leading-relaxed">
+							<p className="text-gray-600 leading-relaxed text-justify">
 								Based on the assessment, we create a customized care plan that
 								addresses specific needs, preferences, and schedules of your
 								loved one.
@@ -328,7 +328,7 @@ export default function Home() {
 							<h3 className="text-xl font-bold text-blue-900 mb-4">
 								Ongoing Support
 							</h3>
-							<p className="text-gray-600 leading-relaxed">
+							<p className="text-gray-600 leading-relaxed text-justify">
 								Our experienced caregivers provide consistent, compassionate
 								care with regular check-ins and the ability to adjust the care
 								plan as needed.
@@ -344,7 +344,7 @@ export default function Home() {
 					<h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-12">
 						Our Certifications & Partnerships
 					</h2>
-					<div className="flex flex-wrap justify-center items-center gap-8">
+					<div className="flex flex-col md:flex-row flex-wrap justify-center items-center gap-8">
 						<div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
 							<div className="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center mx-auto mb-4">
 								<span className="text-white font-bold text-xl">★</span>

@@ -179,8 +179,8 @@ const Footer = () => {
 				<div className="border-t border-slate-700/50">
 					<div className="container mx-auto px-6 py-6 text-center">
 						<div className="flex flex-col items-center space-y-2">
-							<div className="flex items-center space-x-2 text-slate-300">
-								<FaHeart className="text-red-500" />
+							<div className="flex items-start md:items-center space-x-2 text-slate-300">
+								<FaHeart className="text-red-500 mt-[0.3rem] md:mt-0" />
 								<span className="text-sm">
 									© {new Date().getFullYear()} Superb Care Services Ltd. All
 									rights reserved.

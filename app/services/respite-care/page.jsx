@@ -281,7 +281,7 @@ const RespiteCarePage = () => {
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ delay: 0.2 }}>
 						<h3 className="text-4xl font-bold bg-gradient-to-r from-blue-800 to-[#cca6c8] bg-clip-text text-transparent mb-6">
-							Respite Care FAQ
+							Respite Care FAQs
 						</h3>
 						<p className="text-xl text-gray-600 max-w-3xl mx-auto">
 							Answers to common questions about our respite care services
@@ -372,7 +372,7 @@ const RespiteCarePage = () => {
 						<span className="inline-block px-6 py-3 bg-white/20 backdrop-blur-sm rounded-full text-lg font-medium mb-6">
 							🌿 Time to Recharge & Restore Balance
 						</span>
-						<h2 className="text-5xl font-bold mb-8 bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">
+						<h2 className="text-5xl font-bold mb-8 bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent py-3">
 							Take Control of Your Well-Being
 						</h2>
 						<p className="text-xl mb-12 opacity-90 leading-relaxed max-w-3xl mx-auto">

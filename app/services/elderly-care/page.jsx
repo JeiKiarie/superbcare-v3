@@ -288,7 +288,7 @@ const ElderlyCarePage = () => {
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ delay: 0.2 }}>
 						<h3 className="text-4xl font-bold bg-gradient-to-r from-blue-800 to-[#cca6c8] bg-clip-text text-transparent mb-6">
-							Elderly Care FAQ
+							Elderly Care FAQs
 						</h3>
 						<p className="text-xl text-gray-600 max-w-3xl mx-auto">
 							Find answers to common questions about our elderly care services

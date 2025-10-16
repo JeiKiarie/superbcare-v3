@@ -196,3 +196,6 @@
 		@apply bg-background text-foreground;
 	}
 }
+p {
+	@apply text-justify;
+}

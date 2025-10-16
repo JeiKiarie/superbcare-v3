@@ -51,7 +51,7 @@ const CompanionCarePage = () => {
 						<span className="inline-block px-4 py-2 bg-[#cca6c8]/10 backdrop-blur-sm rounded-full text-sm font-medium text-[#cca6c8] mb-4">
 							📝 Meaningful Connections
 						</span>
-						<h2 className="text-5xl font-bold bg-gradient-to-r from-blue-800 to-[#cca6c8] bg-clip-text text-transparent mb-6">
+						<h2 className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-blue-800 to-[#cca6c8] bg-clip-text text-transparent mb-6">
 							Heartfelt Companionship Care
 						</h2>
 						<p className="text-xl text-gray-600 leading-relaxed max-w-4xl mx-auto">
@@ -280,7 +280,7 @@ const CompanionCarePage = () => {
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ delay: 0.2 }}>
 						<h3 className="text-4xl font-bold bg-gradient-to-r from-blue-800 to-[#cca6c8] bg-clip-text text-transparent mb-6">
-							Companion Care FAQ
+							Companion Care FAQs
 						</h3>
 						<p className="text-xl text-gray-600 max-w-3xl mx-auto">
 							Common questions about our companionship services and how we bring

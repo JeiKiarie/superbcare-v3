@@ -105,7 +105,7 @@ const HeroSection = ({
 					{subtitle && (
 						<motion.p
 							variants={subtitleVariants}
-							className="text-lg md:text-xl text-gray-200 tracking-wide">
+							className="text-lg md:text-xl text-gray-200 tracking-wide !text-center">
 							{subtitle}
 						</motion.p>
 					)}

@@ -52,9 +52,9 @@ const AboutPage = () => {
 							initial={{ opacity: 0, y: 20 }}
 							animate={{ opacity: 1, y: 0 }}
 							transition={{ delay: 0.6 }}>
-							<p className="text-xl leading-relaxed opacity-90 max-w-3xl mx-auto">
+							<p className="text-xl text-justify leading-relaxed opacity-90 max-w-3xl mx-auto">
 								Since 2018, we have been transforming lives through
-								compassionate, personalized care services delivered in the
+								compassionate, personalised care services delivered in the
 								comfort and dignity of home.
 							</p>
 						</AnimatedWrapper>
@@ -72,7 +72,7 @@ const AboutPage = () => {
 					</h2>
 					<p className="text-xl text-gray-600 leading-relaxed max-w-4xl mx-auto">
 						At Superb Care Services Ltd, our mission is to provide
-						compassionate, personalized care that empowers individuals to
+						compassionate, personalised care that empowers individuals to
 						maintain their independence and quality of life at home. We are
 						dedicated to supporting our clients and their families by delivering
 						exceptional live-in care services with respect, dignity, and
@@ -110,7 +110,7 @@ const AboutPage = () => {
 							{[
 								{
 									title: 'Innovation',
-									desc: 'Pioneering new approaches to care that combine technology, compassion, and personalized attention.',
+									desc: 'Pioneering new approaches to care that combine technology, compassion, and personalised attention.',
 									icon: '🚀',
 								},
 								{
@@ -224,7 +224,7 @@ const AboutPage = () => {
 							{
 								icon: <Users className="w-12 h-12 text-blue-500" />,
 								title: 'Compassion',
-								desc: 'We prioritize the well-being of our clients, offering care with empathy, understanding, and kindness.',
+								desc: 'We prioritise the well-being of our clients, offering care with empathy, understanding, and kindness.',
 							},
 							{
 								icon: <ShieldCheck className="w-12 h-12 text-green-500" />,
@@ -427,7 +427,7 @@ const AboutPage = () => {
 							Join Our Family of Clients
 						</h2>
 						<p className="text-xl mb-10 opacity-90">
-							Ready to experience personalized, compassionate care? Contact us
+							Ready to experience personalised, compassionate care? Contact us
 							today to learn more about our services or schedule an appointment.
 						</p>
 						<Link href="/appointment">

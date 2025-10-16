@@ -7,7 +7,7 @@ const HeroSection = ({
 	title,
 	subtitle,
 	backgroundImage,
-	height = 'h-[calc(100vh-5rem)]',
+	height = 'h-[70vh] md:h-[calc(100vh-5rem)]',
 	titleSize = 'text-5xl',
 	className = '',
 }) => {
@@ -118,7 +118,7 @@ const HeroSection = ({
 
 				{/* Scroll Indicator */}
 				<motion.div
-					className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20"
+					className="absolute hidden md:block bottom-8 left-1/2 transform -translate-x-1/2 z-20"
 					initial={{ opacity: 0, y: 20 }}
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.6, delay: 1.5 }}>

@@ -22,13 +22,13 @@ import AnimatedWrapper from '@/components/AnimatedWrapper';
 const services = [
 	{
 		title: 'Live-In Care',
-		shortDesc: '24/7 personalized care in the comfort of home',
+		shortDesc: '24/7 personalised care in the comfort of home',
 		description:
-			'Our live-in care services provide around-the-clock care for your loved ones, allowing them to remain in the comfort of their home. We offer personalized care plans tailored to their needs, ensuring they receive the highest level of care at all times.',
+			'Our live-in care services provide around-the-clock care for your loved ones, allowing them to remain in the comfort of their home. We offer personalised care plans tailored to their needs, ensuring they receive the highest level of care at all times.',
 		icon: <Home className="w-8 h-8" />,
 		imageUrl: '/live-in-care.jpg',
 		link: '/services/live-in-care',
-		features: ['24/7 Care', 'Personalized Plans', 'Trained Professionals'],
+		features: ['24/7 Care', 'Personalised Plans', 'Trained Professionals'],
 		gradient: 'from-blue-500 to-purple-600',
 		delay: 0.1,
 		popular: true,
@@ -37,7 +37,7 @@ const services = [
 		title: 'Elderly Care',
 		shortDesc: 'Comprehensive support for seniors',
 		description:
-			'Our elderly care services provide personalized support, ensuring the comfort and dignity of your loved ones at home. We offer assistance with daily tasks such as bathing, dressing, medication management, and companionship.',
+			'Our elderly care services provide personalised support, ensuring the comfort and dignity of your loved ones at home. We offer assistance with daily tasks such as bathing, dressing, medication management, and companionship.',
 		icon: <User className="w-8 h-8" />,
 		imageUrl: '/elderly-care.jpg',
 		link: '/services/elderly-care',
@@ -47,13 +47,13 @@ const services = [
 	},
 	{
 		title: 'Dementia Care',
-		shortDesc: 'Specialized support for memory care',
+		shortDesc: 'Specialised support for memory care',
 		description:
-			'We provide specialized care for individuals with dementia, offering a structured environment and emotional support. Our caregivers are trained to handle dementia complexities and ensure safety.',
+			'We provide specialised care for individuals with dementia, offering a structured environment and emotional support. Our caregivers are trained to handle dementia complexities and ensure safety.',
 		icon: <Brain className="w-8 h-8" />,
 		imageUrl: '/dementia-care1.jpg',
 		link: '/services/dementia-care',
-		features: ['Specialized Training', 'Safe Environment', 'Memory Support'],
+		features: ['Specialised Training', 'Safe Environment', 'Memory Support'],
 		gradient: 'from-green-500 to-blue-600',
 		delay: 0.3,
 	},
@@ -142,7 +142,7 @@ const whyChooseUs = [
 	},
 	{
 		icon: <Users className="w-12 h-12" />,
-		title: 'Personalized Approach',
+		title: 'Personalised Approach',
 		description:
 			'Each service is tailored to individual needs, preferences, and family dynamics.',
 		gradient: 'from-purple-400 to-pink-500',
@@ -179,7 +179,7 @@ const Services = () => {
 							</span>
 						</div>
 						<h3 className="text-4xl font-bold bg-gradient-to-r from-blue-800 to-purple-700 bg-clip-text text-transparent mb-6">
-							Specialized Care Solutions
+							Specialised Care Solutions
 						</h3>
 						<p className="text-xl text-gray-600 max-w-3xl mx-auto">
 							Each service is thoughtfully designed to provide the highest level
@@ -457,7 +457,7 @@ const Services = () => {
 						</h3>
 						<p className="text-xl leading-relaxed opacity-90 mb-12 max-w-2xl mx-auto">
 							Take the first step towards peace of mind. Contact us today for a
-							free consultation and personalized care assessment tailored to
+							free consultation and personalised care assessment tailored to
 							your loved one&apos;s unique needs.
 						</p>
 

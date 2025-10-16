@@ -538,11 +538,11 @@ export default function Home() {
 						What Our Clients Say
 					</AnimatedWrapper>
 
-					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl">
 						<AnimatedWrapper
 							as="div"
 							className="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border-l-4 border-[#cca6c8]"
-							initial={{ opacity: 0, x: -30 }}
+							initial={{ opacity: 0, y: 30 }}
 							transition={{ delay: 0.2, duration: 0.6 }}>
 							<div className="flex items-center mb-6">
 								<div className="w-12 h-12 bg-[#cca6c8] rounded-full flex items-center justify-center mr-4">
@@ -601,8 +601,8 @@ export default function Home() {
 
 						<AnimatedWrapper
 							as="div"
-							className="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border-l-4 border-[#cca6c8] md:col-span-2 lg:col-span-1"
-							initial={{ opacity: 0, x: 30 }}
+							className="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border-l-4 border-[#cca6c8]"
+							initial={{ opacity: 0, y: 30 }}
 							transition={{ delay: 0.6, duration: 0.6 }}>
 							<div className="flex items-center mb-6">
 								<div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mr-4">
@@ -645,7 +645,7 @@ export default function Home() {
 					</AnimatedWrapper>
 					<AnimatedWrapper
 						as="p"
-						className="text-xl md:text-2xl mb-12 max-w-3xl mx-auto leading-relaxed"
+						className="text-xl md:text-2xl mb-12 px-8 md:px-0 text-justify max-w-3xl mx-auto leading-relaxed"
 						initial={{ opacity: 0, y: 20 }}
 						transition={{ delay: 0.2, duration: 0.8 }}>
 						Contact us today to learn more about our live-in care services.

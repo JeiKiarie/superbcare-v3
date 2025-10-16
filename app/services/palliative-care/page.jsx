@@ -15,6 +15,38 @@ import {
 } from '@/components/ui/accordion';
 import BackButton from '@/components/BackButton';
 
+export const metadata = {
+	title:
+		'Palliative Care Services | End-of-Life Care | Hospicare | Superb Care Services Ltd',
+	description:
+		'Compassionate palliative care services with pain management, symptom relief, and emotional support. Professional end-of-life care and hospicare services in the comfort of home.',
+	keywords: [
+		'palliative care',
+		'end of life care',
+		'hospice care',
+		'terminal care',
+		'comfort care',
+		'symptom management',
+		'pain relief',
+		'end-of-life support',
+	],
+	openGraph: {
+		title: 'Palliative Care Services - Compassionate End-of-Life Care',
+		description:
+			'Professional palliative care with pain management, symptom control, and emotional support. Dignified end-of-life care in the comfort of home.',
+		url: 'https://superbcareservices.co.uk/services/palliative-care',
+		type: 'website',
+	},
+	twitter: {
+		title: 'Palliative Care Services | Superb Care Services Ltd',
+		description:
+			'Compassionate palliative care with symptom management, pain relief, and emotional support. Professional end-of-life care services.',
+	},
+	alternates: {
+		canonical: 'https://superbcareservices.co.uk/services/palliative-care',
+	},
+};
+
 const PalliativeCarePage = () => {
 	return (
 		<>

@@ -22,6 +22,38 @@ import {
 } from '@/components/ui/accordion';
 import BackButton from '@/components/BackButton';
 
+export const metadata = {
+	title:
+		'Companion Care Services | Social Care | Elderly Companionship | Superb Care Services Ltd',
+	description:
+		'Professional companion care services to combat loneliness. Social visits, activity support, and meaningful companionship for seniors in the comfort of home.',
+	keywords: [
+		'companion care',
+		'elderly companionship',
+		'social care',
+		'loneliness support',
+		'senior friendship',
+		'companionship services',
+		'home companion',
+		'social visits',
+	],
+	openGraph: {
+		title: 'Companion Care Services - Social & Emotional Support',
+		description:
+			'Professional companionship services for seniors including social visits, activity support, and emotional care to combat loneliness.',
+		url: 'https://superbcareservices.co.uk/services/companion-care',
+		type: 'website',
+	},
+	twitter: {
+		title: 'Companion Care Services | Superb Care Services Ltd',
+		description:
+			'Heartfelt companion care services for seniors. Social visits, meaningful activities, and professional companionship to reduce loneliness.',
+	},
+	alternates: {
+		canonical: 'https://superbcareservices.co.uk/services/companion-care',
+	},
+};
+
 const CompanionCarePage = () => {
 	return (
 		<>

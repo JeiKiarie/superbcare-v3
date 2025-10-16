@@ -9,6 +9,36 @@ import {
 } from '@/components/ui/accordion';
 import BackButton from '@/components/BackButton';
 
+export const metadata = {
+	title: 'Live-In Care Services | 24/7 Home Care | Superb Care Services Ltd',
+	description:
+		'Professional live-in care services with 24/7 support in the comfort of home. Personalised elderly care, medication management, and companionship across the UK.',
+	keywords: [
+		'live in care',
+		'24/7 home care',
+		'live-in caregiver',
+		'residential care at home',
+		'personalised home care',
+		'elderly live-in support',
+		'round the clock care',
+	],
+	openGraph: {
+		title: 'Live-In Care Services - 24/7 Home Care',
+		description:
+			'Professional live-in care with 24/7 support. Personalised elderly care services including medication management and companionship in the comfort of home.',
+		url: 'https://superbcareservices.co.uk/services/live-in-care',
+		type: 'website',
+	},
+	twitter: {
+		title: 'Live-In Care Services | Superb Care Services Ltd',
+		description:
+			'24/7 live-in care services. Professional home care with personalised support, medication management, and companionship across the UK.',
+	},
+	alternates: {
+		canonical: 'https://superbcareservices.co.uk/services/live-in-care',
+	},
+};
+
 const LiveInCarePage = () => {
 	return (
 		<>

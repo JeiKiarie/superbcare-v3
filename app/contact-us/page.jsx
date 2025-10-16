@@ -15,6 +15,36 @@ import {
 import { FaInstagram, FaFacebook } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 
+export const metadata = {
+	title:
+		'Contact Superb Care Services Ltd | Get In Touch | Elderly Care Providers',
+	description:
+		'Contact Superb Care Services Ltd for professional elderly care, live-in care, and home care services. Call +447984885069 or visit Windsor office. Free consultations available.',
+	keywords: [
+		'contact superb care',
+		'elderly care contact',
+		'home care services contact',
+		'live in care booking',
+		'care services windsor',
+		'professional care providers',
+	],
+	openGraph: {
+		title: 'Contact Superb Care Services Ltd',
+		description:
+			'Get in touch with our professional elderly care team. Free consultations available for live-in care, dementia care, and palliative care services.',
+		url: 'https://superbcareservices.co.uk/contact-us',
+		type: 'website',
+	},
+	twitter: {
+		title: 'Contact Superb Care Services Ltd',
+		description:
+			'Professional elderly care providers. Contact us today for live-in care consultations and home care services across the UK.',
+	},
+	alternates: {
+		canonical: 'https://superbcareservices.co.uk/contact-us',
+	},
+};
+
 const ContactPage = () => {
 	const fadeInUp = {
 		initial: { opacity: 0, y: 20 },

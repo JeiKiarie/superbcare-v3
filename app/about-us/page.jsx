@@ -4,6 +4,34 @@ import HeroSection from '@/components/HeroSection';
 import AnimatedWrapper from '@/components/AnimatedWrapper';
 import { Heart, Users, ShieldCheck, Star } from 'lucide-react';
 
+export const metadata = {
+	title: 'About Superb Care Services Ltd - Professional Elderly Care Provider',
+	description:
+		'Learn about Superb Care Services Ltd, founded in 2018 to provide exceptional elderly care services. Meet our team and discover our mission to deliver compassionate live-in care across the UK.',
+	keywords: [
+		'about superb care',
+		'elderly care company',
+		'professional care services',
+		'live-in care provider',
+		'cqc registered care',
+	],
+	openGraph: {
+		title: 'About Superb Care Services Ltd - Professional Elderly Care',
+		description:
+			'Founded in 2018, we provide compassionate live-in elderly care services across the UK. Learn about our mission and meet our dedicated care team.',
+		url: 'https://superbcareservices.co.uk/about-us',
+		type: 'website',
+	},
+	twitter: {
+		title: 'About Superb Care Services Ltd',
+		description:
+			'Professional elderly care services founded in 2018. Compassionate live-in care across the UK.',
+	},
+	alternates: {
+		canonical: 'https://superbcareservices.co.uk/about-us',
+	},
+};
+
 const AboutPage = () => {
 	return (
 		<>

@@ -19,6 +19,38 @@ import {
 } from '@/components/ui/accordion';
 import BackButton from '@/components/BackButton';
 
+export const metadata = {
+	title:
+		'Respite Care Services | Caregiver Relief | Short Term Care | Superb Care Services Ltd',
+	description:
+		'Professional respite care services providing temporary relief for carers. Flexible short-term care from hours to weeks for elderly care. Maintain dignity and quality care.',
+	keywords: [
+		'respite care',
+		'caregiver relief',
+		'short term care',
+		'temporary care',
+		'caregiver break',
+		'carer support',
+		'elderly respite',
+		'care respite',
+	],
+	openGraph: {
+		title: 'Respite Care Services - Time to Recharge & Restore',
+		description:
+			'Professional respite care providing caregivers much-needed breaks. Flexible short-term care solutions ensuring loved ones receive exceptional care in your absence.',
+		url: 'https://superbcareservices.co.uk/services/respite-care',
+		type: 'website',
+	},
+	twitter: {
+		title: 'Respite Care Services | Superb Care Services Ltd',
+		description:
+			'Professional caregiver respite services. Flexible short-term care for carers who need a break while ensuring loved ones receive quality home care.',
+	},
+	alternates: {
+		canonical: 'https://superbcareservices.co.uk/services/respite-care',
+	},
+};
+
 const RespiteCarePage = () => {
 	return (
 		<>

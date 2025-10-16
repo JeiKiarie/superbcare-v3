@@ -26,6 +26,37 @@ import {
 } from '@/components/ui/accordion';
 import BackButton from '@/components/BackButton';
 
+export const metadata = {
+	title: 'Elderly Care Services | Live-In Home Care | Superb Care Services Ltd',
+	description:
+		'Professional elderly care services including personal care, medication management, companionship & 24/7 support. CQC registered live-in care for seniors in the comfort of home.',
+	keywords: [
+		'elderly care',
+		'home care for elderly',
+		'live-in care for seniors',
+		'personal care assistance',
+		'medication management',
+		'companion care for elderly',
+		'elderly support services',
+		'senior home care',
+	],
+	openGraph: {
+		title: 'Elderly Care Services - Professional Live-In Home Care',
+		description:
+			'Compassionate elderly care services with 24/7 support, medication management, and personalized care plans in the comfort of home.',
+		url: 'https://superbcareservices.co.uk/services/elderly-care',
+		type: 'website',
+	},
+	twitter: {
+		title: 'Elderly Care Services | Superb Care Services Ltd',
+		description:
+			'Professional live-in elderly care with personal assistance, medication management, and 24/7 support across the UK.',
+	},
+	alternates: {
+		canonical: 'https://superbcareservices.co.uk/services/elderly-care',
+	},
+};
+
 const ElderlyCarePage = () => {
 	return (
 		<>

@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Block access to admin areas if they exist
+Disallow: /admin/
+Disallow: /_next/static/
+Disallow: /api/
+
+# Allow crawling of main content
+Allow: /services/
+Allow: /about-us
+Allow: /contact-us
+
+# Sitemap
+Sitemap: https://superbcareservices.co.uk/sitemap.xml

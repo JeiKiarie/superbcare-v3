@@ -149,6 +149,38 @@ const whyChooseUs = [
 	},
 ];
 
+export const metadata = {
+	title:
+		'Home Care Services | Elderly Care | Live-In Care | Superb Care Services Ltd',
+	description:
+		'Comprehensive elderly care services including live-in care, dementia care, palliative care, and companion care. Professional home care services across the UK.',
+	keywords: [
+		'home care services',
+		'elderly care services',
+		'live in care',
+		'home care uk',
+		'dementia care',
+		'palliative care',
+		'companion care',
+		'professional care services',
+	],
+	openGraph: {
+		title: 'Home Care Services - Elderly & Live-In Care',
+		description:
+			'Professional comprehensive elderly care services including dementia care, palliative care, and companion care. Quality home care across the UK.',
+		url: 'https://superbcareservices.co.uk/services',
+		type: 'website',
+	},
+	twitter: {
+		title: 'Home Care Services | Superb Care Services Ltd',
+		description:
+			'Comprehensive elderly and live-in care services. Professional home care including dementia, palliative, and companion care across the UK.',
+	},
+	alternates: {
+		canonical: 'https://superbcareservices.co.uk/services',
+	},
+};
+
 const Services = () => {
 	return (
 		<>

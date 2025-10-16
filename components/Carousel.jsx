@@ -1,15 +1,12 @@
 'use client';
 
 import Slider from 'react-slick';
-import Image from 'next/image'; // Optional: For optimized images in Next.js
+import Image from 'next/image';
 import Link from 'next/link';
-import image1 from '../public/live-in-care1.jpg';
-import image3 from '../public/palliative-care.webp';
-import image4 from '../public/image4.jpg';
 import { motion } from 'framer-motion';
-import { useState, useRef, useEffect } from 'react';
+import { useState } from 'react';
 import { Button } from './ui/button';
-console.log(image1);
+
 const Carousel = () => {
 	const [currentSlide, setCurrentSlide] = useState(0);
 	const [slideKey, setSlideKey] = useState(0);
@@ -34,7 +31,7 @@ const Carousel = () => {
 			title: 'Live-In Care',
 			description:
 				'Around-the-clock care services to ensure your loved ones receive personalized assistance at home.',
-			imageUrl: image1,
+			imageUrl: '/live-in-care1.jpg',
 			buttonText: 'Learn More',
 			buttonLink: '/services/live-in-care',
 		},
@@ -42,7 +39,7 @@ const Carousel = () => {
 			title: 'Elderly Care',
 			description:
 				'Comprehensive elderly care programs focusing on physical, emotional, and social well-being.',
-			imageUrl: image3,
+			imageUrl: '/palliative-care.webp',
 			buttonText: 'Explore Services',
 			buttonLink: '/services/elderly-care',
 		},
@@ -50,7 +47,7 @@ const Carousel = () => {
 			title: 'Personalized Care Plans',
 			description:
 				'Tailor-made care plans that cater to the unique needs of your loved ones.',
-			imageUrl: image4,
+			imageUrl: '/image4.jpg',
 			buttonText: 'Get Started',
 			buttonLink: '/appointment',
 		},

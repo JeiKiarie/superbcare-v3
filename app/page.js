@@ -21,6 +21,40 @@ import { BiFirstAid } from 'react-icons/bi';
 import { BiTimeFive } from 'react-icons/bi';
 import { BiAlarm } from 'react-icons/bi';
 
+export const metadata = {
+	title:
+		'Superb Care Services Ltd | Professional Live-In Care | Windsor Elderly Care | Home Care UK',
+	description:
+		'Professional live-in care services for elderly in Windsor & UK. 24/7 live-in caregivers, dementia care, palliative care & companionship. CQC registered & experienced carers.',
+	keywords: [
+		'superb care services',
+		'live in care windsor',
+		'elderly care uk',
+		'home care services',
+		'24/7 live in carers',
+		'dementia care windsor',
+		'palliative care',
+		'elderly companionship',
+		'caregiver services',
+		'professional carers',
+	],
+	openGraph: {
+		title: 'Superb Care Services Ltd - Professional Live-In Care for Elderly',
+		description:
+			'24/7 professional live-in care services in Windsor and across the UK. Experienced caregivers for elderly care, dementia support, and palliative care.',
+		url: 'https://superbcareservices.co.uk',
+		type: 'website',
+	},
+	twitter: {
+		title: 'Superb Care Services Ltd | Live-In Care Windsor',
+		description:
+			'Professional live-in care for elderly in Windsor. 24/7 caregivers, dementia care, palliative care & companionship services.',
+	},
+	alternates: {
+		canonical: 'https://superbcareservices.co.uk',
+	},
+};
+
 const services = [
 	{
 		id: 1,

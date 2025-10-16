@@ -1,10 +1,13 @@
 import './globals.css';
-import { Inter } from 'next/font/google';
+import { Poppins } from 'next/font/google';
 import Header from '/components/Header';
 import Footer from '/components/Footer';
 import Script from 'next/script';
 
-const inter = Inter({ subsets: ['latin'] });
+const poppins = Poppins({
+	weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+	subsets: ['latin'],
+});
 
 export const metadata = {
 	title:
@@ -136,7 +139,7 @@ export default function RootLayout({ children }) {
 					}}
 				/>
 			</head>
-			<body className={inter.className}>
+			<body className={poppins.className}>
 				<Header />
 				<main className="overflow-auto pt-20 md:pt-0">{children}</main>
 				<Footer />
@@ -144,21 +147,3 @@ export default function RootLayout({ children }) {
 		</html>
 	);
 }
-
-// import Header from '/components/Header';
-// import Footer from '/components/Footer';
-// import MobileMenu from '/components/MobileMenu';
-// import './globals.css';
-
-// export default function RootLayout({ children }) {
-// 	return (
-// 		<html lang="en">
-// 			<body className="min-h-screen flex flex-col">
-// 				<Header />
-// 				{/* <MobileMenu /> */}
-// 				<main className="flex-grow">{children}</main>
-// 				<Footer />
-// 			</body>
-// 		</html>
-// 	);
-// }

@@ -308,12 +308,11 @@ const DementiaCarePage = () => {
 								},
 								{
 									question: 'How do you prevent wandering and ensure safety?',
-									answer:
-										'We implement comprehensive safety protocols including environmental modifications, door alarms, GPS tracking systems, safety assessments, regular check-ins, and caregiver training. We also work with families to create personalised safety plans that respect the individual&#39;s dignity while ensuring security.',
+									answer: `We implement comprehensive safety protocols including environmental modifications, door alarms, GPS tracking systems, safety assessments, regular check-ins, and caregiver training. We also work with families to create personalised safety plans that respect the individual's dignity while ensuring security.`,
 								},
 								{
 									question: 'How often is the dementia care plan reviewed?',
-									answer: `Dementia care plans are reviewed every 1-3 months or whenever significant changes occur in the individual&#39;s condition, with immediate adjustments as needed. Regular assessments ensure the care plan remains appropriate for the person's current needs and abilities.`,
+									answer: `Dementia care plans are reviewed every 1-3 months or whenever significant changes occur in the individual's condition, with immediate adjustments as needed. Regular assessments ensure the care plan remains appropriate for the person's current needs and abilities.`,
 								},
 								{
 									question: 'Do you provide family support and education?',

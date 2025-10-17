@@ -1,5 +1,5 @@
-import Carousel from '/components/Carousel';
-import AnimatedWrapper from '/components/AnimatedWrapper';
+import Carousel from '../components/Carousel';
+import AnimatedWrapper from '../components/AnimatedWrapper';
 import Link from 'next/link';
 import Image from 'next/image';
 import { FaHeart, FaHome, FaSmile } from 'react-icons/fa';
@@ -8,7 +8,7 @@ import {
 	AccordionContent,
 	AccordionItem,
 	AccordionTrigger,
-} from '/components/ui/accordion';
+} from '../components/ui/accordion';
 import { MdOutlineAssistWalker } from 'react-icons/md';
 import { LiaUserNurseSolid } from 'react-icons/lia';
 import { LuCalendarClock } from 'react-icons/lu';

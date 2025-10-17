@@ -30,8 +30,9 @@ const Carousel = () => {
 		{
 			title: 'Live-In Care',
 			description:
-				'Around-the-clock care services to ensure your loved ones receive personalized assistance at home.',
+				'Around-the-clock care services to ensure your loved ones receive personalised assistance at home.',
 			imageUrl: '/live-in-care1.jpg',
+			alt: 'Live-in care services with dedicated caregiver',
 			buttonText: 'Learn More',
 			buttonLink: '/services/live-in-care',
 		},
@@ -40,14 +41,16 @@ const Carousel = () => {
 			description:
 				'Comprehensive elderly care programs focusing on physical, emotional, and social well-being.',
 			imageUrl: '/palliative-care.webp',
+			alt: 'Compassionate palliative care for seniors',
 			buttonText: 'Explore Services',
 			buttonLink: '/services/elderly-care',
 		},
 		{
-			title: 'Personalized Care Plans',
+			title: 'Personalised Care Plans',
 			description:
 				'Tailor-made care plans that cater to the unique needs of your loved ones.',
 			imageUrl: '/image4.jpg',
+			alt: 'Personalised care plans for individual needs',
 			buttonText: 'Get Started',
 			buttonLink: '/appointment',
 		},
@@ -63,9 +66,8 @@ const Carousel = () => {
 						<Image
 							src={slide.imageUrl}
 							alt={slide.alt}
-							layout="fill"
-							objectFit="cover"
-							className="w-full h-full"
+							fill
+							className="object-cover"
 						/>
 						<div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-center text-white p-6">
 							<div>

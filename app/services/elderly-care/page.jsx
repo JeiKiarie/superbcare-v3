@@ -86,7 +86,7 @@ const ElderlyCarePage = () => {
 						<span className="inline-block px-4 py-2 bg-[#cca6c8]/10 backdrop-blur-sm rounded-full text-sm font-medium text-[#cca6c8] mb-4">
 							✨ Specialised Senior Care Solutions
 						</span>
-						<h2 className="text-5xl font-bold bg-gradient-to-r from-blue-800 to-[#cca6c8] bg-clip-text text-transparent mb-6">
+						<h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-800 to-[#cca6c8] bg-clip-text text-transparent mb-6">
 							Compassionate Care for Seniors
 						</h2>
 						<p className="text-xl text-gray-600 leading-relaxed max-w-4xl mx-auto">

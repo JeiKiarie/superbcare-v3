@@ -12,6 +12,8 @@ import {
 	Sheet,
 	SheetContent,
 	SheetHeader,
+	SheetTitle,
+	SheetDescription,
 	SheetTrigger,
 	SheetClose,
 } from '@/components/ui/sheet';
@@ -249,6 +251,10 @@ export default function Header() {
 								side="right"
 								className="w-[300px] sm:w-[400px]">
 								<SheetHeader className="pb-6">
+									<SheetTitle className="sr-only">Navigation Menu</SheetTitle>
+									<SheetDescription className="sr-only">
+										Main navigation menu for Superb Care Services
+									</SheetDescription>
 									<Link
 										href="/"
 										className="flex items-center space-x-3"

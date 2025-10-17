@@ -164,7 +164,7 @@ export default function Home() {
 							</span>
 						</h1>
 
-						<p className="text-xl md:text-2xl mb-8 leading-relaxed text-blue-100">
+						<p className="text-xl md:text-2xl mb-8 leading-relaxed text-blue-100 text-center">
 							Professional Live-In Care Services
 							<span className="block text-lg md:text-xl mt-2 text-white/80">
 								Bringing compassion, dignity, and exceptional care to your loved

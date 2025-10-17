@@ -81,7 +81,7 @@ const HeroSection = ({
 					initial={{ scale: 1.1 }}
 					animate={{ scale: 1 }}
 					transition={{ duration: 10, ease: 'linear' }}
-					className="h-full w-full">
+					className="h-full w-full relative">
 					<Image
 						src={backgroundImage}
 						alt="Hero Background"

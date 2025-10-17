@@ -1,7 +1,6 @@
 import Carousel from '../components/Carousel';
 import AnimatedWrapper from '../components/AnimatedWrapper';
 import Link from 'next/link';
-import Image from 'next/image';
 import { FaHeart, FaHome, FaSmile } from 'react-icons/fa';
 import {
 	Accordion,

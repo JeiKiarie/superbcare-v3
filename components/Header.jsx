@@ -97,16 +97,17 @@ export default function Header() {
 							href="/"
 							className="flex items-center space-x-3 group">
 							<motion.div
+								className="rounded-lg w-[105px] h-[65px]overflow-hidden"
 								whileHover={{ rotate: 10 }}
 								transition={{ type: 'spring', stiffness: 300 }}>
 								<Image
-									className="transition-opacity duration-300 group-hover:opacity-80"
-									width={70}
-									height={70}
+									className="transition-opacity duration-300 group-hover:opacity-80 rounded-lg"
 									alt="Superb Care Services Logo"
 									src={Logo}
 									style={{
 										filter: 'drop-shadow(0 1px 2px rgba(0, 0, 0, 0.05))',
+										width: '100%',
+										height: '100%',
 									}}
 								/>
 							</motion.div>
@@ -254,12 +255,12 @@ export default function Header() {
 										onClick={() => setIsMobileMenuOpen(false)}>
 										<Image
 											className="transition-opacity duration-300 hover:opacity-80"
-											width={40}
-											height={40}
 											alt="Superb Care Services Logo"
 											src={Logo}
 											style={{
 												filter: 'drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1))',
+												width: '40px',
+												height: '40px',
 											}}
 										/>
 										<div>

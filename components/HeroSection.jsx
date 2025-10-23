@@ -7,7 +7,7 @@ const HeroSection = ({
 	title,
 	subtitle,
 	backgroundImage,
-	height = 'h-[70vh] md:h-[calc(100vh-5rem)]',
+	height = 'h-[50vh] md:h-[calc(100vh-5rem)]',
 	titleSize = 'text-5xl',
 	className = '',
 }) => {
@@ -172,7 +172,7 @@ const HeroSection = ({
 				variants={bannerVariantsLeft}
 				initial="hidden"
 				animate="visible"
-				className="absolute top-8 left-8 bg-white/10 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium border border-white/20">
+				className="absolute top-4 md:top-8 left-4 md:left-8 bg-white/10 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium border border-white/20">
 				Compassionate Care
 			</motion.div>
 
@@ -180,7 +180,7 @@ const HeroSection = ({
 				variants={bannerVariantsRight}
 				initial="hidden"
 				animate="visible"
-				className="absolute top-8 right-8 bg-white/10 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium border border-white/20">
+				className="absolute top-4 md:top-8 right-4 md:right-8 bg-white/10 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium border border-white/20">
 				24/7 Support
 			</motion.div>
 
@@ -188,7 +188,7 @@ const HeroSection = ({
 				variants={bannerVariantsLeft}
 				initial="hidden"
 				animate="visible"
-				className="absolute bottom-16 left-8 bg-white/10 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium border border-white/20">
+				className="absolute bottom-4 md:bottom-16 left-4 md:left-8 bg-white/10 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium border border-white/20">
 				Professional Staff
 			</motion.div>
 
@@ -196,7 +196,7 @@ const HeroSection = ({
 				variants={bannerVariantsRight}
 				initial="hidden"
 				animate="visible"
-				className="absolute bottom-16 right-8 bg-white/10 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium border border-white/20">
+				className="absolute bottom-4 md:bottom-16 right-4 md:right-8 bg-white/10 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium border border-white/20">
 				Quality Services
 			</motion.div>
 		</section>

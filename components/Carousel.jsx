@@ -57,12 +57,12 @@ const Carousel = () => {
 	];
 
 	return (
-		<div className="carousel relative w-full h-[70vh] md:h-[calc(100vh-5rem)] overflow-hidden">
+		<div className="carousel relative w-full h-[50vh] md:h-[calc(100vh-5rem)] overflow-hidden">
 			<Slider {...slickSettings}>
 				{slides.map((slide, index) => (
 					<div
 						key={index}
-						className="relative w-full h-screen">
+						className="relative w-full h-[50vh] md:h-[calc(100vh-5rem)]">
 						<Image
 							src={slide.imageUrl}
 							alt={slide.alt}

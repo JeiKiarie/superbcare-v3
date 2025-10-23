@@ -8,7 +8,7 @@ export default function AppointmentPage() {
 				<h1 className="text-4xl font-bold text-blue-800 mb-8">
 					Book an Appointment
 				</h1>
-				<p className="text-gray-700 mb-4">
+				<p className="text-gray-700 mb-4 text-center">
 					Schedule a time for a consultation with one of our care experts.
 				</p>
 				<div className="bg-white p-6 shadow-lg rounded-lg">

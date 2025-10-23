@@ -22,7 +22,7 @@ export const metadata = {
 		siteName: 'Superb Care Services Ltd',
 		images: [
 			{
-				url: 'https://superbcareservices.co.uk/superb-logo.jpg',
+				url: 'https://superbcareservices.co.uk/SuperbLogo.webp',
 				width: 1200,
 				height: 630,
 				alt: 'Superb Care Services Ltd Logo',

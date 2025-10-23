@@ -29,7 +29,7 @@ import BackButton from '@/components/BackButton';
 export const metadata = {
 	title: 'Elderly Care Services | Live-In Home Care | Superb Care Services Ltd',
 	description:
-		'Professional elderly care services including personal care, medication management, companionship & 24/7 support. CQC registered live-in care for seniors in the comfort of home.',
+		'Professional elderly care services including personal care, medication management, companionship & 24/7 support. Live-in care for seniors in the comfort of home.',
 	keywords: [
 		'elderly care',
 		'home care for elderly',
@@ -439,7 +439,7 @@ const ElderlyCarePage = () => {
 								{ number: '98%', label: 'Client Satisfaction' },
 								{ number: '180+', label: 'Seniors Cared For' },
 								{ number: '7+', label: 'Years Experience' },
-								{ number: 'CQC', label: 'Approved & Accredited' },
+								// { number: 'CQC', label: 'Approved & Accredited' },
 							].map((stat, index) => (
 								<div
 									key={index}

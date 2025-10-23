@@ -6,7 +6,6 @@ import { FaFacebook, FaInstagram, FaBars, FaPhone } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import Logo from '/public/SuperbLogo.webp';
 import { Button } from '@/components/ui/button';
 import {
 	Sheet,
@@ -105,7 +104,9 @@ export default function Header() {
 								<Image
 									className="transition-opacity duration-300 group-hover:opacity-80 rounded-lg"
 									alt="Superb Care Services Logo"
-									src={Logo}
+									src="/SuperbLogo.webp"
+									width={105}
+									height={65}
 									style={{
 										filter: 'drop-shadow(0 1px 2px rgba(0, 0, 0, 0.05))',
 										width: '100%',
@@ -263,7 +264,9 @@ export default function Header() {
 											<Image
 												className="transition-opacity duration-300 hover:opacity-80 rounded-lg"
 												alt="Superb Care Services Logo"
-												src={Logo}
+												src="/SuperbLogo.webp"
+												width={70}
+												height={40}
 												style={{
 													filter: 'drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1))',
 													width: '100%',

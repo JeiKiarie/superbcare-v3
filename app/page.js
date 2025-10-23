@@ -371,7 +371,7 @@ export default function Home() {
 				</div>
 			</section>
 
-			{/* Awards & Certifications Section */}
+			{/* Awards & Certifications Section
 			<section className="py-16 px-6 bg-gray-50">
 				<div className="container mx-auto text-center">
 					<h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-12">
@@ -405,7 +405,7 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
-
+ */}
 			{/* FAQ Section */}
 			<section className="py-16 px-6 bg-white">
 				<div className="container mx-auto max-w-4xl">

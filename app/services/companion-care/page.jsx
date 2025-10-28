@@ -41,7 +41,7 @@ export const metadata = {
 		title: 'Companion Care Services - Social & Emotional Support',
 		description:
 			'Professional companionship services for seniors including social visits, activity support, and emotional care to combat loneliness.',
-		url: 'https://superbcareservices.co.uk/services/companion-care',
+		url: 'https://superbcare.co.uk/services/companion-care',
 		type: 'website',
 	},
 	twitter: {
@@ -50,7 +50,7 @@ export const metadata = {
 			'Heartfelt companion care services for seniors. Social visits, meaningful activities, and professional companionship to reduce loneliness.',
 	},
 	alternates: {
-		canonical: 'https://superbcareservices.co.uk/services/companion-care',
+		canonical: 'https://superbcare.co.uk/services/companion-care',
 	},
 };
 

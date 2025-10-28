@@ -168,7 +168,7 @@ export const metadata = {
 		title: 'Home Care Services - Elderly & Live-In Care',
 		description:
 			'Professional comprehensive elderly care services including dementia care, palliative care, and companion care. Quality home care across the UK.',
-		url: 'https://superbcareservices.co.uk/services',
+		url: 'https://superbcare.co.uk/services',
 		type: 'website',
 	},
 	twitter: {
@@ -177,7 +177,7 @@ export const metadata = {
 			'Comprehensive elderly and live-in care services. Professional home care including dementia, palliative, and companion care across the UK.',
 	},
 	alternates: {
-		canonical: 'https://superbcareservices.co.uk/services',
+		canonical: 'https://superbcare.co.uk/services',
 	},
 };
 

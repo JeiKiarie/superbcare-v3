@@ -18,11 +18,11 @@ export const metadata = {
 		title: 'Superb Care Services Ltd - Professional Elderly Care Services',
 		description:
 			'Elderly Live-in Home Care and Supported Living Services across the UK. Compassionate, professional care in the comfort of home.',
-		url: 'https://superbcareservices.co.uk',
+		url: 'https://superbcare.co.uk',
 		siteName: 'Superb Care Services Ltd',
 		images: [
 			{
-				url: 'https://superbcareservices.co.uk/SuperbLogo.webp',
+				url: 'https://superbcare.co.uk/superblogo.webp',
 				width: 1200,
 				height: 630,
 				alt: 'Superb Care Services Ltd Logo',
@@ -36,7 +36,7 @@ export const metadata = {
 		title: 'Superb Care Services Ltd - Professional Elderly Care Services',
 		description:
 			'Elderly Live-in Home Care and Supported Living Services across the UK. Compassionate care in the comfort of home.',
-		images: ['https://superbcareservices.co.uk/superb-logo.jpg'],
+		images: ['https://superbcare.co.uk/superblogo.webp'],
 	},
 	robots: {
 		index: true,
@@ -50,7 +50,7 @@ export const metadata = {
 		},
 	},
 	alternates: {
-		canonical: 'https://superbcareservices.co.uk',
+		canonical: 'https://superbcare.co.uk',
 	},
 };
 
@@ -68,9 +68,9 @@ export default function RootLayout({ children }) {
 							name: 'Superb Care Services Ltd',
 							description:
 								'Professional elderly care services providing live-in home care, dementia care, palliative care, and companion care across the UK.',
-							url: 'https://superbcareservices.co.uk',
+							url: 'https://superbcare.co.uk',
 							telephone: '+447984885069',
-							email: 'info@superbcareservices.co.uk',
+							email: 'info@superbcare.co.uk',
 							address: {
 								'@type': 'PostalAddress',
 								streetAddress: 'Castle Hill House, 12 Castle Hill',

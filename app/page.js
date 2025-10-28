@@ -41,11 +41,11 @@ export const metadata = {
 		title: 'Superb Care Services Ltd - Professional Live-In Care for Elderly',
 		description:
 			'24/7 professional live-in care services in Windsor and across the UK. Experienced caregivers for elderly care, dementia support, and palliative care.',
-		url: 'https://superbcareservices.co.uk',
+		url: 'https://superbcare.co.uk',
 		siteName: 'Superb Care Services Ltd',
 		images: [
 			{
-				url: 'https://superbcareservices.co.uk/SuperbLogo.webp',
+				url: 'https://superbcare.co.uk/superblogo.webp',
 				width: 1200,
 				height: 630,
 				alt: 'Superb Care Services Ltd Logo',
@@ -58,10 +58,10 @@ export const metadata = {
 		title: 'Superb Care Services Ltd | Live-In Care Windsor',
 		description:
 			'Professional live-in care for elderly in Windsor. 24/7 caregivers, dementia care, palliative care & companionship services.',
-		images: ['https://superbcareservices.co.uk/SuperbLogo.webp'],
+		images: ['https://superbcare.co.uk/superblogo.webp'],
 	},
 	alternates: {
-		canonical: 'https://superbcareservices.co.uk',
+		canonical: 'https://superbcare.co.uk',
 	},
 };
 

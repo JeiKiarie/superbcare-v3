@@ -26,7 +26,7 @@ export const metadata = {
 		title: 'Live-In Care Services - 24/7 Home Care',
 		description:
 			'Professional live-in care with 24/7 support. Personalised elderly care services including medication management and companionship in the comfort of home.',
-		url: 'https://superbcareservices.co.uk/services/live-in-care',
+		url: 'https://superbcare.co.uk/services/live-in-care',
 		type: 'website',
 	},
 	twitter: {
@@ -35,7 +35,7 @@ export const metadata = {
 			'24/7 live-in care services. Professional home care with personalised support, medication management, and companionship across the UK.',
 	},
 	alternates: {
-		canonical: 'https://superbcareservices.co.uk/services/live-in-care',
+		canonical: 'https://superbcare.co.uk/services/live-in-care',
 	},
 };
 

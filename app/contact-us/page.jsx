@@ -23,7 +23,7 @@ export const metadata = {
 		title: 'Contact Superb Care Services Ltd',
 		description:
 			'Get in touch with our professional elderly care team. Free consultations available for live-in care, dementia care, and palliative care services.',
-		url: 'https://superbcareservices.co.uk/contact-us',
+		url: 'https://superbcare.co.uk/contact-us',
 		type: 'website',
 	},
 	twitter: {
@@ -32,7 +32,7 @@ export const metadata = {
 			'Professional elderly care providers. Contact us today for live-in care consultations and home care services across the UK.',
 	},
 	alternates: {
-		canonical: 'https://superbcareservices.co.uk/contact-us',
+		canonical: 'https://superbcare.co.uk/contact-us',
 	},
 };
 

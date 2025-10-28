@@ -104,7 +104,7 @@ export default function Header() {
 								<Image
 									className="transition-opacity duration-300 group-hover:opacity-80 rounded-lg"
 									alt="Superb Care Services Logo"
-									src="/SuperbLogo.webp"
+									src="/superblogo.webp"
 									width={105}
 									height={65}
 									style={{
@@ -264,7 +264,7 @@ export default function Header() {
 											<Image
 												className="transition-opacity duration-300 hover:opacity-80 rounded-lg"
 												alt="Superb Care Services Logo"
-												src="/SuperbLogo.webp"
+												src="/superblogo.webp"
 												width={70}
 												height={40}
 												style={{

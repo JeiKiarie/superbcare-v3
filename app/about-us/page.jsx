@@ -19,7 +19,7 @@ export const metadata = {
 		title: 'About Superb Care Services Ltd - Professional Elderly Care',
 		description:
 			'Founded in 2018, we provide compassionate live-in elderly care services across the UK. Learn about our mission and meet our dedicated care team.',
-		url: 'https://superbcareservices.co.uk/about-us',
+		url: 'https://superbcare.co.uk/about-us',
 		type: 'website',
 	},
 	twitter: {
@@ -28,7 +28,7 @@ export const metadata = {
 			'Professional elderly care services founded in 2018. Compassionate live-in care across the UK.',
 	},
 	alternates: {
-		canonical: 'https://superbcareservices.co.uk/about-us',
+		canonical: 'https://superbcare.co.uk/about-us',
 	},
 };
 

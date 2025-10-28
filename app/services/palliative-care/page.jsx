@@ -34,7 +34,7 @@ export const metadata = {
 		title: 'Palliative Care Services - Compassionate End-of-Life Care',
 		description:
 			'Professional palliative care with pain management, symptom control, and emotional support. Dignified end-of-life care in the comfort of home.',
-		url: 'https://superbcareservices.co.uk/services/palliative-care',
+		url: 'https://superbcare.co.uk/services/palliative-care',
 		type: 'website',
 	},
 	twitter: {
@@ -43,7 +43,7 @@ export const metadata = {
 			'Compassionate palliative care with symptom management, pain relief, and emotional support. Professional end-of-life care services.',
 	},
 	alternates: {
-		canonical: 'https://superbcareservices.co.uk/services/palliative-care',
+		canonical: 'https://superbcare.co.uk/services/palliative-care',
 	},
 };
 

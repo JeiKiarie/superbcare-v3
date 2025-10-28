@@ -33,7 +33,7 @@ export const metadata = {
 		title: "Dementia Care Services - Alzheimer's & Memory Care",
 		description:
 			"Professional dementia care services with specialized support for Alzheimer's patients. Compassionate memory care in the comfort of home.",
-		url: 'https://superbcareservices.co.uk/services/dementia-care',
+		url: 'https://superbcare.co.uk/services/dementia-care',
 		type: 'website',
 	},
 	twitter: {
@@ -42,7 +42,7 @@ export const metadata = {
 			"Specialized dementia and Alzheimer's care with professional live-in support and memory care services across the UK.",
 	},
 	alternates: {
-		canonical: 'https://superbcareservices.co.uk/services/dementia-care',
+		canonical: 'https://superbcare.co.uk/services/dementia-care',
 	},
 };
 

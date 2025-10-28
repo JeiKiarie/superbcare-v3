@@ -38,7 +38,7 @@ export const metadata = {
 		title: 'Respite Care Services - Time to Recharge & Restore',
 		description:
 			'Professional respite care providing caregivers much-needed breaks. Flexible short-term care solutions ensuring loved ones receive exceptional care in your absence.',
-		url: 'https://superbcareservices.co.uk/services/respite-care',
+		url: 'https://superbcare.co.uk/services/respite-care',
 		type: 'website',
 	},
 	twitter: {
@@ -47,7 +47,7 @@ export const metadata = {
 			'Professional caregiver respite services. Flexible short-term care for carers who need a break while ensuring loved ones receive quality home care.',
 	},
 	alternates: {
-		canonical: 'https://superbcareservices.co.uk/services/respite-care',
+		canonical: 'https://superbcare.co.uk/services/respite-care',
 	},
 };
 

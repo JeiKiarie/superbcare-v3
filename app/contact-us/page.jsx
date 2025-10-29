@@ -44,7 +44,7 @@ const ContactPage = () => {
 				title="Let's Start a Conversation"
 				subtitle="We're here to help you find the perfect care solution"
 				backgroundImage="/contact-image.jpg"
-				titleSize="text-6xl md:text-7xl"
+				// titleSize="text-6xl md:text-7xl"
 				className="relative overflow-hidden"
 			/>
 

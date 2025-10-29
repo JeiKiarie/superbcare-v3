@@ -57,7 +57,7 @@ const Carousel = () => {
 	];
 
 	return (
-		<div className="carousel relative w-full h-[50vh] md:h-[calc(100vh-5rem)] overflow-hidden">
+		<div className="carousel relative w-full h-[40vh] md:h-[calc(100vh-5rem)] overflow-hidden">
 			<Slider {...slickSettings}>
 				{slides.map((slide, index) => (
 					<div
@@ -73,7 +73,7 @@ const Carousel = () => {
 							<div>
 								<motion.h2
 									key={`title-${slideKey}-${index}`}
-									className="text-3xl md:text-5xl font-extrabold mb-4 text-center"
+									className="text-xl md:text-5xl font-extrabold mb-3 md:mb-4 text-center"
 									initial={{ opacity: 0, y: -50 }}
 									animate={{ opacity: 1, y: 0 }}
 									transition={{ duration: 0.8, delay: 0.5 }}>
@@ -81,7 +81,7 @@ const Carousel = () => {
 								</motion.h2>
 								<motion.p
 									key={`desc-${slideKey}-${index}`}
-									className="text-lg md:text-2xl max-w-2xl mx-auto mb-6"
+									className="text-sm md:text-2xl max-w-lg md:max-w-2xl mx-auto mb-4 md:mb-6"
 									initial={{ opacity: 0, y: 20 }}
 									animate={{ opacity: 1, y: 0 }}
 									transition={{ duration: 0.8, delay: 0.7 }}>

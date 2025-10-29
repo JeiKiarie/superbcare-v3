@@ -189,6 +189,7 @@ const Services = () => {
 				title="Our Comprehensive Care Services"
 				subtitle="Compassionate Care, Exceptional Service"
 				backgroundImage="/live-in-care.jpg"
+				// titleSize="text-2xl md:text-5xl"
 			/>
 
 			{/* Our Services Grid */}

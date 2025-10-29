@@ -7,8 +7,8 @@ const HeroSection = ({
 	title,
 	subtitle,
 	backgroundImage,
-	height = 'h-[50vh] md:h-[calc(100vh-5rem)]',
-	titleSize = 'text-5xl',
+	height = 'h-[40vh] md:h-[calc(100vh-5rem)]',
+	titleSize = 'text-2xl md:text-7xl',
 	className = '',
 }) => {
 	const containerVariants = {
@@ -101,17 +101,17 @@ const HeroSection = ({
 					variants={containerVariants}
 					initial="hidden"
 					animate="visible"
-					className="text-center space-y-4">
+					className="text-center space-y-2 md:space-y-4">
 					{subtitle && (
 						<motion.p
 							variants={subtitleVariants}
-							className="text-lg md:text-xl text-gray-200 tracking-wide !text-center">
+							className="text-base md:text-xl text-gray-200 tracking-wide !text-center">
 							{subtitle}
 						</motion.p>
 					)}
 					<motion.h1
 						variants={itemVariants}
-						className={`${titleSize} font-bold text-white drop-shadow-2xl`}>
+						className={`text-3xl ${titleSize} font-bold text-white drop-shadow-2xl`}>
 						{title}
 					</motion.h1>
 				</motion.div>
